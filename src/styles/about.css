@@ -1,0 +1,500 @@
+.bannerbg {
+    display: block;
+    width: 100%;
+    margin: 0 0;
+    padding: 120px 0 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: url(/images/footerbgnew.webp) no-repeat center center;
+    background-size: cover
+}
+
+.bannerbg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / .6)
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg p {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #df672a;
+    margin-bottom: .5rem;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.bannerbg h1 {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase
+}
+
+.sectiontop {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    overflow: hidden
+}
+
+.topbx {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative
+}
+
+.topbx .figure {
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.topbx .figure img {
+    width: 100%;
+    height: auto
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    background: rgb(0 0 0 / .8)
+}
+
+.overlay .caption {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    overflow: hidden;
+    transform: translate(0, -50%)
+}
+
+.overlay .caption .title {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #df672a;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.overlay .caption p {
+    display: block;
+    font-size: .95rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1.5rem
+}
+
+.overlay .caption p span {
+    color: #df672a
+}
+
+.workportbg {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    overflow: hidden;
+    background: #f7f8fa
+}
+
+.workportbg .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px
+}
+
+.workportbg [class*="col-"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px
+}
+
+.workcaption [class*="col-"] {
+    margin: 7.5px 0
+}
+
+.workbox {
+    width: 100%;
+    margin: 0;
+    padding: 30px 15px 30px 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 30px 0 rgb(38 42 76 / 20%)
+}
+
+.workbox .icon {
+    display: inline-block;
+    padding: 30px 15px 15px 10px;
+    position: relative;
+    border: 5px solid #e86221;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "DM Serif Display", Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 0 0 #ddd;
+    min-width: 95px;
+    text-align: center
+}
+
+.workbox .icon:after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    font-size: 42px;
+    display: inline-block;
+    background: #fff;
+    line-height: 1;
+    color: #df672a;
+    padding: 5px 0 2px;
+    transform: translate(0, -50%)
+}
+
+.workbox .caption {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.workbox .caption .title {
+    display: block;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.workbox .caption p {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #414141
+}
+
+.basicadvancebg {
+    width: 100%;
+    height: calc(100% - 15px);
+    position: relative;
+    background: #34343c;
+    overflow: hidden;
+    top: 7.5px;
+    border-radius: 7px;
+    padding: 30px 0;
+    box-sizing: border-box
+}
+
+.basicadvancinner {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    overflow: hidden
+}
+
+.basicadvancinner hr {
+    border-top: 1px solid rgb(255 255 255 / .3)
+}
+
+.basicadvancinner .countrytitle {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.basicadvancinner p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.packggebx {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    float: left
+}
+
+.packggebx:not(:last-child) {
+    border-right: 1px solid #fff
+}
+
+.packggebx .title {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.packggebx p {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: .5rem
+}
+
+.packggebx .price {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff
+}
+
+.packggebx .price sup {
+    font-weight: 400;
+    font-size: 1.5rem
+}
+
+.packggebx .btnprimary,
+.packggebx .btnsecondary {
+/*    margin-top: .5rem*/
+}
+.btnsecondary {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 5px;
+}
+.packggebx .btnprimary a,
+.packggebx .btnsecondary a {
+    padding: 12px 30px;
+    background: #e86221;
+    color:#fff;
+    border-radius: 22px;
+    line-height: 1;
+    display: block;
+}
+
+.clearpackage {
+    width: 100%;
+    clear: both;
+    height: 2rem
+}
+
+.stripebg {
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    overflow: hidden;
+    background: #34343c
+}
+
+.stripebg [class*="col-"] {
+    margin: 1rem 0
+}
+
+.stripebx {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center
+}
+
+.stripebx .title {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    text-transform: uppercase
+}
+
+.stripebx p {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.6
+}
+
+.portfoliobg {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0 30px;
+    overflow: hidden
+}
+
+.portfoliobg .widthsmall {
+    margin-bottom: 3rem
+}
+
+.portfolioinner {
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    background: #fff;
+    padding: 15px 30px 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px 0 rgb(38 42 76 / 20%)
+}
+
+.portfolioinner [class*="col-"] {
+    margin: 1rem 0
+}
+
+.portfolioinner .figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 7px
+}
+
+.portfolioinner .figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px
+}
+
+.clientsbg {
+    width: 100%;
+    margin: 0rem 0 0;
+    padding: 60px 0;
+    overflow: hidden;
+    background: #f7f8fa;
+    border-radius: 7px
+}
+
+.clientsbg .maintitle {
+    font-size: 1.4rem
+}
+
+.clientsbg .clientrelative {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.clientsbg .clientrelative .figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px
+}
+
+.clientsbg .clientrelative .figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px
+}
+
+.homeboothonenew {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 90px 0 0;
+    padding: 0;
+    overflow: hidden;
+    background: #eee
+}
+
+.homeboothonenew .figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.homeboothonenew .figure img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.homeboothonenew .homeright {
+    display: block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left
+}
+
+.homeboothonenew .caption {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 60px;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.homeboothonenew p {
+    margin: .5rem 0 1rem;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #414141
+}
+
+@media screen and (max-width:767px) {
+    .sectiontop [class*="col-"] {
+        margin: 1rem 0
+    }
+    .homeboothonenew .caption {
+        padding: 15px 30px
+    }
+}
+
+@media screen and (max-width:575px) {
+    .packggebx {
+        width: 100%
+    }
+    .packggebx:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #fff
+    }
+    .basicadvancinner .clearpackage {
+        display: none
+    }
+}

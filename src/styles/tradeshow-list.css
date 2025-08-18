@@ -1,0 +1,333 @@
+.bannerbg,
+.tradeshowviewbg,
+.tradeviewbg {
+    margin: 0;
+    overflow: hidden;
+    width: 100%
+}
+
+.bannerbg {
+    display: block;
+    padding: 120px 0 100px;
+    position: relative;
+    text-align: center;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat
+}
+
+.bannerbg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.trade-table-content table {
+    border: 1px solid #757575;
+    border-radius: 5px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 23px -8px #0e0f1040;
+    margin-bottom: .5rem
+}
+
+.trade-table-content table thead {
+    background-color: #34343c;
+    padding: 10px 12px;
+    font-size: 1.1rem
+}
+
+.trade-table-content table thead tr {
+    border-radius: 5px 5px 0 0;
+    vertical-align: middle
+}
+
+.trade-table-content table thead th {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center
+}
+
+.trade-table-content tbody tr {
+    vertical-align: middle;
+    border-bottom: 15px solid #f4f4f4
+}
+
+.trade-table-content tbody tr td {
+    padding: 1.5rem .5rem;
+    vertical-align: middle
+}
+
+.trade-table-content tbody tr:last-child {
+    vertical-align: middle;
+    border-bottom: none !important
+}
+
+.trade-table-content .rank {
+    background-color: #b50728;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 12px;
+    display: grid;
+    place-items: center;
+    text-align: center
+}
+
+.trade-table-content button {
+    background-color: #b50728;
+    border: 3px solid #950923;
+    color: #fff;
+    height: 49px;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-align: center;
+    outline: 0;
+    width: 131px
+}
+
+.trade-table-content button:hover {
+    background-color: #000
+}
+
+.trade-table-content .logo-icon {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 4px
+}
+
+.trade-table-content .logo-icon img {
+    border: 1px solid #dee2e6;
+    border-radius: 4px
+}
+
+.trade-table-content .title {
+    font-weight: 500
+}
+
+.tradeviewbg {
+    display: block;
+    padding: 60px 0;
+    background: 0 0/cover #fff
+}
+
+.tradeshowviewbg {
+    padding: 0
+}
+
+.tradeshowviewbg [class*=col-] {
+    margin: .5rem 0
+}
+
+.tradeshowviewbg ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-right: 0;
+    align-items: center;
+    justify-content: space-around
+}
+
+.tradeshowviewbg ul li {
+    display: flex;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    line-height: 1.2;
+    min-height: 66px;
+    font-size: .9rem;
+    color: #414141;
+    align-items: center;
+    font-family: "DM Serif Display", Arial, Helvetica, sans-serif
+}
+
+.tradeshowviewbg ul li:first-child {
+    max-width: 63px
+}
+
+.tradeshowviewbg ul li:nth-child(2) {
+    max-width: 80px;
+    flex: 0 0 80px
+}
+
+.tradeshowviewbg ul li:nth-child(3) {
+    width: 380px;
+    flex: 0 0 380px;
+    word-wrap: break-word
+}
+
+.tradeshowviewbg ul li:nth-child(4) {
+    width: 140px;
+    flex: 0 0 140px
+}
+
+.tradeshowviewbg ul li:nth-child(5) {
+    width: 280px;
+    flex: 0 0 280px
+}
+
+.tradeshowviewbg ul li .nnumber {
+    display: inline-block;
+    width: 38px;
+    line-height: 38px;
+    background: #ff7416;
+    font-size: .9rem;
+    padding: 0 7px;
+    border-radius: 50%;
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    color: #fff
+}
+
+.featuredcatgrybg .companylogo {
+    max-width: 60px;
+    flex: 0 0 60px;
+    z-index: 2
+}
+
+.tradeshowviewbg ul li .tradlogo {
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%
+}
+
+.tradeshowviewbg ul li .tradlogo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: .3s ease-in-out
+}
+
+.tradeshowviewbg ul li .tradlogo img:hover {
+    transform: scale(3);
+    z-index: 9;
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+.tradeshowviewbg ul li strong {
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem
+}
+
+.tradeshowviewbg ul li span {
+    font-size: .9rem;
+    display: block;
+    min-width: 150px;
+    color: #000
+}
+
+.tradeshowviewbg ul li .viewdetail {
+    display: inline-block
+}
+
+.tradeshowviewbg ul li .viewdetail a {
+    display: inline-block;
+    font-size: .9rem;
+    line-height: 34px;
+    border-radius: 4px;
+    background: #121f32;
+    color: #fff;
+    padding: 0 15px
+}
+
+.page-item:first-child .page-link {
+    background: #ff7416;
+    color: #fff
+}
+
+.page-link {
+    color: #ff7416
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #ff7416;
+    background-color: #fff;
+    border-color: #dee2e6
+}
+
+@media screen and (max-width:1199px) {
+    .trade-table-content table,
+    .tradeshowviewbg ul li:first-child {
+        display: none
+    }
+    .tradeshowviewbg ul {
+        display: block;
+        text-align: center;
+        border-right: 1px solid #ddd
+    }
+    .tradeshowviewbg ul li {
+        display: block;
+        width: 100%;
+        border: 0;
+        min-height: auto;
+        height: auto
+    }
+    .tradeshowviewbg ul li:nth-child(2),
+    .tradeshowviewbg ul li:nth-child(3),
+    .tradeshowviewbg ul li:nth-child(4),
+    .tradeshowviewbg ul li:nth-child(5) {
+        width: 100%;
+        max-width: 100%
+    }
+    .tradeshowviewbg ul li .tradlogo {
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width:767px) {
+    .tradcontntbanner {
+        padding: 60px 0
+    }
+    .tradcontntbanner .title span {
+        font-size: 3.5rem
+    }
+}
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

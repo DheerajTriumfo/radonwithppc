@@ -1,0 +1,254 @@
+.bannerbg,
+.formsection {
+    margin: 0;
+    width: 100%;
+    overflow: hidden
+}
+
+.bannerbg {
+    display: block;
+    padding: 150px 0;
+    position: relative;
+    text-align: center;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat
+}
+
+.bannerbg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / .6)
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p,
+.formbg .formtitle p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem
+}
+
+.bannerbg p {
+    color: #fff
+}
+
+.formsection {
+    display: block;
+    padding: 60px 0
+}
+
+.formbg {
+    display: block;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    border-radius: 7px
+}
+
+.formbg .row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.formbg .formtitle {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #000;
+    margin-bottom: .8rem;
+    font-weight: 500
+}
+
+.formbg .formtitle p {
+    color: #414141
+}
+
+.formbg input[type=text],
+.formbg select {
+    line-height: 52px;
+    height: 52px;
+    padding: 0 15px
+}
+
+.formbg input[type=text],
+.formbg select,
+.formbg textarea {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    color: #3d3d3d;
+    margin: 1rem 0;
+    background: #fff;
+    box-sizing: border-box;
+    text-shadow: none
+}
+
+.formbg input[type=text] {
+    border-radius: 3px;
+    border: 1px solid #ddd
+}
+
+.formbg select {
+    border-radius: 5px;
+    border: 1px solid #ddd
+}
+
+.formbg textarea {
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd
+}
+
+.formbg input[type=submit] {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 58px;
+    box-sizing: border-box;
+    padding: 0 35px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+    background: #e86221;
+    float: right
+}
+
+.form-groups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+.form-groups input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer
+}
+
+.form-groups label {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1rem
+}
+
+.form-groups label:before {
+    content: '';
+    -webkit-appearance: none;
+    border: 1px solid #e86221;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), inset 0 -15px 10px -12px rgba(0, 0, 0, .05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 15px;
+    background: #fff
+}
+
+.form-groups input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #e86221;
+    background: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg)
+}
+
+.error {
+    color: red;
+    font-size: .85rem;
+    display: block
+}
+
+.searchndata {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px
+}
+
+.searchnimg {
+    max-width: 200px;
+    flex: 0 0 200px;
+    text-align: center
+}
+
+.searchnimg img {
+    display: inline-block;
+    width: 100%;
+    max-width: 95px;
+    height: auto
+}
+
+.searchncart {
+    flex: 1
+}
+
+.carttext {
+    display: block;
+    overflow: hidden;
+    padding: 8px 10px;
+    border-left: 1px solid #ddd
+}
+
+.carttext .skucode {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    color: #000;
+    font-weight: 500
+}
+
+.carttext .rentalname {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    color: #ff7416
+}
+
+.carttext .boothsize {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.2;
+    color: #414141
+}

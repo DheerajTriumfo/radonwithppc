@@ -1,0 +1,400 @@
+.postrailgrid .nextpost .icon,
+.postrailgrid .previouspost .icon {
+    display: block;
+    height: 35px;
+    font-size: 2rem;
+    line-height: 25px;
+    text-align: center
+}
+
+.bannerbg {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 150px 0;
+    overflow: hidden;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat;
+    position: relative
+}
+
+.bannerbg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.blogdetailbg,
+.blogdetailbg .card,
+.blogdetailbg .contentpart,
+.blogdetailbg .forminfo {
+    background: #fff;
+    overflow: hidden
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.blogdetailbg {
+    width: 100%;
+    margin: 0;
+    padding: 30px 0 60px
+}
+
+.blogdetailbg .contentpart {
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 .35rem .75rem #1362fc4d
+}
+
+.blogdetailbg .contentpart .figure {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    margin-bottom: 1rem
+}
+
+.blogdetailbg .contentpart .figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0
+}
+
+.blogdetailbg .contentpart h2,
+.blogdetailbg .contentpart h3,
+.blogdetailbg .contentpart h4 {
+    display: block;
+    color: #061f34;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 600
+}
+
+.blogdetailbg .contentpart h2 {
+    font-size: 1.6rem
+}
+
+.blogdetailbg .contentpart h3 {
+    font-size: 1.4rem
+}
+
+.blogdetailbg .contentpart h4 {
+    font-size: 1.2rem
+}
+
+.blogdetailbg .contentpart p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #414141
+}
+
+.blogdetailbg .contentpart ol li,
+.blogdetailbg .contentpart ul li {
+    display: block;
+    padding-left: 30px;
+    color: #414141;
+    position: relative;
+    font-size: .95rem;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    text-align: justify
+}
+
+.blogdetailbg .contentpart ol li::after,
+.blogdetailbg .contentpart ul li::after {
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: 0 0;
+    top: 5px;
+    left: 0;
+    border: 2px solid #ff7416;
+    border-radius: 50%;
+    transition: 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    content: "";
+    transform: rotate(145deg)
+}
+
+.postrailgrid {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 20px 0;
+    overflow: hidden;
+    border-top: 1px solid #ddd
+}
+
+.postrailgrid .nextpost,
+.postrailgrid .previouspost {
+    display: block;
+    position: relative
+}
+
+.postrailgrid .previouspost .icon {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    color: #000;
+    margin-right: 15px;
+    float: left
+}
+
+.postrailgrid .previouspost .caption {
+    width: calc(100% - 50px);
+    float: left
+}
+
+.rmark {
+    display: block;
+    font-size: .7rem;
+    line-height: 1.2;
+    color: #ef4f02;
+    font-weight: 500;
+    transition: .5s ease-in-out
+}
+
+.postrailgrid .posttitle {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #000
+}
+
+.postrailgrid .posttitle:hover,
+a:hover .postrailgrid .posttitle {
+    color: #1553fc
+}
+
+.rmark:hover,
+a:hover .rmark {
+    color: #000
+}
+
+.postrailgrid .nextpost .icon {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    color: #000;
+    margin-left: 15px;
+    float: right
+}
+
+.blogdetailbg .forminfo input[type=email],
+.blogdetailbg .forminfo input[type=file],
+.blogdetailbg .forminfo input[type=text] {
+    border-radius: 8px;
+    width: 100%;
+    color: #3d3d3d;
+    text-shadow: none;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px #fff7f6;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block
+}
+
+.postrailgrid .nextpost .caption {
+    width: calc(100% - 50px);
+    float: left;
+    text-align: right
+}
+
+.blogdetailbg .forminfo {
+    border-radius: 6px;
+    padding: 30px 15px;
+    box-shadow: 0 .35rem .75rem #1362fc4d;
+    margin-bottom: 1.5rem
+}
+
+.blogdetailbg .forminfo .title {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #061f34;
+    font-weight: 600
+}
+
+.blogdetailbg .forminfo input[type=email],
+.blogdetailbg .forminfo input[type=text] {
+    padding: 0 15px;
+    line-height: 45px;
+    border: 1px solid #ddd
+}
+
+.blogdetailbg .forminfo input[type=file] {
+    padding: 5px 15px;
+    line-height: 35px;
+    border: 1px solid #ddd
+}
+
+.blogdetailbg .forminfo textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #3d3d3d;
+    line-height: 45px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-shadow: none;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px #fff7f6
+}
+
+.blogdetailbg .forminfo input[type=submit] {
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #e86221;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    width: 255px;
+    border: 3px solid #ef4f02
+}
+
+.blogdetailbg .card {
+    border: 1px solid #efefef;
+    display: block;
+    border-radius: .25rem;
+    margin-bottom: 2rem
+}
+
+.blogdetailbg .card .figure {
+    width: 100%;
+    overflow: hidden;
+    border-radius: .25rem .25rem 0 0
+}
+
+.blogdetailbg .card .figure img {
+    width: 100%;
+    height: auto;
+    border-radius: .25rem .25rem 0 0
+}
+
+.blogdetailbg .card .caption {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    border-bottom: 1px solid #efefef;
+    color: #000
+}
+
+.blogdetailbg .card .cardfooter {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 15px
+}
+
+.mediafig {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    display: block
+}
+
+.mediafig img {
+    border-radius: 1px;
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.mediabody {
+    float: left;
+    width: calc(100% - 75px);
+    display: block;
+    padding-top: 15px
+}
+
+.cardfooter .tt_small {
+    padding: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #ef4f02;
+    line-height: 15px
+}
+
+.cardfooter .tt_medium {
+    padding: 0;
+    font-size: 13px;
+    color: #000;
+    line-height: 15px;
+    font-weight: 600
+}
+
+.blogdetailbg table {
+    width: 100% !important;
+    margin-top: .6rem;
+    margin-bottom: 1rem
+}
+
+.blogdetailbg table tr:nth-child(odd) {
+    background-color: #efefef
+}
+
+.blogdetailbg table td {
+    border: 1px solid #414141;
+    padding: 10px;
+    text-align: center
+}
+
+.forminfo .error {
+    color: red;
+    font-size: .9rem;
+    display: block
+}
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

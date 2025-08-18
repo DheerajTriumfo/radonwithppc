@@ -1,0 +1,175 @@
+.bannerbg {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 120px 0 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat
+}
+
+.formbg,
+.formbg input[type=text] {
+    display: block;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%
+}
+
+.bannerbg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.formbg input[type=text],
+.formbg select {
+    line-height: 52px;
+    height: 52px;
+    padding: 0 15px
+}
+
+.formsection {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    overflow: hidden
+}
+
+.formbg {
+    position: relative;
+    padding: 30px;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    border-radius: 7px
+}
+
+.formbg .row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.formbg .formtitle {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #000;
+    margin-bottom: .8rem;
+    font-weight: 500
+}
+
+.formbg input[type=text] {
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #3d3d3d;
+    margin: 1rem 0;
+    text-shadow: none;
+    border: 1px solid #ddd
+}
+
+.custom-drop-file {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    height: 52px;
+    margin: 1rem 0
+}
+
+.custom-drop-file input[type=file] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    top: 0;
+    left: 0
+}
+
+.custom-drop-file p {
+    margin: 0;
+    color: #414141;
+    font-size: .65rem;
+    position: relative
+}
+
+.formbg select,
+.formbg textarea {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    color: #3d3d3d;
+    margin: 1rem 0;
+    background: #fff;
+    box-sizing: border-box;
+    text-shadow: none
+}
+
+.custom-drop-file p span {
+    display: inline-block;
+    background: #414141;
+    padding: 5px;
+    color: #fff
+}
+
+.formbg select {
+    border-radius: 5px;
+    border: 1px solid #ddd
+}
+
+.formbg textarea {
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd
+}
+
+.formbg input[type=submit] {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 58px;
+    box-sizing: border-box;
+    padding: 0 35px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+    background: #e86221;
+    float: right
+}
+
+.error {
+    color: red;
+    font-size: .85rem
+}

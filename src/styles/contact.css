@@ -1,0 +1,247 @@
+.bannerbg h1,
+.bannerbg p {
+    color: #fff;
+    display: block
+}
+
+.formbg .formtitle,
+.infocontent ul li .caption .infotitle {
+    line-height: 1;
+    color: #000;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+
+.bannerbg {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 150px 0;
+    overflow: hidden;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat;
+    position: relative
+}
+
+.contactbg,
+.mapbg {
+    margin: 0 0 60px;
+    width: 100%;
+    display: block
+}
+
+.bannerbg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.contactbg,
+.formbg,
+.infocontent {
+    position: relative
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p,
+.formbg .formtitle,
+.infocontent ul li {
+    margin-bottom: 1rem
+}
+
+.bannerbg p,
+.formbg p {
+    font-size: 1rem;
+    line-height: 1.6
+}
+
+.contactbg {
+    padding: 60px 0;
+    background: #f8f8f8
+}
+
+.formbg,
+.infocontent ul li {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    display: block
+}
+
+.contactbg .row {
+    margin-left: .5rem;
+    margin-right: .5rem
+}
+
+.contactbg [class*=col-] {
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+
+.contactbg::after,
+.infocontent::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.infocontent {
+    display: block;
+    width: 100%
+}
+
+.infocontent ul li {
+    padding: 15.5px 15px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 5px
+}
+
+.infocontent ul li .icon {
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fef6f4;
+    float: left;
+    margin-right: 15px
+}
+
+.infocontent ul li .icon img,
+.mapbg img {
+    width: 100%;
+    height: auto
+}
+
+.infocontent ul li .caption {
+    width: calc(100% - 85px);
+    float: left;
+    overflow: hidden
+}
+
+.infocontent ul li .caption .infotitle {
+    display: block;
+    font-size: 1.2rem;
+    margin: .5rem 0
+}
+
+.infocontent p,
+.infocontent p a {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #414141
+}
+
+.formbg {
+    padding: 30px;
+    border: 1px solid #efefef;
+    border-radius: 7px
+}
+
+.formbg .row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.formbg .formtitle {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -2px
+}
+
+.formbg p {
+    display: block;
+    color: #414141;
+    margin-bottom: 0
+}
+
+.formbg input[type=text],
+.formbg select {
+    line-height: 52px;
+    height: 52px;
+    padding: 0 15px
+}
+
+.formbg input[type=text],
+.formbg select,
+.formbg textarea {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin: 1rem 0;
+    background: #fff;
+    text-shadow: none;
+    box-sizing: border-box;
+    width: 100%;
+    display: block
+}
+
+.formbg input[type=text] {
+    border-radius: 3px;
+    border: 1px solid #ddd
+}
+
+.formbg select {
+    border-radius: 5px;
+    border: 1px solid #ddd
+}
+
+.formbg textarea {
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd
+}
+
+.formbg input[type=submit] {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 58px;
+    box-sizing: border-box;
+    padding: 0 35px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+    background: #e86221;
+    float: right
+}
+
+.mapbg {
+    padding: 5px;
+    box-sizing: border-box
+}
+
+.mapbg iframe {
+    width: 100%;
+    height: 450px
+}
+
+.mrbt {
+    margin-bottom: 3rem
+}
+
+.error {
+    color: red;
+    font-size: .85rem;
+    display: block
+}

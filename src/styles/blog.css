@@ -1,0 +1,185 @@
+.bannerbg,
+.portfoliobg {
+    margin: 0;
+    overflow: hidden;
+    width: 100%
+}
+
+.bannerbg h1,
+.portfolioinner .caption .title {
+    font-size: 20px;
+    color: #222;
+    text-align: center;
+    font-weight: 600;
+    line-height: 32px
+}
+
+.bannerbg {
+    display: block;
+    padding: 120px 0 100px;
+    position: relative;
+    text-align: center;
+    background: url(/images/footerbgnew.webp) center center/cover no-repeat
+}
+
+.bannerbg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.bannerbg .container {
+    position: relative;
+    z-index: 1
+}
+
+.bannerbg h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-transform: uppercase
+}
+
+.bannerbg p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.gt-bottom>ul,
+.gt-bottom>ul>li {
+    font-size: .9231rem;
+    display: flex
+}
+
+.portfoliobg {
+    display: block;
+    padding: 60px 0 30px
+}
+
+.portfoliobg .widthsmall {
+    margin-bottom: 3rem
+}
+
+.blogbx {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    position: relative;
+    height: 100%;
+    border-radius: 5px
+}
+
+.portfolioinner {
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    background: #fff;
+    padding: 15px 30px 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px 0 rgb(38 42 76 / 20%)
+}
+
+.portfolioinner [class*=col-] {
+    margin: 1rem 0
+}
+
+.portfolioinner .figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 7px
+}
+
+.portfolioinner .figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px
+}
+
+.portfolioinner .caption {
+    display: block;
+    overflow: hidden;
+    padding: 15px 0
+}
+
+.portfolioinner .caption .title {
+    font-size: 20px;
+    color: #222;
+    text-align: center
+}
+
+.gt-bottom {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem
+}
+
+.gt-bottom>ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: -5px -10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.gt-bottom>ul>li {
+    padding: 5px 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #555;
+    line-height: 1.7
+}
+
+.gt-bottom>ul>li svg {
+    color: #fb0;
+    margin-right: 10px
+}
+
+.portfolioinner a:hover .caption .title {
+    color: #ff7416;
+    transition: .3s ease-in-out
+}
+
+.page-item:first-child .page-link {
+    background: #ff7416;
+    color: #fff
+}
+
+.page-link {
+    color: #ff7416
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #ff7416;
+    background-color: #fff;
+    border-color: #dee2e6
+}
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
