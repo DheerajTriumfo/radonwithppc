@@ -42,12 +42,12 @@ export default function Navigation()
 		<header>
 			<div className="header">
 				<div className="container">
-					<div className="logo"><a href="/"><img src="/images/logo-radon.webp" width="180" height="50" alt="Radon LLC" /></a></div>
-					<div className="rfpbg"><a href="/quote-form/">RFP</a></div>
+					<div className="logo"><link href="/"><img src="/images/logo-radon.webp" width="180" height="50" alt="Radon LLC" /></link></div>
+					<div className="rfpbg"><link href="/quote-form/">RFP</link></div>
 					<div className="infobg">
 						<ul>
-							<li><a href="mailto:info@radonexhibition.com">info@radonexhibition.com</a></li> 
-							<li><a href="tel:+19174633566">+1 917 463 3566</a></li>
+							<li><link href="mailto:info@radonexhibition.com">info@radonexhibition.com</link></li> 
+							<li><link href="tel:+19174633566">+1 917 463 3566</link></li>
 						</ul>
 					</div>
 				</div>
