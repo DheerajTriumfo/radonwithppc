@@ -1,6 +1,6 @@
 import "../../styles/location.css";
 import Locationlist from './locationlist.js';
-
+import Link from 'next/link';
 
 export const metadata = {
 	title: 'Our Service Area | RADON LLC',
@@ -56,21 +56,21 @@ export default function Location(){
 		                            </div>
 		                            <div className="loaction-points">
 		                                <ul>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-germany/" target="_blank">germany</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/" target="_blank">Poland</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-united-kingdom/" target="_blank">united kingdom</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-spain/" target="_blank">spain</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-netherlands/" target="_blank">netherlands</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-italy/" target="_blank">italy</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-sweden/" target="_blank">sweden</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-france/" target="_blank">france</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-switzerland/" target="_blank">switzerland</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-belgium/" target="_blank">belgium</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-austria/" target="_blank">austria</a></li>
-		                                    <li><a href="https://www.radonexhibition.eu/stand-builder-croatia/" target="_blank">croatia</a></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-germany/" target="_blank">germany</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/" target="_blank">Poland</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-united-kingdom/" target="_blank">united kingdom</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-spain/" target="_blank">spain</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-netherlands/" target="_blank">netherlands</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-italy/" target="_blank">italy</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-sweden/" target="_blank">sweden</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-france/" target="_blank">france</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-switzerland/" target="_blank">switzerland</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-belgium/" target="_blank">belgium</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-austria/" target="_blank">austria</Link></li>
+		                                    <li><Link href="https://www.radonexhibition.eu/stand-builder-croatia/" target="_blank">croatia</Link></li>
 		                                </ul>  
 		                            </div>
-		                            <a href="https://www.radonexhibition.eu/" target="_blank" className="pop-link">&#x2192;</a>
+		                            <Link href="https://www.radonexhibition.eu/" target="_blank" className="pop-link">&#x2192;</Link>
 								</div>
 							</div>
 						</div>

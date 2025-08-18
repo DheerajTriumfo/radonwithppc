@@ -1,5 +1,5 @@
 import '../../styles/privacypolicy.css';
-
+import Link from 'next/link';
 export const metadata = {
 	title : 'Privacy Policy',
 	description: '',
@@ -39,7 +39,7 @@ export default function Privacypolicy()
 						<h2 className="smalltitle">Changes to This Privacy Policy</h2>
 						<p>We reserve the right to update or modify this Privacy Policy at any time. We will notify you of any changes by posting the updated policy on our website with the effective date of the revision.</p>
 						<h2 className="smalltitle">Contact Us</h2>
-						<p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:info@radonexhibition.com">info@radonexhibition.com</a></p>
+						<p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <Link href="mailto:info@radonexhibition.com">info@radonexhibition.com</Link></p>
 						<p>By using our website or services, you consent to the collection and use of your information as outlined in this Privacy Policy.</p>
 					</div>
 				</div>

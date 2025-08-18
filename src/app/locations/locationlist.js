@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-
+import Link from 'next/link';
 
 
 
@@ -19,7 +19,7 @@ export default function Locationlist()
 			{listing ? (
 				listing.map((citylistdata, index) => (
 					<li key={index}>
-						<a href={`/${citylistdata.pageurl}/`}>{citylistdata.cityname}</a>
+						<Link href={`/${citylistdata.pageurl}/`}>{citylistdata.cityname}</Link>
 					</li>
 				))
 			):(

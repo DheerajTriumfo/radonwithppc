@@ -1,4 +1,3 @@
-
 import Style from '../../../styles/blog-detail.css';
 
 const baseUrl = 'https://radonexhibition.com';

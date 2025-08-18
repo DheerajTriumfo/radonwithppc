@@ -3,6 +3,8 @@ import styles from '../../styles/boothsize.module.css';
 import '../../styles/owl.carousel.min.css';
 //import Script from 'next/script';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import QuoteForm from './includeform.js';
 import CarouselSection from './CarouselSection.jsx';
@@ -113,7 +115,7 @@ export default async function LocationDetail({ params })
 								) : boothSize === '40x50' ? (
 									<p>RADON LLC offers a wide range of engaging 40x50 trade show booth rentals that can be tailored to your needs at minimal costs. Explore the most appropriate booth design to meet your brand and exhibition needs.</p>
 								) : null}
-								<div className={styles.boothsizequotebtn}><link href="/exhibit-form/">REQUEST FOR FREE DESIGN</link></div>
+								<div className={styles.boothsizequotebtn}><Link href="/exhibit-form/">REQUEST FOR FREE DESIGN</Link></div>
 							</div>
 						</div>
 					</div>
@@ -128,7 +130,7 @@ export default async function LocationDetail({ params })
 								{boothdata.map((row, index) => (
 								<div key={row.id || index} className="col-lg-4 col-md-6 col-12">
 									<div className={styles.boothbg}>
-										<div className={styles.figure}><link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`${baseUrl}/uploads/rentalexhibition/${row.thumbnail}`} /></link></div>
+										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><Image src={`https://radonexhibition.com/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
 										<div className={styles.caption}>
 											<div className={styles.title}><span>BOOTH CODE: </span>{row.skucode}</div>
 											<QuoteForm/>
@@ -151,7 +153,7 @@ export default async function LocationDetail({ params })
 								<div className={styles.shrtdesc}>
 									<p>Simply provide us with your booth requirements, and our exhibit design team will create custom booth designs tailored to your budget and marketing goals. Receive detailed quotations along with the designs.</p>
 								</div>
-								<div className="btnprimary text-center mrtnone"><link href="/exhibit-form/">REQUEST FREE DESIGN</link></div>
+								<div className="btnprimary text-center mrtnone"><Link href="/exhibit-form/">REQUEST FREE DESIGN</Link></div>
 							</div>
 						</div>
 					</div>
@@ -236,8 +238,8 @@ export default async function LocationDetail({ params })
 				</div>
 			</section>
 			<section>
-				<div class="boothsearchsizebg">
-					<div class="container">
+				<div className="boothsearchsizebg">
+					<div className="container">
 						<div className="row" id="ajax_result"></div>
 					</div>
 				</div>
@@ -251,7 +253,7 @@ export default async function LocationDetail({ params })
 							</div>
 						</div>
 						<div className="ourservicebtn">
-							<link href="/exhibit-form/">Work With Us »</link>
+							<Link href="/exhibit-form/">Work With Us »</Link>
 						</div>
 					</div>
 				</div>
@@ -267,7 +269,7 @@ export default async function LocationDetail({ params })
 								<div className="caption">
 									<h2 className="title">{locdata.toptitle}</h2>
 									<div dangerouslySetInnerHTML={{ __html: locdata.topdesc }} />
-									<div className="btnprimary"><link href="/contact-us/" className="text-uppercase">CONTACT US</link></div>
+									<div className="btnprimary"><Link href="/contact-us/" className="text-uppercase">CONTACT US</Link></div>
 								</div>
 							</div>
 						</div>
@@ -303,7 +305,7 @@ export default async function LocationDetail({ params })
 					<div className="container">
 						<div className="csinner">
 							<div className="actiontext">WE WOULD LOVE TO WORK WITH YOU</div>
-							<div className="actionbtn"><link href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></link></div>
+							<div className="actionbtn"><Link href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></Link></div>
 						</div>
 					</div>
 				</div>

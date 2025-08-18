@@ -3,6 +3,8 @@ import React, { useState, useEffect, use  } from 'react';
 import { useParams } from 'next/navigation';
 const baseUrl = 'https://radonexhibition.com';
 import Blogform from './blogform.js';
+import Link from "next/link";
+
 
 export default function GetblogDetail({params})
 {
@@ -68,24 +70,24 @@ export default function GetblogDetail({params})
 									<div className="row">
 										<div className="col-md-6 col-sm-12">
 											<div className="previouspost">
-												<link href={prevdata ? prevdata.url : '#'}>
+												<Link href={prevdata ? prevdata.url : '#'}>
 													<div className="icon">&#8249;</div>
 													<div className="caption">
 														<div className="rmark">Previous</div>
 														<div className="posttitle">{prevdata ? prevdata.blogtitle : 'No previous post'}</div>
 													</div>
-												</link>
+												</Link>
 											</div>
 										</div>
 										<div className="col-md-6 col-sm-12">
 											<div className="nextpost">
-												<link href={nextdata ? nextdata.url : '#'}>
+												<Link href={nextdata ? nextdata.url : '#'}>
 													<div className="icon">&#8250;</div>
 													<div className="caption">
 														<div className="rmark">Next</div>
 														<div className="posttitle">{nextdata ? nextdata.blogtitle : 'No next post'}</div>
 													</div>
-												</link>
+												</Link>
 											</div>
 										</div>
 									</div>
@@ -97,7 +99,7 @@ export default function GetblogDetail({params})
 									<div className="title">Recent Posts</div>
 									{sidebarData.map((sidebarrow, index) =>(
 									<div className="card" key={sidebarrow.id || index}>
-									    <link href={`/blog/${sidebarrow.url}/`}>
+									    <Link href={`/blog/${sidebarrow.url}/`}>
 											<div className="figure"><img src={`${baseUrl}/uploads/blog/${sidebarrow.blogimg}`} width="1014" height="650" alt={ sidebarrow.alttag } loading="lazy"  /></div>
 											<div className="caption">{sidebarrow.blogtitle}</div>
 											<div className="cardfooter">
@@ -107,7 +109,7 @@ export default function GetblogDetail({params})
 													<div className="tt_medium">Radon LLC</div>
 												</div>
 											</div>
-										</link>
+										</Link>
 									</div>
 									)
 									)}

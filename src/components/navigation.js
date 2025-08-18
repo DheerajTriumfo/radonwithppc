@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation()
 {
@@ -42,12 +43,12 @@ export default function Navigation()
 		<header>
 			<div className="header">
 				<div className="container">
-					<div className="logo"><link href="/"><img src="/images/logo-radon.webp" width="180" height="50" alt="Radon LLC" /></link></div>
-					<div className="rfpbg"><link href="/quote-form/">RFP</link></div>
+					<div className="logo"><Link  href="/"><img src="/images/logo-radon.webp" width="180" height="50" alt="Radon LLC" /></Link ></div>
+					<div className="rfpbg"><Link  href="/quote-form/">RFP</Link ></div>
 					<div className="infobg">
 						<ul>
-							<li><link href="mailto:info@radonexhibition.com">info@radonexhibition.com</link></li> 
-							<li><link href="tel:+19174633566">+1 917 463 3566</link></li>
+							<li><Link  href="mailto:info@radonexhibition.com">info@radonexhibition.com</Link ></li> 
+							<li><Link  href="tel:+19174633566">+1 917 463 3566</Link ></li>
 						</ul>
 					</div>
 				</div>

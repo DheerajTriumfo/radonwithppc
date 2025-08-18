@@ -1,4 +1,5 @@
-	import '../../styles/portfolio.css';
+import '../../styles/portfolio.css';
+import Link from "next/link";
 import Portfolioimage from './portfolioimg.js';
 export const metadata = {
 	title : 'Our Portfolio | Trade Show Booth Designs | RADON LLC ',
@@ -13,7 +14,7 @@ export default function Portfolio(){
 						<div className="widthsmall">
 							<h1>OUR WORK AT A GLANCE</h1>
 							<p>RADON LLC has created designs that are trendy and innovative. Designs that define your company. Please take a look at the range of stand designs that we have made so far</p>
-							<div className="boothsizequotebtn"><a href="https://radonexhibition.com/quote-form/">Get Free Quote in 24 Hours</a></div>
+							<div className="boothsizequotebtn"><Link href="https://radonexhibition.com/quote-form/">Get Free Quote in 24 Hours</Link></div>
 						</div>
 					</div>
 				</div>

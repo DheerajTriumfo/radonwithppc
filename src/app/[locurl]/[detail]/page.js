@@ -3,6 +3,8 @@ import styles from '../../../styles/boothdetail.css';
 import Script from 'next/script';
 import '../../../styles/owl.carousel.min.css';
 import GetboothDetailform from './detailform.js';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const baseUrl = 'https://radonexhibition.com';
 export default async function boothDetail({ params})
@@ -35,7 +37,7 @@ export default async function boothDetail({ params})
 										<div className="owl-carousel owl-theme">
 										{boothimg && boothimg.length > 0 ? (
 											boothimg.map((btimg, index) => (
-											 <div key={btimg.id || index} className="figure"><img src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`} /></div>
+											 <div key={btimg.id || index} className="figure"><Image src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`} width={1024} height={768} alt={`Booth Image ${index + 1}`} /></div>
 													
 											))
 
@@ -99,10 +101,10 @@ export default async function boothDetail({ params})
 								boothrelated.map((related, index) => (
 									<div key={related.id || index} className="col-lg-4 col-md-6 col-12">
 										<div className="boothbg">
-											<div className="figure"><a href={`/${related.boothsize}-trade-show-booth/${related.url}` }><img src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`} width="350" height="300" loading="lazy" alt={related.alttag} /></a></div>
+											<div className="figure"><Link href={`/${related.boothsize}-trade-show-booth/${related.url}` }><Image src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`} width={350} height={300} alt={related.alttag || `Booth Image ${index + 1}`} loading="lazy"  /></Link></div>
 											<div className="caption">
 												<div className="title"><span>BOOTH CODE: </span>{related.skucode}</div>
-												<div className="btnsecondary"><link href="/free-design/">CONTACT US</link></div>
+												<div className="btnsecondary"><Link href="/free-design/">CONTACT US</Link></div>
 											</div>
 										</div>
 									</div> 

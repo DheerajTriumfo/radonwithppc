@@ -1,4 +1,5 @@
-
+import Link from "next/link";
+import Image from "next/image";
 import '../../styles/about.css';
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function About(){
 						<div className="row">
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="topbx">
-									<div className="figure"><img src="/images/about-design.webp" width="500" height="500" alt="" loading="lazy"/></div>
+									<div className="figure"><Image src="/images/about-design.webp" width="500" height="500" alt="" loading="lazy"/></div>
 									<div className="overlay">
 										<div className="caption">
 											<div className="title">Who We Are</div>
@@ -35,7 +36,7 @@ export default function About(){
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="topbx">
-									<div className="figure"><img src="/images/about-build.webp" width="500" height="500" alt="" loading="lazy"/></div>
+									<div className="figure"><Image src="/images/about-build.webp" width="500" height="500" alt="" loading="lazy"/></div>
 									<div className="overlay">
 										<div className="caption">
 											<div className="title">Our Story</div>
@@ -46,7 +47,7 @@ export default function About(){
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="topbx">
-									<div className="figure"><img src="/images/about-deliver.webp" width="500" height="500" alt="" loading="lazy"/></div>
+									<div className="figure"><Image src="/images/about-deliver.webp" width="500" height="500" alt="" loading="lazy"/></div>
 									<div className="overlay">
 										<div className="caption">
 											<div className="title">OUR PRESENCE</div>
@@ -115,12 +116,12 @@ export default function About(){
 										<div className="packggebx">
 											<div className="title">USA</div>
 											<p>302 E. Carson Ave, Suite1011, Las Vegas, Nevada 89101, USA</p>
-											<div className="btnprimary"><link href="/exhibit-form/">Enquire Now</link></div>
+											<div className="btnprimary"><Link href="/exhibit-form/">Enquire Now</Link></div>
 										</div>
 										<div className="packggebx">
 											<div className="title">EUROPE</div>
 											<p>RADON SP. Z O.O.ul. Gorzowska 2B. 65 -127 Zielona Góra, Poland</p>
-											<div className="btnsecondary"><link href={`https://www.radonexhibition.eu/`} target="_blank">Visit Website</link></div>
+											<div className="btnsecondary"><Link href={`https://www.radonexhibition.eu/`} target="_blank">Visit Website</Link></div>
 										</div>
 									</div>
 								</div>
@@ -168,36 +169,36 @@ export default function About(){
 							<div className="row">
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog10.webp" width="767" height="530" alt="" loading="lazy"/>
+										<Image src="/images/blog10.webp" width="767" height="530" alt="" loading="lazy"/>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog2.webp" width="767" height="530" alt="" loading="lazy"/>
+										<Image src="/images/blog2.webp" width="767" height="530" alt="" loading="lazy"/>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog3.webp" width="767" height="530" alt="" loading="lazy"/>
+										<Image src="/images/blog3.webp" width="767" height="530" alt="" loading="lazy"/>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog11.webp" width="767" height="530" alt="" loading="lazy"/>
+										<Image src="/images/blog11.webp" width="767" height="530" alt="" loading="lazy"/>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog5.webp" width="767" height="530" alt="" loading="lazy"/> 
+										<Image src="/images/blog5.webp" width="767" height="530" alt="" loading="lazy"/> 
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-12">
 									<div className="figure">
-										<img src="/images/blog12.webp" width="767" height="530" alt="" loading="lazy"/>
+										<Image src="/images/blog12.webp" width="767" height="530" alt="" loading="lazy"/>
 									</div>
 								</div>
 							</div>
-							<div className="btnprimary text-center"><link href="/portfolio/">View Portfolio</link></div>
+							<div className="btnprimary text-center"><Link href="/portfolio/">View Portfolio</Link></div>
 						</div>
 					</div>
 				</div>
@@ -206,7 +207,7 @@ export default function About(){
 				<div className="homeboothonenew">
 					<div className="row">
 						<div className="col-lg-6 col-md-12">
-							<div className="figure"><img src="/images/radonhomebooth5.webp" width="1280" height="913" alt=""/></div>
+							<div className="figure"><Image src="/images/radonhomebooth5.webp" width="1280" height="913" alt=""/></div>
 						</div>
 						<div className="col-lg-6 col-md-12">
 							<div className="caption">
