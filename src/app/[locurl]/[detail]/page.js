@@ -10,7 +10,7 @@ const baseUrl = 'https://radonexhibition.com';
 
 export default async function BoothDetail({ params }) {
   const { locurl, detail } = params;
-  
+
   // Fetch booth details
   const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}/`, {
     cache: 'no-store',
@@ -37,11 +37,14 @@ export default async function BoothDetail({ params }) {
                       {boothimg && boothimg.length > 0 ? (
                         boothimg.map((btimg, index) => (
                           <div key={btimg.id || index} className="figure">
+                            {/* Remove lazy load for the initial image */}
                             <img
+                              className="carousel-image"
                               src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`}
                               width={1024}
                               height={768}
                               alt={`Booth Image ${index + 1}`}
+                              
                             />
                           </div>
                         ))
@@ -136,14 +139,15 @@ export default async function BoothDetail({ params }) {
         </div>
       </section>
 
+      {/* Only initialize carousel after the page is ready */}
       <Script src="https://www.radonexhibition.eu/web/js/owl.carousel.js" strategy="afterInteractive" />
-      <Script id="init-owl-carousel" strategy="afterInteractive">
+      <Script  strategy="afterInteractive">
         {`
-          $(function () {
+          $(document).ready(function() {
             if (typeof $.fn.owlCarousel !== "undefined" && $('.owl-carousel').length > 0) {
-              $('.owl-carousel').owlCarousel({
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
                 items: 5,
-                lazyLoad: true,
                 loop: true,
                 margin: 30,
                 autoplay: false,
@@ -157,6 +161,8 @@ export default async function BoothDetail({ params }) {
                   1000: { items: 1 }
                 }
               });
+
+              
             }
           });
         `}
