@@ -102,7 +102,7 @@ export default async function boothDetail({ params})
 											<div className="figure"><a href={`/${related.boothsize}-trade-show-booth/${related.url}` }><img src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`} width="350" height="300" loading="lazy" alt={related.alttag} /></a></div>
 											<div className="caption">
 												<div className="title"><span>BOOTH CODE: </span>{related.skucode}</div>
-												<div className="btnsecondary"><a href="/free-design/">CONTACT US</a></div>
+												<div className="btnsecondary"><link href="/free-design/">CONTACT US</link></div>
 											</div>
 										</div>
 									</div> 

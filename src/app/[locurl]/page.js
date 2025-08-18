@@ -113,7 +113,7 @@ export default async function LocationDetail({ params })
 								) : boothSize === '40x50' ? (
 									<p>RADON LLC offers a wide range of engaging 40x50 trade show booth rentals that can be tailored to your needs at minimal costs. Explore the most appropriate booth design to meet your brand and exhibition needs.</p>
 								) : null}
-								<div className={styles.boothsizequotebtn}><a href="/exhibit-form/">REQUEST FOR FREE DESIGN</a></div>
+								<div className={styles.boothsizequotebtn}><link href="/exhibit-form/">REQUEST FOR FREE DESIGN</link></div>
 							</div>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ export default async function LocationDetail({ params })
 								{boothdata.map((row, index) => (
 								<div key={row.id || index} className="col-lg-4 col-md-6 col-12">
 									<div className={styles.boothbg}>
-										<div className={styles.figure}><a href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`${baseUrl}/uploads/rentalexhibition/${row.thumbnail}`} /></a></div>
+										<div className={styles.figure}><link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`${baseUrl}/uploads/rentalexhibition/${row.thumbnail}`} /></link></div>
 										<div className={styles.caption}>
 											<div className={styles.title}><span>BOOTH CODE: </span>{row.skucode}</div>
 											<QuoteForm/>
@@ -151,7 +151,7 @@ export default async function LocationDetail({ params })
 								<div className={styles.shrtdesc}>
 									<p>Simply provide us with your booth requirements, and our exhibit design team will create custom booth designs tailored to your budget and marketing goals. Receive detailed quotations along with the designs.</p>
 								</div>
-								<div className="btnprimary text-center mrtnone"><a href="/exhibit-form/">REQUEST FREE DESIGN</a></div>
+								<div className="btnprimary text-center mrtnone"><link href="/exhibit-form/">REQUEST FREE DESIGN</link></div>
 							</div>
 						</div>
 					</div>
@@ -251,7 +251,7 @@ export default async function LocationDetail({ params })
 							</div>
 						</div>
 						<div className="ourservicebtn">
-							<a href="/exhibit-form/">Work With Us »</a>
+							<link href="/exhibit-form/">Work With Us »</link>
 						</div>
 					</div>
 				</div>

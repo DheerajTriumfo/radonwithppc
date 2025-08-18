@@ -91,7 +91,7 @@ export default function Bloglist()
 								{blogdata.map((blgdta, index) => (
 									<div key={blgdta.id || index} className="col-lg-4 col-md-6 col-12">
 									    <div className="blogbx">
-			    							<a href={`/blog/${blgdta.url}/`}>
+			    							<link href={`/blog/${blgdta.url}/`}>
 			    								<div className="figure">
 			    									<img src={`https://radonexhibition.com/uploads/blog/${blgdta.blogimg}`} width="420" height="290" alt="" loading="lazy" />
 			    								</div>
@@ -99,7 +99,7 @@ export default function Bloglist()
 			    									<div className="title">{blgdta.blogtitle}</div>
 			    									
 			    								</div>
-			    							</a>
+			    							</link>
 										</div>
 									</div>
 									)

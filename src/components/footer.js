@@ -26,11 +26,11 @@ export default function Footer(){
 								<div className="footertitle">RADON LLC</div>
 								<div className="fmenu">
 									<ul>
-										<li><a href="/">Home</a></li>
-										<li><a href="/exhibition-stand-builders/">About Us</a></li>
-										<li><a href="/portfolio/">Portfolio</a></li>
-										<li><a href="/contact-us/">Contact Us</a></li>
-										<li><a href="/privacy-policy/">Privacy Policy</a></li>
+										<li><link href="/">Home</link></li>
+										<li><link href="/exhibition-stand-builders/">About Us</link></li>
+										<li><link href="/portfolio/">Portfolio</link></li>
+										<li><link href="/contact-us/">Contact Us</link></li>
+										<li><link href="/privacy-policy/">Privacy Policy</link></li>
 									</ul>
 								</div>
 							</div>
@@ -38,11 +38,11 @@ export default function Footer(){
 								<div className="footertitle">Booth By Size</div>
 								<div className="fmenu">
 									<ul>
-									    <li><a href="/10x10-trade-show-booth/">10 X 10</a></li>
-										<li><a href="/10x20-trade-show-booth/">10 X 20</a></li>
-										<li><a href="/10x30-trade-show-booth/">10 X 30</a></li>
-										<li><a href="/20x20-trade-show-booth/">20 X 20</a></li>
-										<li><a href="/20x30-trade-show-booth/">20 X 30</a></li>
+									    <li><link href="/10x10-trade-show-booth/">10 X 10</link></li>
+										<li><link href="/10x20-trade-show-booth/">10 X 20</link></li>
+										<li><link href="/10x30-trade-show-booth/">10 X 30</link></li>
+										<li><link href="/20x20-trade-show-booth/">20 X 20</link></li>
+										<li><link href="/20x30-trade-show-booth/">20 X 30</link></li>
 									</ul>
 								</div>
 							</div>
@@ -50,11 +50,11 @@ export default function Footer(){
 								<div className="footertitle">&nbsp;</div>
 								<div className="fmenu">
 									<ul>
-									    <li><a href="/20x40-trade-show-booth/">20 X 40</a></li>
-										<li><a href="/30x30-trade-show-booth/">30 X 30</a></li>
-										<li><a href="/30x40-trade-show-booth/">30 X 40</a></li>
-										<li><a href="/40x40-trade-show-booth/">40 X 40</a></li>
-										<li><a href="/40x50-trade-show-booth/">40 X 50</a></li>
+									    <li><link href="/20x40-trade-show-booth/">20 X 40</link></li>
+										<li><link href="/30x30-trade-show-booth/">30 X 30</link></li>
+										<li><link href="/30x40-trade-show-booth/">30 X 40</link></li>
+										<li><link href="/40x40-trade-show-booth/">40 X 40</link></li>
+										<li><link href="/40x50-trade-show-booth/">40 X 50</link></li>
 									</ul>
 								</div>
 							</div>
@@ -62,11 +62,11 @@ export default function Footer(){
 								<div className="footertitle">Resources</div>
 								<div className="fmenu">
 									<ul>
-										<li><a href="/quote-form/">Free Consultation</a></li>
-										<li><a href="/free-design/">Free Design</a></li>
-										<li><a href="/top-trade-shows/">Top Trade Shows</a></li>
-									    <li><a href="/blog/">Blog</a></li>
-									    <li><a href="/locations/">Where We Build</a></li>
+										<li><link href="/quote-form/">Free Consultation</link></li>
+										<li><link href="/free-design/">Free Design</link></li>
+										<li><link href="/top-trade-shows/">Top Trade Shows</link></li>
+									    <li><link href="/blog/">Blog</link></li>
+									    <li><link href="/locations/">Where We Build</link></li>
 									</ul>
 								</div>
 							</div>
@@ -78,10 +78,10 @@ export default function Footer(){
 						<div className="copyright text-center">Copyright ©2025 RADON LLC. All Rights Reserved </div>
 						<div className="socialfoote">
 							<ul>
-								<li><a href="https://www.facebook.com/radonexhibitionllc"><img src="/images/facebook.webp" width="35" height="35" alt="Facebook Page" loading="lazy"/></a></li>
-								<li><a href="https://twitter.com/ExhibitionLlc"><img src="/images/twitter.webp" width="35" height="35" alt="twitter" loading="lazy"/></a></li>
-								<li><a href="https://www.linkedin.com/company/radon-exhibition-llc/"><img src="/images/linkdin.webp" width="35" height="35" alt="LinkedIn Page" loading="lazy" /></a></li>
-								<li><a href="https://www.instagram.com/radonexhibitionllc/"><img src="/images/instagram.webp" width="35" height="35" alt="Instagram Page" loading="lazy"/></a></li>
+								<li><link href="https://www.facebook.com/radonexhibitionllc"><img src="/images/facebook.webp" width="35" height="35" alt="Facebook Page" loading="lazy"/></link></li>
+								<li><link href="https://twitter.com/ExhibitionLlc"><img src="/images/twitter.webp" width="35" height="35" alt="twitter" loading="lazy"/></link></li>
+								<li><link href="https://www.linkedin.com/company/radon-exhibition-llc/"><img src="/images/linkdin.webp" width="35" height="35" alt="LinkedIn Page" loading="lazy" /></link></li>
+								<li><link href="https://www.instagram.com/radonexhibitionllc/"><img src="/images/instagram.webp" width="35" height="35" alt="Instagram Page" loading="lazy"/></link></li>
 							</ul>
 						</div>
 					</div>
