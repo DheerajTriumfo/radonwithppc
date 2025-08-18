@@ -6,6 +6,7 @@ import GetboothDetailform from './detailform.js';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const baseUrl = 'https://radonexhibition.com';
 
 export default async function BoothDetail({ params }) {
@@ -141,7 +142,7 @@ export default async function BoothDetail({ params }) {
 
       {/* Only initialize carousel after the page is ready */}
       <Script src="https://www.radonexhibition.eu/web/js/owl.carousel.js" strategy="afterInteractive" />
-      <Script id="dheeraj">
+      <Script  strategy="afterInteractive">
         {`
           $(document).ready(function() {
             if (typeof $.fn.owlCarousel !== "undefined" && $('.owl-carousel').length > 0) {
