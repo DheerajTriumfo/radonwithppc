@@ -141,7 +141,7 @@ export default async function BoothDetail({ params }) {
 
       {/* Only initialize carousel after the page is ready */}
       <Script src="https://www.radonexhibition.eu/web/js/owl.carousel.js" strategy="afterInteractive" />
-      <Script  strategy="afterInteractive">
+      <Script id="dheeraj">
         {`
           $(document).ready(function() {
             if (typeof $.fn.owlCarousel !== "undefined" && $('.owl-carousel').length > 0) {
