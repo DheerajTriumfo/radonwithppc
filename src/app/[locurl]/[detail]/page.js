@@ -3,9 +3,9 @@ import styles from '../../../styles/boothdetail.css';
 import Script from 'next/script';
 import '../../../styles/owl.carousel.min.css';
 import GetboothDetailform from './detailform.js';
+import Detailcarousel from './Carouseldetail.js';
 import Image from 'next/image';
 import Link from 'next/link';
-
 
 const baseUrl = 'https://radonexhibition.com';
 
@@ -34,25 +34,7 @@ export default async function BoothDetail({ params }) {
               <div className="row">
                 <div className="col-lg-7">
                   <div className="figurebg">
-                    <div className="owl-carousel owl-theme">
-                      {boothimg && boothimg.length > 0 ? (
-                        boothimg.map((btimg, index) => (
-                          <div key={btimg.id || index} className="figure">
-                            {/* Remove lazy load for the initial image */}
-                            <img
-                              className="carousel-image"
-                              src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`}
-                              width={1024}
-                              height={768}
-                              alt={`Booth Image ${index + 1}`}
-                              
-                            />
-                          </div>
-                        ))
-                      ) : (
-                        <p>No additional details available.</p>
-                      )}
-                    </div>
+                    <Detailcarousel locurl={locurl} detail={detail} boothimg={boothimg} />
                     <h2 className="rboothtitle">
                       <span>BOOTH CODE: </span> {boothdetaildata.skucode}
                     </h2>
@@ -140,34 +122,7 @@ export default async function BoothDetail({ params }) {
         </div>
       </section>
 
-      {/* Only initialize carousel after the page is ready */}
-      <Script src="https://www.radonexhibition.eu/web/js/owl.carousel.js" strategy="afterInteractive" />
-      <Script  strategy="afterInteractive">
-        {`
-          $(document).ready(function() {
-            if (typeof $.fn.owlCarousel !== "undefined" && $('.owl-carousel').length > 0) {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                items: 5,
-                loop: true,
-                margin: 30,
-                autoplay: false,
-                autoplayTimeout: 3000,
-                smartSpeed: 1500,
-                nav: true,
-                dots: false,
-                responsive: {
-                  0: { items: 1 },
-                  600: { items: 1 },
-                  1000: { items: 1 }
-                }
-              });
-
-              
-            }
-          });
-        `}
-      </Script>
+      
     </>
   );
 }
