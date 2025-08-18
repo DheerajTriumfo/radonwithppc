@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../styles/common.css";
@@ -5,7 +6,7 @@ import "../styles/menumaker.css";
 import Script from "next/script";
 import Navigation from '../components/navigation';
 import Footer from '../components/footer.js';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation/>
         {children}
+        <SpeedInsights url="https://newradonllc.vercel.app/" />
         <Footer/>
       </body>
     </html>
