@@ -144,7 +144,7 @@ export default async function LocationDetail({ params })
 					<div className={styles.citylistingbg}>
 						<div className={styles.container}>
 							<div className={styles.widthsmall}>
-								<h2 className={styles.maintitle}>DIDN'T FIND THE PERFECT DESIGN?</h2>
+								<h2 className={styles.maintitle}>DIDNT FIND THE PERFECT DESIGN?</h2>
 							</div>
 							<h2 className={styles.maintitle} style={{ color: '#f9742f' }}>GET A FREE CUSTOM DESIGN CREATED TO MATCH YOUR EXACT REQUIREMENTS!</h2>
 							<div className={styles.widthsmall}>
@@ -267,7 +267,7 @@ export default async function LocationDetail({ params })
 								<div className="caption">
 									<h2 className="title">{locdata.toptitle}</h2>
 									<div dangerouslySetInnerHTML={{ __html: locdata.topdesc }} />
-									<div className="btnprimary"><a href="/contact-us/" className="text-uppercase">CONTACT US</a></div>
+									<div className="btnprimary"><link href="/contact-us/" className="text-uppercase">CONTACT US</link></div>
 								</div>
 							</div>
 						</div>
@@ -303,7 +303,7 @@ export default async function LocationDetail({ params })
 					<div className="container">
 						<div className="csinner">
 							<div className="actiontext">WE WOULD LOVE TO WORK WITH YOU</div>
-							<div className="actionbtn"><a href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></a></div>
+							<div className="actionbtn"><link href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></link></div>
 						</div>
 					</div>
 				</div>

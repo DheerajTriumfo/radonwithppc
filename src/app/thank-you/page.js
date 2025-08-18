@@ -10,7 +10,7 @@ export default function Thankyou()
 					<div className="container">
 						<div className="widthsmall">
 							<h1>Thank You for Connecting with Us! </h1>
-							<p>Your message has been received, and our expert will reach out to you soon. You're one step closer to a smooth and successful exhibition experience. We look forward to assisting you!</p>
+							<p>Your message has been received, and our expert will reach out to you soon. You are one step closer to a smooth and successful exhibition experience. We look forward to assisting you!</p>
 						</div>
 					</div>
 				</div>

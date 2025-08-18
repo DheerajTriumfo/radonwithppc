@@ -114,7 +114,7 @@ export default function Tradeshowdetaillist({slug})
   								dangerouslySetInnerHTML={{ __html: tradeshow.description }}
 							/>
 							<div className="btnprimary">
-								<a href="">Request For Booth Quotation</a>
+								<link href="">Request For Booth Quotation</link>
 							</div>
 						</div>
 					</div>
@@ -132,7 +132,7 @@ export default function Tradeshowdetaillist({slug})
 						<div className="row">
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/10x10-trade-show-booth/">
+		    						<link href="/10x10-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/10x10n.webp" loading="lazy" width="350" height="300" alt="10x10 custom trade show booth design" />
 		    							</div>
@@ -140,12 +140,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">10 X 10</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/10x20-trade-show-booth/">
+		    						<link href="/10x20-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/10x20n.webp" loading="lazy" width="350" height="300" alt="10x20 custom trade show booth design"/>
 		    							</div>
@@ -153,12 +153,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">10 X 20</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/10x30-trade-show-booth/">
+		    						<link href="/10x30-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/10x30n.webp" loading="lazy" width="350" height="300" alt="10x30 custom trade show booth design"/>
 		    							</div>
@@ -166,12 +166,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">10 X 30</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/20x20-trade-show-booth/">
+		    						<link href="/20x20-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/20x20n.webp" loading="lazy" width="350" height="300" alt="20x20 custom trade show booth design"/>
 		    							</div>
@@ -179,12 +179,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">20 X 20</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/20x30-trade-show-booth/">
+		    						<link href="/20x30-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/20x30n.webp" loading="lazy" width="350" height="300" alt="20x30 custom trade show booth design"/>
 		    							</div>
@@ -192,12 +192,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">20 X 30</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/20x40-trade-show-booth/">
+		    						<link href="/20x40-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/20x40n.webp" loading="lazy" width="350" height="300" alt="20x40 custom trade show booth design"/>
 		    							</div>
@@ -205,12 +205,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">20 X 40</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/30x30-trade-show-booth/">
+		    						<link href="/30x30-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/30x30n.webp" loading="lazy" width="350" height="300" alt="30x30 custom trade show booth design"/>
 		    							</div>
@@ -218,12 +218,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">30 X 30</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/30x40-trade-show-booth/">
+		    						<link href="/30x40-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/30x40n.webp" loading="lazy" width="350" height="300" alt="30x40 custom trade show booth design"/>
 		    							</div>
@@ -231,12 +231,12 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">30 X 40</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 							<div className="col-lg-4 col-md-6 col-12">
 								<div className="boothbg">
-		    						<a href="/40x40-trade-show-booth/">
+		    						<link href="/40x40-trade-show-booth/">
 		    							<div className="figure">
 		    							    <img src="/images/40x40n.webp" loading="lazy" width="350" height="300" alt="40x40 custom trade show booth design"/>
 		    							</div>
@@ -244,7 +244,7 @@ export default function Tradeshowdetaillist({slug})
 		    								<div className="title">40 X 40</div>
 		    								<div className="corner">Trade Show Booth Designs</div>
 		    							</div>
-		    						</a>
+		    						</link>
 		    					</div>
 							</div>
 						</div>

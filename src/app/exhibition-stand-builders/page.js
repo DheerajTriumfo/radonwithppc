@@ -50,7 +50,7 @@ export default function About(){
 									<div className="overlay">
 										<div className="caption">
 											<div className="title">OUR PRESENCE</div>
-											<p>Our presence spans extensive design and manufacturing facilities in both <span>America</span> and <span>Europe</span>. With this dual presence, we're adept at managing exhibition stand projects across both continents, ensuring excellent control over quality and cost.</p>
+											<p>Our presence spans extensive design and manufacturing facilities in both <span>America</span> and <span>Europe</span>. With this dual presence, we are adept at managing exhibition stand projects across both continents, ensuring excellent control over quality and cost.</p>
 										</div>
 									</div>
 								</div>
@@ -115,12 +115,12 @@ export default function About(){
 										<div className="packggebx">
 											<div className="title">USA</div>
 											<p>302 E. Carson Ave, Suite1011, Las Vegas, Nevada 89101, USA</p>
-											<div className="btnprimary"><a href="/exhibit-form/">Enquire Now</a></div>
+											<div className="btnprimary"><link href="/exhibit-form/">Enquire Now</link></div>
 										</div>
 										<div className="packggebx">
 											<div className="title">EUROPE</div>
 											<p>RADON SP. Z O.O.ul. Gorzowska 2B. 65 -127 Zielona Góra, Poland</p>
-											<div className="btnsecondary"><a href={`https://www.radonexhibition.eu/`} target="_blank">Visit Website</a></div>
+											<div className="btnsecondary"><link href={`https://www.radonexhibition.eu/`} target="_blank">Visit Website</link></div>
 										</div>
 									</div>
 								</div>
@@ -197,7 +197,7 @@ export default function About(){
 									</div>
 								</div>
 							</div>
-							<div className="btnprimary text-center"><a href="/portfolio/">View Portfolio</a></div>
+							<div className="btnprimary text-center"><link href="/portfolio/">View Portfolio</link></div>
 						</div>
 					</div>
 				</div>

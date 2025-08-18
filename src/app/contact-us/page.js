@@ -78,7 +78,7 @@ export default function Contactus()
 					<div className="widthsmall text-center mrbt">
 						<h2 className="maintitle">Locate Us on the Map!</h2>
 						<div className="shrtdesc">
-							<p>Want to meet us? You are welcome at RADON LLC's head office. Refer to the map given below to find our location.  </p>
+							<p>Want to meet us? You are welcome at RADON LLCs head office. Refer to the map given below to find our location.  </p>
 						</div>
 					</div>
 					<div className="mapbg"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.9134909262884!2d-115.14546098545311!3d36.168659705348745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8dbe71b8b3c0d%3A0x601f38d4196114d3!2sRadon%20LLC!5e0!3m2!1sen!2sin!4v1718287118304!5m2!1sen!2sin" width="100%" height="450"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>

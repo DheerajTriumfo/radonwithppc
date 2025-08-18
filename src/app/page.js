@@ -57,7 +57,7 @@ export default function Home(){
                               </div>
                               <h3>40 X 40 </h3>
                               <p> Trade Show Booth Rentals </p>
-                              <div className="btnseeplan"> <a href="/40x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                              <div className="btnseeplan"> <link href="/40x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                            </li>
                            <li>
                               <div className="figure">
@@ -65,7 +65,7 @@ export default function Home(){
                               </div>
                               <h3>30 X 40</h3>
                               <p>Trade Show Booth Rentals</p>
-                              <div className="btnseeplan"> <a href="/30x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                              <div className="btnseeplan"> <link href="/30x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                            </li>
                            <li>
                               <div className="figure">
@@ -73,7 +73,7 @@ export default function Home(){
                               </div>
                               <h3>30 X 30</h3>
                               <p>Trade Show Booth Rentals</p>
-                              <div className="btnseeplan"> <a href="/30x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                              <div className="btnseeplan"> <link href="/30x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                            </li>
                            <li>
                             <div className="figure">
@@ -81,7 +81,7 @@ export default function Home(){
                             </div>
                             <h3>20 X 40</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"> <a href="/20x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div className="btnseeplan"> <link href="/20x40-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                          </li>
                          <li>
                             <div className="figure">
@@ -89,7 +89,7 @@ export default function Home(){
                             </div>
                             <h3>20 X 30</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"> <a href="/20x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div className="btnseeplan"> <link href="/20x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                          </li>
                          <li>
                             <div className="figure">
@@ -97,7 +97,7 @@ export default function Home(){
                             </div>
                             <h3>20 X 20</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"> <a href="/20x20-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div className="btnseeplan"> <link href="/20x20-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                          </li>
                          <li>
                             <div className="figure">
@@ -105,7 +105,7 @@ export default function Home(){
                             </div>
                             <h3>10 X 30</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"> <a href="/10x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div className="btnseeplan"> <link href="/10x30-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                          </li>
                          <li>
                             <div className="figure">
@@ -113,7 +113,7 @@ export default function Home(){
                             </div>
                             <h3>10 X 20</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"> <a href="/10x20-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </a> </div>
+                            <div className="btnseeplan"> <link href="/10x20-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i> </link> </div>
                          </li>
                          <li>
                             <div className="figure">
@@ -121,11 +121,11 @@ export default function Home(){
                             </div>
                             <h3>10 X 10</h3>
                             <p> Trade Show Booth Rentals </p>
-                            <div className="btnseeplan"><a href="/10x10-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                            <div className="btnseeplan"><link href="/10x10-trade-show-booth/">Explore Designs <i className="fa fa-long-arrow-right" aria-hidden="true"></i></link></div>
                          </li>
                       </ul>
                            <div className="col-lg-12 text-center mt-2">
-                              <a className="moreless-button" href="/free-design/">Contact For Free Design </a>
+                              <link className="moreless-button" href="/free-design/">Contact For Free Design </link>
                            </div>
                      </div>
                   </div>
@@ -153,7 +153,7 @@ export default function Home(){
                     <p><strong>Great Value for Investment</strong></p>
                     <p>Our goal is to help you maximize ROI with quality, customizable, and cost-effective trade show booth rentals and display rental services.</p>
                   </div>
-                  <div className="getquotebtn"><a href="/exhibit-form/" className="text-uppercase">Start Your Project</a></div>
+                  <div className="getquotebtn"><link href="/exhibit-form/" className="text-uppercase">Start Your Project</link></div>
                </div>
             </div>
          </div>
@@ -186,7 +186,7 @@ export default function Home(){
                             
                         </ul>
                         <h2 className="maintitle">Contact RADON LLC – Your Trade Show Exhibit Rental Experts</h2>
-                        <p>Looking for trade show display rentals, custom exhibit booths, or reliable tradeshow display companies? Call RADON LLC at <a href="tel:+1 917 463 3566">+1 917 463 3566</a>, email <a href="mailto:info@radonexhibition.com">info@radonexhibition.com</a>, or submit your query through our website. We're here to deliver high-impact exhibit rentals that turn your vision into a memorable trade show presence.</p>
+                        <p>Looking for trade show display rentals, custom exhibit booths, or reliable tradeshow display companies? Call RADON LLC at <link href="tel:+1 917 463 3566">+1 917 463 3566</link>, email <link href="mailto:info@radonexhibition.com">info@radonexhibition.com</link>, or submit your query through our website. We are here to deliver high-impact exhibit rentals that turn your vision into a memorable trade show presence.</p>
                         <div className="row">
                             <div className="col-md-6 col-12">
                                 <p><strong>Our Trade Show Services</strong></p>
@@ -226,7 +226,7 @@ export default function Home(){
                   <div className="caption text-center">
                      <h2 className="maintitle">Address</h2>
                      <div className="shrtdesc">
-                        <p><a href="https://maps.app.goo.gl/iSgSPGfYz23ZLfn2A" target="_blank">5071 N Rainbow Blvd, Suite 170, Las Vegas, Nevada, 89130</a></p>  
+                        <p><link href="https://maps.app.goo.gl/iSgSPGfYz23ZLfn2A" target="_blank">5071 N Rainbow Blvd, Suite 170, Las Vegas, Nevada, 89130</link></p>  
                      </div>
                   </div>
                </div>
@@ -236,7 +236,7 @@ export default function Home(){
                <div className="col-lg-4 col-md-12">
                   <div className="caption text-center">
                      <h2 className="maintitle">Let’s start your project and take your brand to the next level</h2>
-                     <div className="getquotebtn"><a href="/exhibit-form/" className="text-uppercase">Start Your Project</a></div>
+                     <div className="getquotebtn"><link href="/exhibit-form/" className="text-uppercase">Start Your Project</link></div>
                   </div>
                </div>
                
