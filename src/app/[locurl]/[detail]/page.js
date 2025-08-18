@@ -37,7 +37,7 @@ export default async function boothDetail({ params})
 										<div className="owl-carousel owl-theme">
 										{boothimg && boothimg.length > 0 ? (
 											boothimg.map((btimg, index) => (
-											 <div key={btimg.id || index} className="figure"><Image src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`} width={1024} height={768} alt={`Booth Image ${index + 1}`} /></div>
+											 <div key={btimg.id || index} className="figure"><img src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`} width={1024} height={768} alt={`Booth Image ${index + 1}`} /></div>
 													
 											))
 
