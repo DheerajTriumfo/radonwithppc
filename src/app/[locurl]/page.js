@@ -263,7 +263,7 @@ export default async function LocationDetail({ params })
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6 col-sm-12 nopadding">
-								<div className="figure"><img src={`https://radonexhibition.com/uploads/servicearea/${locdata.city_img}`} width="584" height="424" loading="lazy" alt={`${locdata.alt_tag}`}/></div>
+								<div className="figure"><Image src={`https://radonexhibition.com/uploads/servicearea/${locdata.city_img}`} width="584" height="424" loading="lazy" alt={`${locdata.alt_tag}`}/></div>
 							</div>
 							<div className="col-md-6 col-sm-12 bgwhite">
 								<div className="caption">

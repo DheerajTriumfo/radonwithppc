@@ -5,7 +5,7 @@ import "../styles/menumaker.css";
 import Script from "next/script";
 import Navigation from '../components/navigation';
 import Footer from '../components/footer.js';
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

@@ -81,7 +81,7 @@ export default function Tradeshowdetaillist({slug})
 			<section>
 				<div className="bannerbg">
 					<div className="container">
-						<div className="tradelogo"><Image src={`https://radonexhibition.com/uploads/tradeshow/${tradeshow.event_logo}`} alt={`${tradeshow.alt_tag}`} width="225" height="225" /></div>
+						<div className="tradelogo"><img src={`https://radonexhibition.com/uploads/tradeshow/${tradeshow.event_logo}`} alt={`${tradeshow.alt_tag}`} width="225" height="225" /></div>
 						<div className="calinfo">
 							<div className="place">{tradeshow.city}, {tradeshow.country}</div>
 							<div className="datbg">{formattedDate}</div>
