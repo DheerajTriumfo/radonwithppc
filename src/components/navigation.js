@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import Link from "next/link";
 
 export default function Navigation()
 {
@@ -57,11 +58,11 @@ export default function Navigation()
 				<div className="navigation">
 					<div id="cssmenu">
 						<ul>
-						  <li><a href="/">HOME</a></li>
-							<li><a href="/exhibition-stand-builders/">ABOUT US</a></li>
-							<li><a href="/portfolio/">OUR WORK</a></li>
-							<li><a href="/locations/">LOCATIONS</a></li>
-							<li><a href="/contact-us/">CONTACT US</a></li>
+						  <li><Link  href="/">HOME</Link></li>
+							<li><Link  href="/exhibition-stand-builders/">ABOUT US</Link ></li>
+							<li><Link  href="/portfolio/">OUR WORK</Link ></li>
+							<li><Link  href="/locations/">LOCATIONS</Link ></li>
+							<li><Link  href="/contact-us/">CONTACT US</Link ></li>
 						</ul>
 					</div>
 				</div>
