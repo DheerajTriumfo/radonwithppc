@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation/>
         {children}
-        <SpeedInsights url="https://newradonllc.vercel.app/" />
+        <SpeedInsights url="https://radonexhibitions.de/" />
         <Footer/>
       </body>
     </html>
