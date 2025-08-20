@@ -12,10 +12,13 @@ export default function Detailcarousel({ locurl, detail, boothimg }) {
 
   // Initialize Owl Carousel once the component is mounted
   useEffect(() => {
-    const loadOwlCarousel = () => {
-      $('.owl-carousel').owlCarousel({
+    const interval = setInterval(() => {
+      if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
+        clearInterval(interval); // stop checking
+        window.$('.owl-carousel').owlCarousel({
           items: 1,
-          loop: false,
+          lazyLoad: true,
+          loop: true,
           margin: 30,
           autoplay: true,
           autoplayTimeout: 2000,
@@ -28,12 +31,11 @@ export default function Detailcarousel({ locurl, detail, boothimg }) {
             1000: { items: 1 },
           },
         });
-    };
-    loadOwlCarousel();
-    // if (boothImg.length > 0) {
-    //   loadOwlCarousel(); // Initialize Owl Carousel once images are available
-    // }
-  }, [boothImg]); // Runs when boothImg data is available
+      }
+    }, 100); // check every 100ms
+
+    return () => clearInterval(interval); // cleanup
+  }, [boothImg]);
 
   // Render fallback while fetching data
   if (!boothImg || boothImg.length === 0) {
