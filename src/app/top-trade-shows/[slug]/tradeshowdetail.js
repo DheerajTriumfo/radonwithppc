@@ -22,8 +22,8 @@ export default function Tradeshowdetaillist({slug})
 
     const fetchProductData = async () => {
       try {
-        console.log(`Fetching: https://radonexhibition.com/api/tradeshowdetails/${slug}/`);
-        const response = await fetch(`https://radonexhibition.com/api/tradeshowdetails/${slug}/`);
+        console.log(`Fetching: https://radonllcapi.mobel.us/public/api/tradeshowdetails/${slug}/`);
+        const response = await fetch(`https://radonllcapi.mobel.us/public/api/tradeshowdetails/${slug}`);
         if (!response.ok) {
           throw new Error('Failed to fetch product data');
         }
@@ -81,7 +81,7 @@ export default function Tradeshowdetaillist({slug})
 			<section>
 				<div className="bannerbg">
 					<div className="container">
-						<div className="tradelogo"><img src={`https://radonexhibition.com/uploads/tradeshow/${tradeshow.event_logo}`} alt={`${tradeshow.alt_tag}`} width="225" height="225" /></div>
+						<div className="tradelogo"><img src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} alt={`${tradeshow.alt_tag}`} width="225" height="225" /></div>
 						<div className="calinfo">
 							<div className="place">{tradeshow.city}, {tradeshow.country}</div>
 							<div className="datbg">{formattedDate}</div>

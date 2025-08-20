@@ -73,7 +73,7 @@ export default function Blogform() {
 		setMessage('');
 
 		try {
-			const response = await fetch('https://radonexhibition.com/api/save-blogform/', {
+			const response = await fetch('https://radonllcapi.mobel.us/public/api/save-blogform/', {
 				method: 'POST',
 				body: submitData,
 			});

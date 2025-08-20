@@ -1,6 +1,6 @@
 import Style from '../../../styles/blog-detail.css';
 
-const baseUrl = 'https://radonexhibition.com';
+const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 import GetblogDetail from './blogdetail.js';
 
@@ -10,7 +10,7 @@ export async function generateMetadata(context) {
   const slug = params.slug;
 
   try {
-    const res = await fetch(`https://radonexhibition.com/api/blogdetail/${slug}/`);
+    const res = await fetch(`https://radonllcapi.mobel.us/public/api/blogdetail/${slug}/`);
     if (!res.ok) throw new Error("Failed to fetch metadata");
 
     const data = await res.json();

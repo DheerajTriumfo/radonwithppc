@@ -1,7 +1,9 @@
 'use client';
 import React, {useState, useEffect} from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const baseUrl = 'https://radonexhibition.com';
+const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export default function Bloglist()
 {
@@ -12,7 +14,7 @@ export default function Bloglist()
 	const [totalPages, setTotalPages] = useState(1);
 
 	useEffect(() => {
-		fetch(`${baseUrl}/api/bloglist/?page=${currentPage}`)
+		fetch(`${baseUrl}/api/bloglist?page=${currentPage}`)
 		.then((response) => {
 			if(!response.ok){
 				throw new Error('Network not loaded');
@@ -91,15 +93,15 @@ export default function Bloglist()
 								{blogdata.map((blgdta, index) => (
 									<div key={blgdta.id || index} className="col-lg-4 col-md-6 col-12">
 									    <div className="blogbx">
-			    							<link href={`/blog/${blgdta.url}/`}>
+			    							<Link href={`/blog/${blgdta.url}/`}>
 			    								<div className="figure">
-			    									<img src={`https://radonexhibition.com/uploads/blog/${blgdta.blogimg}`} width="420" height="290" alt="" loading="lazy" />
+			    									<Image src={`https://radonllcapi.mobel.us/public/uploads/blog/${blgdta.blogimg}`} width="420" height="290" alt="" loading="lazy" />
 			    								</div>
 			    								<div className="caption">
 			    									<div className="title">{blgdta.blogtitle}</div>
 			    									
 			    								</div>
-			    							</link>
+			    							</Link>
 										</div>
 									</div>
 									)

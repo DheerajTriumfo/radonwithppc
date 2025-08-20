@@ -9,7 +9,7 @@ export default function Listing()
 	const [currentPage, setCurrentPage] = useState(1);  // Track current page
   	const [totalPages, setTotalPages] = useState(1);  // Track total pages
 	useEffect(() =>{
-		fetch(`https://radonexhibition.com/api/tradeshowlist/?page=${currentPage}`)
+		fetch(`https://radonllcapi.mobel.us/public/api/tradeshowlist?page=${currentPage}`)
 		.then((response) => {
 			if(!response.ok){
 				throw new Error('Network response was not ok');
@@ -113,7 +113,7 @@ export default function Listing()
 			    					<ul>
 			    						<li><div className="nnumber">{index + 1}</div></li>
 			    						<li>
-			    							<div className="tradlogo"><img src={`https://radonexhibition.com/uploads/tradeshow/${tradeshow.event_logo}`} /></div>
+			    							<div className="tradlogo"><img src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} /></div>
 			    						</li>
 		                                <li><strong>{tradeshow.event_name}  </strong></li>
 			    						<li><span>{startDateDay}-{endDateDay} {monthYear}</span></li>

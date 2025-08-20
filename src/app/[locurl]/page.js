@@ -13,7 +13,7 @@ import CarouselSection from './CarouselSection.jsx';
 
 
 
-const baseUrl = 'https://radonexhibition.com';
+const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 
 async function getPageData(locurl) {
@@ -130,7 +130,7 @@ export default async function LocationDetail({ params })
 								{boothdata.map((row, index) => (
 								<div key={row.id || index} className="col-lg-4 col-md-6 col-12">
 									<div className={styles.boothbg}>
-										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`https://radonexhibition.com/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
+										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`https://radonllcapi.mobel.us/public/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
 										<div className={styles.caption}>
 											<div className={styles.title}><span>BOOTH CODE: </span>{row.skucode}</div>
 											<QuoteForm/>
@@ -179,8 +179,8 @@ export default async function LocationDetail({ params })
 		);
 	}
 	else{
-	console.log(`Fetching: https://radonexhibition.com/api/viewlocationdetail/${locurl}/`);
-	const res = await fetch(`https://radonexhibition.com/api/viewlocationdetail/${locurl}/`, {
+	console.log(`Fetching: https://radonllcapi.mobel.us/public/api/viewlocationdetail/${locurl}/`);
+	const res = await fetch(`https://radonllcapi.mobel.us/public/api/viewlocationdetail/${locurl}/`, {
 	    cache: 'no-store',
 	});
 
@@ -263,7 +263,7 @@ export default async function LocationDetail({ params })
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6 col-sm-12 nopadding">
-								<div className="figure"><Image src={`https://radonexhibition.com/uploads/servicearea/${locdata.city_img}`} width="584" height="424" loading="lazy" alt={`${locdata.alt_tag}`}/></div>
+								<div className="figure"><Image src={`https://radonllcapi.mobel.us/public/uploads/servicearea/${locdata.city_img}`} width="584" height="424" loading="lazy" alt={`${locdata.alt_tag}`}/></div>
 							</div>
 							<div className="col-md-6 col-sm-12 bgwhite">
 								<div className="caption">

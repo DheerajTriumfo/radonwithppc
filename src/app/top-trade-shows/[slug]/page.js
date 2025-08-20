@@ -5,7 +5,7 @@ export async function generateMetadata({ params }) {
   const slug = params.slug;
 
   try {
-    const res = await fetch(`https://radonexhibition.com/api/tradeshowdetails/${slug}/`);
+    const res = await fetch(`https://radonllcapi.mobel.us/public/api/tradeshowdetails/${slug}/`);
     if (!res.ok) throw new Error("Failed to fetch metadata");
 
     const data = await res.json();

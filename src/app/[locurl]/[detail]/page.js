@@ -7,7 +7,7 @@ import Detailcarousel from './Carouseldetail.js';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const baseUrl = 'https://radonexhibition.com';
+const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export default async function BoothDetail({ params }) {
   const { locurl, detail } = params;

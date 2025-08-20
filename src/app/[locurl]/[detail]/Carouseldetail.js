@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import Script from 'next/script';
 
-const baseUrl = 'https://radonexhibition.com';
+const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export default function Detailcarousel({ locurl, detail, boothimg }) {
   // State to store the fetched data
@@ -13,10 +13,9 @@ export default function Detailcarousel({ locurl, detail, boothimg }) {
   // Initialize Owl Carousel once the component is mounted
   useEffect(() => {
     const loadOwlCarousel = () => {
-      if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
-        window.$('.owl-carousel').owlCarousel({
+      $('.owl-carousel').owlCarousel({
           items: 1,
-          loop: true,
+          loop: false,
           margin: 30,
           autoplay: true,
           autoplayTimeout: 2000,
@@ -29,12 +28,11 @@ export default function Detailcarousel({ locurl, detail, boothimg }) {
             1000: { items: 1 },
           },
         });
-      }
     };
-
-    if (boothImg.length > 0) {
-      loadOwlCarousel(); // Initialize Owl Carousel once images are available
-    }
+    loadOwlCarousel();
+    // if (boothImg.length > 0) {
+    //   loadOwlCarousel(); // Initialize Owl Carousel once images are available
+    // }
   }, [boothImg]); // Runs when boothImg data is available
 
   // Render fallback while fetching data

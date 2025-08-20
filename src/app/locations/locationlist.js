@@ -8,7 +8,7 @@ export default function Locationlist()
 {
 	const [ listing, setLocationlisting ] = useState(null);
 	useEffect(() => {
-		fetch('https://radonexhibition.com/api/locationlist/')
+		fetch('https://radonllcapi.mobel.us/public/api/locationlist')
 		.then((res) => res.json() )
 		.then((data) => setLocationlisting(data.data))
 		.catch((error) => console.error("Error fetching data:", error));

@@ -32,7 +32,7 @@ export default function CarouselSection() {
   return (
     <>
       <Script
-        src="https://www.radonexhibition.eu/web/js/owl.carousel.js"
+        src="https://radonllcapi.mobel.us/public/web/js/owl.carousel.js"
         strategy="afterInteractive"
       />
       <div className="owl-carousel owl-theme">

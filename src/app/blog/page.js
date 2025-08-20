@@ -1,5 +1,6 @@
 import Styles from '../../styles/blog.css';
 import Bloglist from './bloglist.js';
+import Link from 'next/link';
 
 export const metadata = {
 	title : 'Your Ultimate Exhibitors Guide | Tips & Tricks for Successful Tradeshows',
