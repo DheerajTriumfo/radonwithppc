@@ -1,94 +1,92 @@
 'use client';
+
 import '../../styles/ppcstyle.css';
 import '../../styles/owl.carousel.min.css';
 import Ppcheader from '../../components/navigationppc.js';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Carouselgetppc from './carouselppc.js';
 
 export default function Tradeshobooth() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    boothsize: '',
+    countryname: '',
+    information: '',
+  });
 
-	const [formData, setFormData] = useState({
-	    name: '',
-	    email: '',
-	    phone: '',
-	    boothsize: '',
-	    countryname: '',
-	    information: '',
-	  });
+  const [errors, setErrors] = useState({});
+  
+  const [clientData, setClientData] = useState({
+    pageUrl: '',
+    ipAddress: '',
+  });
 
-	  const [errors, setErrors] = useState({});
-	  
-	  const [clientData, setClientData] = useState({
-	    pageUrl: '',
-	    ipAddress: '',
-	  });
-	  // Fetch page URL and IP Address on the client side
-	  useEffect(() => {
-	    if (typeof window !== 'undefined') {
-	      setClientData({
-	        pageUrl: window.location.href,
-	        ipAddress: window.location.hostname, // Note: You can get actual client IP using a backend service
-	      });
-	    }
-	  }, []);
+  // Fetch page URL and IP Address on the client side
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setClientData({
+        pageUrl: window.location.href,
+        ipAddress: window.location.hostname, // Note: You can get actual client IP using a backend service
+      });
+    }
+  }, []);
 
-	  const handleChange = (e) => {
-	    const { name, value } = e.target;
-	    setFormData({
-	      ...formData,
-	      [name]: value,
-	    });
-	  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-	const handleSubmit = async (e) => {
-	  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-	  // Basic form validation
-	  const newErrors = {};
-	  if (!formData.name) newErrors.name = 'Name is required';
-	  if (!formData.email) newErrors.email = 'Email is required';
-	  if (!formData.phone) newErrors.phone = 'Phone number is required';
-	  if (!formData.boothsize) newErrors.boothsize = 'Booth size is required';
-	  if (!formData.countryname) newErrors.countryname = 'Country name is required';
+    // Basic form validation
+    const newErrors = {};
+    if (!formData.name) newErrors.name = 'Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phone) newErrors.phone = 'Phone number is required';
+    if (!formData.boothsize) newErrors.boothsize = 'Booth size is required';
+    if (!formData.countryname) newErrors.countryname = 'Country name is required';
 
-	  if (Object.keys(newErrors).length > 0) {
-	    setErrors(newErrors);
-	    return;
-	  }
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
 
-	  // Send form data to the backend API
-	  const response = await fetch('https://radonllcapi.mobel.us/public/api/save-ppcform', { // Assuming this is your API endpoint
-	    method: 'POST',
-	    headers: {
-	      'Content-Type': 'application/json',
-	    },
-	    body: JSON.stringify({
-	      name: formData.name,
-	      email: formData.email,
-	      phone: formData.phone,
-	      boothsize: formData.boothsize,
-	      countryname: formData.countryname,
-	      information: formData.information,
-	      pageurl: clientData.pageUrl,
-	      ipaddress: clientData.ipAddress,
-	    }),
-	  });
+    // Send form data to the backend API
+    const response = await fetch('https://radonllcapi.mobel.us/public/api/save-ppcform', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        boothsize: formData.boothsize,
+        countryname: formData.countryname,
+        information: formData.information,
+        pageurl: clientData.pageUrl,
+        ipaddress: clientData.ipAddress,
+      }),
+    });
 
-	  const result = await response.json();
-	  
-	  if (response.ok) {
-	    // Success - show a message or redirect the user
-	    window.location.href = '/thank-you/';
-	    //alert(result.message || 'Form submitted successfully');
-	  } else {
-	    // Handle errors from backend
-	    alert(result.message || 'An error occurred while submitting the form.');
-	  }
-	};
-
-
+    const result = await response.json();
+    
+    if (response.ok) {
+      // Success - show a message or redirect the user
+      window.location.href = '/thank-you/';
+    } else {
+      // Handle errors from backend
+      alert(result.message || 'An error occurred while submitting the form.');
+    }
+  };
 
   return (
     <>
