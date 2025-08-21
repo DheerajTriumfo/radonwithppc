@@ -6,6 +6,7 @@ import Ppcheader from '../../components/navigationppc.js';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import Carouselgetppc from './carouselppc.js';
 
 export default function Tradeshobooth() {
   const [formData, setFormData] = useState({
@@ -103,8 +104,8 @@ export default function Tradeshobooth() {
 		            <p>Help us understand your booth needs by filling in the form.</p>
 		            <form onSubmit={handleSubmit} className="validate-form">
 
-		              <input type="hidden" name="pageurl" value={window.location.href} />
-		              <input type="hidden" name="ipaddress" value={window.location.hostname} />
+		              <input type="hidden" name="pageurl" value={clientData.pageUrl} />
+						<input type="hidden" name="ipaddress" value={clientData.ipAddress} />
 		              {/* Form Fields */}
 		              <input type="text" name="name" placeholder="Your Name*" value={formData.name} onChange={handleChange} className={errors.name ? 'is-invalid' : ''} />
 		              {errors.name && <div className="error">{errors.name}</div>}
@@ -353,6 +354,7 @@ export default function Tradeshobooth() {
 			   				<p>Discover custom trade show booth rentals in every size—designed to reflect your brand, attract attention, and maximize engagement. Make a bold impression with tailored exhibits that fit your space and style. Start exploring now!</p>
 			   			</div>
 			   		</div>
+			   		<Carouselgetppc/>
 		   		</div>
 		   	</div>
 		   </section>
