@@ -6,7 +6,6 @@ import Ppcheader from '../../components/navigationppc.js';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Carouselgetppc from './carouselppc.js';
 
 export default function Tradeshobooth() {
   const [formData, setFormData] = useState({
@@ -354,7 +353,6 @@ export default function Tradeshobooth() {
 			   				<p>Discover custom trade show booth rentals in every size—designed to reflect your brand, attract attention, and maximize engagement. Make a bold impression with tailored exhibits that fit your space and style. Start exploring now!</p>
 			   			</div>
 			   		</div>
-			   		<Carouselgetppc/>
 		   		</div>
 		   	</div>
 		   </section>
