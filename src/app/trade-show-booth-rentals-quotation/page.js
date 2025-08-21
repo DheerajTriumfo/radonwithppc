@@ -240,7 +240,7 @@ export default function Tradeshobooth() {
 		   					<div className="columninners">
 				   				<h2 className="titlerd">Trade Show Booth Rentals Across the USA</h2>
 				   				<div className="shrtdesc">
-				   					<p>Need a hassle-free booth rental for your next trade show? At Radon Exhibition, we offer customizable, ready-to-install exhibit booth rentals across major US cities. Whether it&rsquo;s a 10x20 or a double-decker, we manage everything from booth design to on-site setup.</p>
+				   					<p>Need a hassle-free booth rental for your next trade show? At Radon Exhibition, we offer customizable, ready-to-install exhibit booth rentals across major US cities. Whether its a 10x20 or a double-decker, we manage everything from booth design to on-site setup.</p>
 				   					<p>Our trade show booth rental solutions include high-quality materials, fast delivery, and full support. Choose from pre-designed rental booths or request a custom layout.</p>
 				   					<p><span>Serving: Las Vegas, Chicago, Orlando, New York, Anaheim & more</span></p>
 				   				</div>
