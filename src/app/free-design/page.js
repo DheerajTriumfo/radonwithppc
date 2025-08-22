@@ -1,7 +1,130 @@
+'use client';
 import '../../styles/freedesignform.css';
+import React, { useEffect, useState } from 'react';
 
 export default function GreedesignForm()
 {
+	const [formData, setFormData] = useState({
+    eventname: '',
+    eventcity: '',
+    name: '',
+    email: '',
+    phone: '',
+    boothsize: '',
+    countryname: '',
+    information: '',
+    uploadfile: null,
+  });
+
+  const [errors, setErrors] = useState({});
+  const [clientData, setClientData] = useState({ pageUrl: '', ipAddress: '' });
+  const [loading, setLoading] = useState(false);
+
+  // Fetch page URL and IP Address
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setClientData({
+        pageUrl: window.location.href,
+        ipAddress: window.location.hostname, // real client IP needs backend
+      });
+    }
+  }, []);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle file input
+  const handleFileChange = (e) => {
+    setFormData({
+      ...formData,
+      uploadfile: e.target.files,
+    });
+  };
+
+  //const [loading, setLoading] = useState(false);
+  // Submit form
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  console.log("✅ Form submitted...");
+
+  // Basic validation
+  const newErrors = {};
+  if (!formData.name) newErrors.name = 'Name is required';
+  if (!formData.email) newErrors.email = 'Email is required';
+  if (!formData.phone) newErrors.phone = 'Phone number is required';
+  if (!formData.eventname) newErrors.eventname = 'Event Name is required';
+  if (!formData.eventcity) newErrors.eventcity = 'Event City is required';
+  if (!formData.boothsize) newErrors.boothsize = 'Booth size is required';
+  if (!formData.countryname) newErrors.countryname = 'Country name is required';
+
+  console.log("🟡 Validation errors:", newErrors);
+
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    console.log("❌ Stopped: Validation failed");
+    return;
+  }
+
+  setLoading(true);
+  console.log("📦 Preparing FormData...");
+
+  const fd = new FormData();
+  fd.append("eventname", formData.eventname);
+  fd.append("eventcity", formData.eventcity);
+  fd.append("boothsize", formData.boothsize);
+  fd.append("name", formData.name);
+  fd.append("email", formData.email);
+  fd.append("phone", formData.phone);
+  fd.append("countryname", formData.countryname);
+  fd.append("information", formData.information);
+  fd.append("pageurl", clientData.pageUrl);
+  fd.append("pageip", clientData.ipAddress);
+
+  if (formData.uploadfile && formData.uploadfile.length > 0) {
+    Array.from(formData.uploadfile).forEach((file) => {
+      fd.append("uploadfile[]", file);
+    });
+    console.log("📂 Files attached:", formData.uploadfile.length);
+  } else {
+    console.log("⚠️ No files selected");
+  }
+
+  try {
+    console.log("🚀 Sending data to API...");
+    const response = await fetch("https://radonllcapi.mobel.us/public/api/save-quoteform", {
+      method: "POST",
+      body: fd,
+    });
+
+    console.log("🔵 Response status:", response.status);
+
+    let result = {};
+    try {
+      result = await response.json();
+      console.log("🟢 Response JSON:", result);
+    } catch (err) {
+      console.error("❌ Failed to parse JSON:", err);
+    }
+
+    if (response.ok) {
+      console.log("✅ Success! Redirecting...");
+      window.location.href = "/thank-you/";
+    } else {
+      alert(result.message || "An error occurred while submitting the form.");
+    }
+  } catch (err) {
+    console.error("🔥 Network error:", err);
+    alert("Something went wrong: " + err.message);
+  } finally {
+    setLoading(false);
+  }
+  };
 	return(
 		<>
 			<section>
