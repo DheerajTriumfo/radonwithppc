@@ -10,7 +10,6 @@ export default function Blogform() {
 		name: '',
 		email: '',
 		phone: '',
-		country_code: '',
 		boothsize: '',
 		yourcountry: '',
 		information: '',
@@ -73,7 +72,7 @@ export default function Blogform() {
 		setMessage('');
 
 		try {
-			const response = await fetch('https://radonllcapi.mobel.us/public/api/save-blogform/', {
+			const response = await fetch('https://radonllcapi.mobel.us/public/api/save-blogform', {
 				method: 'POST',
 				body: submitData,
 			});
@@ -81,20 +80,7 @@ export default function Blogform() {
 			const result = await response.json();
 
 			if (response.ok) {
-				// setMessage('Form submitted successfully!');
-				// setFormData({
-				// 	honeypot: '',
-				// 	pageurl: window.location.href,
-				// 	pageip: '',
-				// 	name: '',
-				// 	email: '',
-				// 	phone: '',
-				// 	country_code: '',
-				// 	boothsize: '',
-				// 	yourcountry: '',
-				// 	information: '',
-				// 	uploadfile: []
-				// });
+				
 				window.location.href = '/thank-you/';
 			} else {
 				setMessage(result.message || 'Something went wrong.');
@@ -141,7 +127,6 @@ export default function Blogform() {
 
 				<div className="phone-input-container">
 					<input type="text" name="phone" id="phone" placeholder="Phone Number*" required value={formData.phone} onChange={handleChange} />
-					<input type="hidden" name="country_code" id="country_code" value={formData.country_code} />
 				</div>
 
 				<input type="text" name="boothsize" placeholder="Booth Size*" required value={formData.boothsize} onChange={handleChange} />
