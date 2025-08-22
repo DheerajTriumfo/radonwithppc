@@ -11,9 +11,9 @@ export default function GreedesignForm()
     email: '',
     phone: '',
     boothsize: '',
+    budget: '',
     countryname: '',
     information: '',
-    uploadfile: null,
   });
 
   const [errors, setErrors] = useState({});
@@ -86,18 +86,11 @@ export default function GreedesignForm()
   fd.append("pageurl", clientData.pageUrl);
   fd.append("pageip", clientData.ipAddress);
 
-  if (formData.uploadfile && formData.uploadfile.length > 0) {
-    Array.from(formData.uploadfile).forEach((file) => {
-      fd.append("uploadfile[]", file);
-    });
-    console.log("📂 Files attached:", formData.uploadfile.length);
-  } else {
-    console.log("⚠️ No files selected");
-  }
+  
 
   try {
     console.log("🚀 Sending data to API...");
-    const response = await fetch("https://radonllcapi.mobel.us/public/api/save-quoteform", {
+    const response = await fetch("https://radonllcapi.mobel.us/public/api/save-freedesignformnew", {
       method: "POST",
       body: fd,
     });
@@ -127,6 +120,12 @@ export default function GreedesignForm()
   };
 	return(
 		<>
+			{loading && (
+			  <div className="loader-overlay">
+			    <div className="spinner"></div>
+			    <p>Submitting, please wait...</p>
+			  </div>
+			)}
 			<section>
 				<div className="bannerbg">
 					<div className="container">
@@ -142,7 +141,7 @@ export default function GreedesignForm()
 						<div className="row justify-content-center">
 							<div className="col-lg-9 col-12">
 								<div className="formbg">
-									<form  className="validate-form">
+									<form  onSubmit={handleSubmit} className="validate-form">
 										<div style={{display: 'none'}}>
 											<input type="text" name="honeypot"  />
 										</div>   
@@ -177,7 +176,15 @@ export default function GreedesignForm()
 										<h2 className="formtitle">Booth Detail</h2>
 										<div className="row">
 											<div className="col-lg-6 col-md-12">
-												<input type="text" name="boothsize" placeholder="Booth Size*" required />
+												<input
+						                          type="text"
+						                          name="boothsize"
+						                          placeholder="Booth Size*"
+						                          value={formData.boothsize}
+						                          onChange={handleChange}
+						                          className={errors.boothsize ? 'is-invalid' : ''}
+						                        />
+						                        {errors.boothsize && <div className="error">{errors.boothsize}</div>}
 											</div>
 											<div className="col-lg-6 col-md-12">
 												<input type="text" name="budget" placeholder="Budget (If Decided)" />
@@ -187,24 +194,64 @@ export default function GreedesignForm()
 										<h2 className="formtitle">Contact Detail</h2>
 										<div className="row">
 											<div className="col-lg-6 col-md-12">
-												<input type="text" name="name" placeholder="Your Name*" required />
+												<input
+						                          type="text"
+						                          name="name"
+						                          placeholder="Full Name*"
+						                          value={formData.name}
+						                          onChange={handleChange}
+						                          className={errors.name ? 'is-invalid' : ''}
+						                        />
+						                        {errors.name && <div className="error">{errors.name}</div>}
 											</div>
 											<div className="col-lg-6 col-md-12">
-												<input type="text" name="email" placeholder="Email ID*" required />
+												<input
+						                          type="text"
+						                          name="email"
+						                          placeholder="Email ID*"
+						                          value={formData.email}
+						                          onChange={handleChange}
+						                          className={errors.email ? 'is-invalid' : ''}
+						                        />
+						                        {errors.email && <div className="error">{errors.email}</div>}
 											</div>
 											<div className="col-lg-6 col-md-12">
 												<div className="phone-input-container">
-													<input type="text" name="phone" id="phone" placeholder="Mobile Number*" required />
+													<input
+							                            type="text"
+							                            name="phone"
+							                            placeholder="Phone Number*"
+							                            value={formData.phone}
+							                            onChange={handleChange}
+							                            className={errors.phone ? 'is-invalid' : ''}
+							                          />
+							                          {errors.phone && <div className="error">{errors.phone}</div>}
 												</div>
 											</div>
 											<div className="col-lg-6 col-md-12">
-												<input type="text" name="countryname" placeholder="Your Country*" required />
+												<input
+						                          type="text"
+						                          name="countryname"
+						                          placeholder="Your Country*"
+						                          value={formData.countryname}
+						                          onChange={handleChange}
+						                          className={errors.countryname ? 'is-invalid' : ''}
+						                        />
+						                        {errors.countryname && <div className="error">{errors.countryname}</div>}
 											</div>
 											<div className="col-lg-12 col-md-12">
-												<textarea name="information" rows="4" placeholder="Additional Information"></textarea>
+												<textarea
+						                          name="information"
+						                          rows="4"
+						                          placeholder="Additional Information"
+						                          value={formData.information}
+						                          onChange={handleChange}
+						                        ></textarea>
 											</div>
 											<div className="col-lg-12 col-md-12">
-												<input type="submit" name="submmit" value="Send Requierements" />
+												<button type="submit" disabled={loading}>
+						                          {loading ? <span className="spinner"></span> : "Request Quote"}
+						                        </button>
 											</div>
 										</div>
 									</form>
