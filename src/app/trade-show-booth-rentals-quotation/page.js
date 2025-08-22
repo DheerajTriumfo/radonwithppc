@@ -43,8 +43,11 @@ export default function Tradeshobooth() {
     });
   };
 
+
+  const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
-    e.preventDefault();
+     e.preventDefault();
+     
 
     // Basic form validation
     const newErrors = {};
@@ -58,7 +61,7 @@ export default function Tradeshobooth() {
       setErrors(newErrors);
       return;
     }
-
+    setLoading(true);
     // Send form data to the backend API
     const response = await fetch('https://radonllcapi.mobel.us/public/api/save-ppcform', {
       method: 'POST',
@@ -90,6 +93,12 @@ export default function Tradeshobooth() {
 
   return (
     <>
+    	{loading && (
+		  <div className="loader-overlay">
+		    <div className="spinner"></div>
+		    <p>Submitting, please wait...</p>
+		  </div>
+		)}
     	<div className="bannerbg">
 		    <div className="bg-shape"><Image src="/images/bg-shape-1.svg" width="1443" height="844" alt="" /></div>
 		        <div className="container">
@@ -163,7 +172,9 @@ export default function Tradeshobooth() {
 		                onChange={handleChange}
 		              ></textarea>
 
-		              <input type="submit" name="submit" value="Request Quote" />
+		              <button type="submit" disabled={loading}>
+									  {loading ? <span className="spinner"></span> : "Request Quote"}
+									</button>
 		            </form>
 		        </div>
 		    </div>
