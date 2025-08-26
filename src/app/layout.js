@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {}
+         <link rel="icon" href="/image/favicon.webp" />
         <Script
           id="gtm-head"
           strategy="afterInteractive"
