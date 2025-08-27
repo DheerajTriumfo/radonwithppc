@@ -1,5 +1,6 @@
 import styles from '../../styles/thanks.css';
 import Image from "next/image";
+import link form "next/link";
 
 export default function Thankyou()
 {
@@ -20,7 +21,7 @@ export default function Thankyou()
 		            <div className="thankyou">
 		                <div className="icon"><img src="/images/like.webp" width="100" height="114" alt="" /></div>
 		                <p>You are now one step closer to a successful and stress-free exhibition experience.</p>
-		                <a href="/" className="backhomebtn">Back to Home</a>
+		                <Link href="/" className="backhomebtn">Back to Home</Link>
 		            </div>
 		        </div>
 			</section>
