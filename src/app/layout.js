@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         </noscript>
         {!hideHeaderFooter && <Navigation />}
         {children}
-        <SpeedInsights url="https://radonexhibitions.de/" />
+        <SpeedInsights url="https://radonexhibition.com/" />
          {!hideHeaderFooter && <Footer />}
       </body>
     </html>
