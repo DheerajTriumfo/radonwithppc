@@ -1,6 +1,6 @@
 import styles from '../../styles/thanks.css';
 import Image from "next/image";
-import link form "next/link";
+import link from "next/link";
 
 export default function Thankyou()
 {
