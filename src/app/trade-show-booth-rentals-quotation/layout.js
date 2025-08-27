@@ -1,5 +1,6 @@
 import Ppcheader from '../../components/navigationppc.js';
 import Footerppc from '../../components/footerppc.js';
+import "../../styles/commonppc.css";
 export const metadata = {
   title: "PPC Trade Show Booth Rentals Quotation",
   description: "Landing page for PPC campaign",

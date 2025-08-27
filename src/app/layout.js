@@ -27,14 +27,13 @@ import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const noHeaderFooterRoutes = ["/trade-show-booth-rentals-quotation"];
+  const noHeaderFooterRoutes = ["/trade-show-booth-rentals-quotation/"];
   const hideHeaderFooter = noHeaderFooterRoutes.includes(pathname);
   
   return (
     <html lang="en">
       <head>
         {}
-         <link rel="icon" href="/image/favicon.webp" />
         <Script
           id="gtm-head"
           strategy="afterInteractive"

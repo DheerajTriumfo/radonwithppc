@@ -106,7 +106,7 @@ export default function Tradeshobooth() {
 		         	<span className="shrttitle">WELCOME TO RADON LLC</span>
 		         	<h1 className="bannertitle">Boost Your Trade Show Presence with Professional Booths</h1>
 		         	<p>Booth Rentals, Custom Designs & Complete Solutions Across the USA	</p>
-		         	<div className="btn-view"><Link href="">View Portfolio</Link></div>
+		         	<div className="btn-view"><Link href="/portfolio/">View Portfolio</Link></div>
 		         </div>
 		         <div className="formbg" id="formbg">
 		            <h2 className="title">Let’s start the productive work.</h2>
