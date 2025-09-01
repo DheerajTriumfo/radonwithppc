@@ -8,7 +8,7 @@ module.exports = {
     return [
       // ✅ Cache static assets aggressively (1 year, immutable)
       {
-        source: '/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)',
+        source: '/:all*(svg|jpg|jpeg|png|webp|ico|css|js|woff2|ttf|eot|otf)', 
         headers: [
           {
             key: 'Cache-Control',
@@ -43,5 +43,15 @@ module.exports = {
         ],
       },
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/trade-show-booth-rental/',       // The old URL path
+        destination: '/',  // The new URL path
+        permanent: true,           // This makes it a 301 redirect
+      },
+      
+    ]
   },
 };
