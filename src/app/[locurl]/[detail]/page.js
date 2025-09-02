@@ -9,6 +9,29 @@ import Link from 'next/link';
 
 const baseUrl = 'https://radonllcapi.mobel.us/public';
 
+export async function generateMetadata({ params }) {
+  const { detail } = params;
+  
+
+  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}/`, {
+    cache: 'no-store',
+  });
+
+  if (!result.ok) return {};
+  const data = await result.json();
+  if (!data?.data) return {};
+
+  const booth = data.data;
+
+  return {
+    title: '',
+    description: '',
+    alternates: {
+      canonical: `https://www.radonexhibition.com/${booth.boothsize}-trade-show-booth/${detail}/`,
+    },
+  };
+}
+
 export default async function BoothDetail({ params }) {
   const { locurl, detail } = params;
 

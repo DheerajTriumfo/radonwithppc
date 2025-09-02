@@ -55,7 +55,9 @@ export async function generateMetadata({ params }) {
                     ? [`${baseUrl}/uploads/meta/${pageMeta.meta_image}`]
                     : [],
             },
-            
+            alternates: {
+		          canonical: `https://www.radonexhibition.com/${params.locurl}/`,
+		    },
         };
     }
 
@@ -71,6 +73,9 @@ export async function generateMetadata({ params }) {
                 ? [`${baseUrl}/uploads/meta/${locdata.meta_image}`]
                 : [],
         },
+        alternates: {
+	          canonical: `https://www.radonexhibition.com/${params.locurl}/`,
+		},
     };
 }
 
