@@ -9,6 +9,9 @@ import "../styles/home.css";
 export const metadata = {
   title : "Trade Show Booth Rentals Las Vegas | Trade Show Booth Builders",
   description : "As leading trade show booth builders in Las Vegas, we provide tradeshow booth design, rental exhibits, and turnkey trade show solutions throughout the USA.",
+  alternates: {
+       canonical: `https://www.radonexhibition.com/`,
+   },
 };
 
 export default function Home(){
