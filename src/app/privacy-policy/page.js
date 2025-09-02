@@ -3,6 +3,9 @@ import Link from 'next/link';
 export const metadata = {
 	title : 'Privacy Policy',
 	description: '',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/privacy-policy/',
+	},
 }
 export default function Privacypolicy()
 {

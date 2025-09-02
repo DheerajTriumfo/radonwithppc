@@ -5,6 +5,9 @@ import Contactform from './contactform.js';
 export const metadata = {
 	title: 'Contact Us | Radon LLC',
 	description: '',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/contact-us/',
+	},
 }
 export default function Contactus()
 {
@@ -50,7 +53,7 @@ export default function Contactus()
 											</div>
 										</li>
 										<li>
-											<div className="icon"><img src="images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
+											<div className="icon"><img src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">United States</div>
 												<p>5071 N Rainbow Blvd, Suite 170, Las Vegas, Nevada, 89130</p>

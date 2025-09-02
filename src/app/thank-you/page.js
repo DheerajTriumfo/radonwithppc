@@ -1,7 +1,13 @@
 import styles from '../../styles/thanks.css';
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+	title: 'Thank You | Radon LLC',
+	description: '',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/thank-you/',
+	},
+}
 export default function Thankyou()
 {
 	return(

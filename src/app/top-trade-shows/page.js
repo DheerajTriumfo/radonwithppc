@@ -4,7 +4,10 @@ import Listing from './tradelist.js';
 
 export const metadata = {
 	title : 'Explore Best Trade Shows In USA',
-	description: 'Explore the list of upcoming trade shows and exhibitions of various industries and find the most appropriate ones where you can represent your business.'
+	description: 'Explore the list of upcoming trade shows and exhibitions of various industries and find the most appropriate ones where you can represent your business.',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/top-trade-shows/',
+	},
 };
 export default function Tradeshowlist(){
 	return(

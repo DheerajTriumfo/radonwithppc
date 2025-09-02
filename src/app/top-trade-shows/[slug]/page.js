@@ -14,6 +14,9 @@ export async function generateMetadata({ params }) {
     return {
       title: tradeshow?.meta_title || 'Trade Show Detail',
       description: tradeshow?.meta_desc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details',
+      alternates: {
+          canonical: `https://www.radonexhibition.com/top-trade-shows/${slug}/`,
+      },
     };
   } catch (error) {
     return {

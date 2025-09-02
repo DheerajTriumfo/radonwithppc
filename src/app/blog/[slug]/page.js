@@ -4,6 +4,7 @@ const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 import GetblogDetail from './blogdetail.js';
 
+
 export async function generateMetadata(context) {
   const { params } = await context; // ✅ await the context
 
@@ -18,7 +19,10 @@ export async function generateMetadata(context) {
 
     return {
       title: blogdata?.meta_title || 'Blog Detail',
-      description: blogdata?.metadesc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Trade show details',
+      description: blogdata?.metadesc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Blog details',
+      alternates: {
+          canonical: `https://www.radonexhibition.com/blog/${slug}/`,
+      },
     };
   } catch (error) {
     return {

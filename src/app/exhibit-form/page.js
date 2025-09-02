@@ -1,5 +1,11 @@
 import '../../styles/exhibit-form.css';
-
+export const metadata = {
+	title: 'Contact Us | Radon LLC',
+	description: '',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/exhibit-form/',
+	},
+}
 export default function ExhibitForm()
 {
 	return(

@@ -5,6 +5,9 @@ import Link from 'next/link';
 export const metadata = {
 	title: 'Our Service Area | RADON LLC',
 	description: 'RADON LLC has become a well-known name among exhibitors in many prime cities in the USA & Europe due to our excellent services. Explore the list of locations.',
+	alternates: {
+	    canonical: 'https://www.radonexhibition.com/locations/',
+	},
 }
 
 

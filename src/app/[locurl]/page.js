@@ -55,6 +55,7 @@ export async function generateMetadata({ params }) {
                     ? [`${baseUrl}/uploads/meta/${pageMeta.meta_image}`]
                     : [],
             },
+            
         };
     }
 
