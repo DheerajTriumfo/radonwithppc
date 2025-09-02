@@ -6,7 +6,7 @@ export const metadata = {
 	title: 'Contact Us | Radon LLC',
 	description: '',
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/contact-us/',
+	    canonical: 'https://radonexhibition.com/contact-us/',
 	},
 }
 export default function Contactus()

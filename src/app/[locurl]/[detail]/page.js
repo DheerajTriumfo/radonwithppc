@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
     title: '',
     description: '',
     alternates: {
-      canonical: `https://www.radonexhibition.com/${booth.boothsize}-trade-show-booth/${detail}/`,
+      canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detail}/`,
     },
   };
 }

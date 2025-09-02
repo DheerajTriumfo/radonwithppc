@@ -6,7 +6,7 @@ export const metadata = {
 	title : "About Us | RADON LLC - Booth Design & Rental Experts",
 	description: "Enhance your brand presence with our high-quality, turnkey exhibition services.",
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/exhibition-stand-builders/',
+	    canonical: 'https://radonexhibition.com/exhibition-stand-builders/',
 	},
 }
 export default function About(){

@@ -5,7 +5,7 @@ export const metadata = {
 	title : 'Our Portfolio | Trade Show Booth Designs | RADON LLC ',
 	description : 'RADON LLC is known for trendy and innovative trade show booth display ideas. Check out our portfolio to explore our stunning trade show booth designs.',
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/portfolio/',
+	    canonical: 'https://radonexhibition.com/portfolio/',
 	},
 };
 export default function Portfolio(){

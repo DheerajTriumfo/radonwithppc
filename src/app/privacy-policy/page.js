@@ -4,7 +4,7 @@ export const metadata = {
 	title : 'Privacy Policy',
 	description: '',
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/privacy-policy/',
+	    canonical: 'https://radonexhibition.com/privacy-policy/',
 	},
 }
 export default function Privacypolicy()

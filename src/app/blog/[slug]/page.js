@@ -21,7 +21,7 @@ export async function generateMetadata(context) {
       title: blogdata?.meta_title || 'Blog Detail',
       description: blogdata?.metadesc?.replace(/<[^>]*>/g, '').slice(0, 150) || 'Blog details',
       alternates: {
-          canonical: `https://www.radonexhibition.com/blog/${slug}/`,
+          canonical: `https://radonexhibition.com/blog/${slug}/`,
       },
     };
   } catch (error) {

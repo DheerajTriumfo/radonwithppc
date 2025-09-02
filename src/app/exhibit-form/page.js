@@ -3,7 +3,7 @@ export const metadata = {
 	title: 'Contact Us | Radon LLC',
 	description: '',
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/exhibit-form/',
+	    canonical: 'https://radonexhibition.com/exhibit-form/',
 	},
 }
 export default function ExhibitForm()

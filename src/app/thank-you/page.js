@@ -5,7 +5,7 @@ export const metadata = {
 	title: 'Thank You | Radon LLC',
 	description: '',
 	alternates: {
-	    canonical: 'https://www.radonexhibition.com/thank-you/',
+	    canonical: 'https://radonexhibition.com/thank-you/',
 	},
 }
 export default function Thankyou()
