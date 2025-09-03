@@ -90,7 +90,7 @@ export default function Tradeshobooth() {
       alert(result.message || 'An error occurred while submitting the form.');
     }
   };
-
+  
   return (
     <>
     	{loading && (
@@ -106,7 +106,7 @@ export default function Tradeshobooth() {
 		         	<span className="shrttitle">WELCOME TO RADON LLC</span>
 		         	<h1 className="bannertitle">Boost Your Trade Show Presence with Professional Booths</h1>
 		         	<p>Booth Rentals, Custom Designs & Complete Solutions Across the USA	</p>
-		         	<div className="btn-view"><Link href="/portfolio/">View Portfolio</Link></div>
+		         	<div className="btn-view"><Link href="#portfolio">View Portfolio</Link></div>
 		         </div>
 		         <div className="formbg" id="formbg">
 		            <h2 className="title">Let’s start the productive work.</h2>
@@ -374,7 +374,7 @@ export default function Tradeshobooth() {
 		            <div className="container">
 		                <div className="organiseinner">
 		                    <h2 className="maintitle">Request for a free consultancy now and make your next exhibition participation a truly rewarding experience. </h2>
-		                    <Link href="javascript:void(0)" className="btn-custom gotoform">REQUEST&nbsp;FREE&nbsp;QUOTE</Link>
+		                    <Link href="#formbg" className="btn-custom">REQUEST&nbsp;FREE&nbsp;QUOTE</Link>
 		                </div>
 		            </div>
 		        </div>

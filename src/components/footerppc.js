@@ -46,7 +46,7 @@ export default function Footerppc(){
 			   		</div>
 			   	</div>
 			   </footer>
-			   <div id="scrollToTopBtn"><i className="fa fa-angle-up"></i></div>
+			   <Link href="#nheader"><div id="scrollToTopBtn"><i className="fa fa-angle-up"></i></div></Link>
 		</>
 		);
 }
