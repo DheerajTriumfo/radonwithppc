@@ -106,6 +106,11 @@ module.exports = {
         destination: '/',  // The new URL path
         permanent: true,           // This makes it a 301 redirect
       },
+      {
+        source: '/getrentalquote/',       // The old URL path
+        destination: '/',  // The new URL path
+        permanent: true,           // This makes it a 301 redirect
+      },
     ]
   },
 };
