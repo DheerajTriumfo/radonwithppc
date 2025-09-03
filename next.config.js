@@ -108,7 +108,7 @@ module.exports = {
       },
       {
         source: '/getrentalquote/',       // The old URL path
-        destination: '/',  // The new URL path
+        destination: '/free-design/',  // The new URL path
         permanent: true,           // This makes it a 301 redirect
       },
     ]
