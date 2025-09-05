@@ -91,7 +91,7 @@ export default function GetblogDetail() {
                   <div className="row">
                     <div className="col-md-6 col-sm-12">
                       <div className="previouspost">
-                        <Link href={prevdata?.url || '#'}>
+                        <Link href={prevdata ? `/blog/${prevdata.url}/` : '#'}>
                           <div className="icon">&#8249;</div>
                           <div className="caption">
                             <div className="rmark">Previous</div>
@@ -104,7 +104,7 @@ export default function GetblogDetail() {
                     </div>
                     <div className="col-md-6 col-sm-12">
                       <div className="nextpost">
-                        <Link href={nextdata?.url || '#'}>
+                       <Link href={nextdata ? `/blog/${nextdata.url}/` : '#'}>
                           <div className="icon">&#8250;</div>
                           <div className="caption">
                             <div className="rmark">Next</div>
