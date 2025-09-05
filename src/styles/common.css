@@ -68,6 +68,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-roboto-condensed);
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
 }
 
