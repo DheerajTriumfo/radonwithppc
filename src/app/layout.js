@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {}
-        <link rel="preload" href="/styles/main.css" as="style" onload="this.rel='stylesheet'">
         <Script
           id="gtm-head"
           strategy="afterInteractive"
@@ -44,7 +43,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-       
+        <link rel="preload" href="/styles/menumaker.css" as="style" onload="this.rel='stylesheet'" />
         <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
         
       </head>
