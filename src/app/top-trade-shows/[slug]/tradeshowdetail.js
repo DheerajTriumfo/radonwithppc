@@ -116,7 +116,7 @@ export default function Tradeshowdetaillist({slug})
   								dangerouslySetInnerHTML={{ __html: tradeshow.description }}
 							/>
 							<div className="btnprimary">
-								<Link href="/">Request For Booth Quotation</Link>
+								<Link href="/exhibit-form/">Request For Booth Quotation</Link>
 							</div>
 						</div>
 					</div>
