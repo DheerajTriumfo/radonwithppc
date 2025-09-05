@@ -43,7 +43,12 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <link rel="preload" href="/styles/menumaker.css" as="style" onload="this.rel='stylesheet'" />
+        <link
+          rel="preload"
+          href="/styles/menumaker.css"
+          as="style"
+          onLoad={(e) => { e.target.rel = "stylesheet"; }}
+        />
         <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="lazyOnload" />
         
       </head>

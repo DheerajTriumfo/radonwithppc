@@ -4,36 +4,35 @@ import Link from "next/link";
 
 export default function Navigation() {
   useEffect(() => {
-    // Load jQuery first
-    const jqueryScript = document.createElement("script");
-    jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-    jqueryScript.onload = () => {
-      // Attach jQuery to window
-      window.jQuery = window.$ = require("jquery");
+  const interval = setInterval(() => {
+    if (window.jQuery && window.jQuery.fn) {
+      clearInterval(interval);
 
-      // Now load Menumaker
       const menuScript = document.createElement("script");
       menuScript.src = "https://radonexhibition.com/js/menumaker.js";
       menuScript.onload = () => {
-        if (window.jQuery && window.$.fn.menumaker) {
+        if (window.$ && window.$.fn.menumaker) {
           window.$("#cssmenu").menumaker({
             format: "multitoggle"
+          });
+
+          // ✅ Close menu when clicking a link
+          window.$("#cssmenu ul li a").on("click", function () {
+            const btn = window.$("#menu-button"); // FIXED selector
+            if (btn.length && btn.hasClass("menu-opened")) {
+              btn.trigger("click");
+            }
           });
         } else {
           console.error("Menumaker plugin is not available.");
         }
       };
       document.body.appendChild(menuScript);
-    };
-    document.body.appendChild(jqueryScript);
+    }
+  }, 100);
 
-    // Cleanup scripts on unmount
-    return () => {
-      document.querySelectorAll(
-        'script[src*="jquery"], script[src*="menumaker"]'
-      ).forEach(el => el.remove());
-    };
-  }, []);
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <>
