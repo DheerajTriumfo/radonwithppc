@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
       <head>
         {}
         <Script
-          id="gtm-head"
-          strategy="afterInteractive"
+          id="gtm-script"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
           }}
         />
         <link rel="preload" href="/styles/menumaker.css" as="style" onload="this.rel='stylesheet'" />
-        <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
+        <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="lazyOnload" />
         
       </head>
       <body className={poppins.className}>
