@@ -73,7 +73,7 @@
 }
 
 .portfolioinner .figure:hover img {
-/*    cursor: url(../images/icon-zoom-white.png), pointer;*/
+    cursor: url(/images/icon-zoom-white.png), pointer;
     transform: scale(1.1, 1.1);
     transition: .3s
 }
