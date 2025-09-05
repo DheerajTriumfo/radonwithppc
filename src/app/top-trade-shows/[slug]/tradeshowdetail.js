@@ -69,7 +69,13 @@ export default function Tradeshowdetaillist({slug})
 	  return () => clearInterval(interval);
 	}, [tradeshow?.start_date]);
 
-	if (loading) return <p>Loading...</p>;
+	if (loading) {
+	  return (
+	    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh" }}>
+	      <div className="spinner"></div>
+	    </div>
+	  );
+	}
   if (error) return <p>Error: {error}</p>;
   if (!tradeshow) return <p>No event found.</p>;
 
