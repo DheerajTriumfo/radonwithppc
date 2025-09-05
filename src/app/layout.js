@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {}
+        <link rel="preload" href="/styles/main.css" as="style" onload="this.rel='stylesheet'">
         <Script
           id="gtm-head"
           strategy="afterInteractive"
