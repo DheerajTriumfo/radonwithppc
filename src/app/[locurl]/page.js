@@ -210,36 +210,6 @@ export default async function LocationDetail({ params })
 							<h1>TRADE SHOW BOOTH RENTAL<br/><span>{locdata.cityname}</span></h1>
 							<p>{locdata.design}</p>
 						</div>
-						<div className="boothsearchbg">
-							<div className="forminner">
-							    <form action="" method="post" encType={`multipart/form-data`}>
-									<div className="row">
-										<div className="col-md-5 col-xs-12">
-											<select name="cityselection" id="cityselection">
-					                            <option value="Las Vegas">Las Vegas</option>
-					                            <option value="Other City">Other City</option>
-					                        </select>
-										</div>
-										<div className="col-md-5 col-xs-12">
-											<select name="boothsizeselection" id="boothsizeselection" required="">
-												<option value="10x10">10x10</option>
-												<option value="10x20">10x20</option>
-												<option value="10x30">10x30</option>
-												<option value="20x20">20x20</option>
-												<option value="20x30">20x30</option>
-												<option value="20x40">20x40</option>
-												<option value="30x30">30x30</option>
-												<option value="30x40">30x40</option>
-												<option value="40x40">40x40</option>
-											</select>
-										</div>
-										<div className="col-md-2 col-xs-12">
-											<input type="submit" name="submit" id="search_boothsize" value="Search"/>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
 					</div>
 				</div>
 			</section>
