@@ -11,7 +11,9 @@
   display: block;
   clear: both;
 }
-
+.vediobanner img{
+    width: 100%;
+}
 /* Placeholder image */
 .video-placeholder,
 .vediobanner video {
