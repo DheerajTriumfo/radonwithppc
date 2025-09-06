@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Faqtab from './home/faq.js';
 import Homeportfolio from './home/portfolio.js';
+import Myvideo from './home/video.js';
 import Link from "next/link";
 
 import "../styles/home.css";
@@ -18,22 +19,7 @@ export default function Home(){
   
   return(
     <>
-      <section>
-        <div className="vediobanner" id="demo">
-            <video
-              loop
-              autoPlay
-              muted
-              playsInline
-              width="1280"
-              height="720"
-              id="video"
-            >
-              <source src="/video/newradonllc.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-        </div>
-      </section>
+    <Myvideo/>
       <section>
          <div className="ban-blow">
             <div className="container">
