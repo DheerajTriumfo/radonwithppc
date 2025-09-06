@@ -13,7 +13,7 @@ export default function MyVideo() {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.0 }
     );
 
     if (bannerRef.current) {
