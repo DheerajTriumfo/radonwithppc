@@ -20,7 +20,7 @@ export default function Home(){
   return(
     <>
     <Myvideo/>
-      <section>
+      <section fetchPriority="high">
          <div className="ban-blow">
             <div className="container">
                <div className="row">
