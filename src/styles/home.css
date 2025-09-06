@@ -26,7 +26,7 @@
 /* Optional: Fade in video smoothly */
 .vediobanner video {
   opacity: 0;
-  transition: opacity 0s ease;
+  transition: opacity 1s ease;
   position: absolute;
   top: 0;
   left: 0;
