@@ -382,13 +382,15 @@
     padding: 0px 0 40px;
 }
 .ban-blow {
-    padding: 70px 0 0
+    padding: 70px 0 0;
+     min-height: 400px;
 }
 
 .ban-blow .content-area {
     padding: 0;
     margin: 0 auto;
-    max-width: 900px
+    max-width: 900px;
+     min-height: 600px;
 }
 
 .ban-blow .content-area .title {
@@ -407,7 +409,8 @@
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+     min-height: 120px;
 }
 
 .ban-blow .content-area p {
