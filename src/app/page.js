@@ -37,6 +37,12 @@ export default function Home(){
                      </div>
                   </div>
                </div>
+            </div>
+         </div>
+      </section>
+      <section fetchPriority="high">
+         <div className="img-blow">
+            <div className="container">
                <div className="row">
                   <div className="col-lg-12">
                      <div className="design-box">
