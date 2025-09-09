@@ -10,7 +10,7 @@ export default function MyVideo() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect();
+          observer.disconnect(); // Disconnect once video becomes visible
         }
       },
       { threshold: 0.0 }
@@ -20,7 +20,7 @@ export default function MyVideo() {
       observer.observe(bannerRef.current);
     }
 
-    return () => observer.disconnect();
+    return () => observer.disconnect(); // Cleanup on component unmount
   }, []);
 
   return (
@@ -28,19 +28,22 @@ export default function MyVideo() {
       <div
         className="videobanner"
         ref={bannerRef}
-        style={{ width: "100%",  position: "relative" }}
+        style={{ width: "100%", position: "relative" }}
       >
+        {/* Placeholder image */}
         {!isVisible && (
           <img
             src="/images/newradonllc-placeholder.jpg"
-            alt="Video Placeholder"
-            width="1280"
-            height="720"
+            alt="Video Placeholder: Placeholder image for Radon LLC"
+            width="1440"
+            height="600"
             decoding="async"
-            loading="eager"
+            loading="lazy"  // Lazy load the placeholder image
             style={{ display: "block", width: "100%", height: "auto" }}
           />
         )}
+
+        {/* Video */}
         {isVisible && (
           <video
             width="1280"
@@ -49,11 +52,10 @@ export default function MyVideo() {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="metadata"  // Load video metadata for better performance
             style={{ display: "block", width: "100%", height: "auto" }}
           >
             <source src="/video/newradonllc.webm" type="video/webm" />
-            <source src="/video/newradonllc.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         )}
