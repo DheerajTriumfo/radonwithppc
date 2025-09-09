@@ -42,8 +42,19 @@ module.exports = {
           },
         ],
       },
+      // ✅ Update MIME types for font files (simplified)
+      {
+        source: '/:all*(woff|woff2|ttf|eot|otf)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
     ];
   },
+
   async redirects() {
     return [
       {
@@ -52,61 +63,60 @@ module.exports = {
         permanent: true,           // This makes it a 301 redirect
       },
       {
-        source: '/10x10-trade-show-booth-designs/',       // The old URL path
-        destination: '/10x10-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/10x10-trade-show-booth-designs/',
+        destination: '/10x10-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/10x20-trade-show-booth-designs/',       // The old URL path
-        destination: '/10x20-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/10x20-trade-show-booth-designs/',
+        destination: '/10x20-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/10x30-trade-show-booth-designs/',       // The old URL path
-        destination: '/10x30-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/10x30-trade-show-booth-designs/',
+        destination: '/10x30-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/20x20-trade-show-booth-designs/',       // The old URL path
-        destination: '/20x20-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/20x20-trade-show-booth-designs/',
+        destination: '/20x20-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/20x40-trade-show-booth-designs/',       // The old URL path
-        destination: '/20x20-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/20x40-trade-show-booth-designs/',
+        destination: '/20x20-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/30x40-trade-show-booth-designs/',       // The old URL path
-        destination: '/30x40-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/30x40-trade-show-booth-designs/',
+        destination: '/30x40-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/40x40-trade-show-booth-designs/',       // The old URL path
-        destination: '/40x40-trade-show-booth/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/40x40-trade-show-booth-designs/',
+        destination: '/40x40-trade-show-booth/',
+        permanent: true,
       },
       {
-        source: '/trade-show-display-rentals-las-vegas/',       // The old URL path
-        destination: '/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/trade-show-display-rentals-las-vegas/',
+        destination: '/',
+        permanent: true,
       },
       {
-        source: '/custom-trade-show-displays/',       // The old URL path
-        destination: '/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/custom-trade-show-displays/',
+        destination: '/',
+        permanent: true,
       },
       {
-        source: '/top-trade-shows/aim-expo/',       // The old URL path
-        destination: '/top-trade-shows/aimexpo/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/top-trade-shows/aim-expo/',
+        destination: '/top-trade-shows/aimexpo/',
+        permanent: true,
       },
       {
-        source: '/top-trade-shows/washington-dc-travel-and-adventure-ahow/',       // The old URL path
-        destination: '/',  // The new URL path
-        permanent: true,           // This makes it a 301 redirect
+        source: '/top-trade-shows/washington-dc-travel-and-adventure-ahow/',
+        destination: '/',
+        permanent: true,
       },
-      
-    ]
+    ];
   },
 };
