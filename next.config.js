@@ -1,5 +1,5 @@
 module.exports = {
-  reactStrictMode: false,
+  
   images: {
     domains: ['radonexhibition.com', 'radonllcapi.mobel.us'], // external images allowed
   },

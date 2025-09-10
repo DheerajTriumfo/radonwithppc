@@ -1,20 +1,20 @@
-// src/app/[locurl]/[detail]/Carouseldetail.js
-
 'use client';
 import { useEffect, useState } from 'react';
 import Script from 'next/script';
 
 const baseUrl = 'https://radonllcapi.mobel.us/public';
 
-export default function Detailcarousel({ locurl, detail, boothimg }) {
-  // State to store the fetched data
-  const [boothImg, setBoothImg] = useState(boothimg || []); // Use boothimg passed from parent
+export default function Detailcarousel({ boothimg }) {
+  const [boothImg, setBoothImg] = useState(boothimg || []);
 
-  // Initialize Owl Carousel once the component is mounted
   useEffect(() => {
     const interval = setInterval(() => {
-      if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
-        clearInterval(interval); // stop checking
+      if (
+        typeof window !== 'undefined' &&
+        window.$ &&
+        window.$.fn.owlCarousel
+      ) {
+        clearInterval(interval);
         window.$('.owl-carousel').owlCarousel({
           items: 1,
           lazyLoad: true,
@@ -32,37 +32,40 @@ export default function Detailcarousel({ locurl, detail, boothimg }) {
           },
         });
       }
-    }, 100); // check every 100ms
+    }, 200);
 
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval);
   }, [boothImg]);
 
-  // Render fallback while fetching data
   if (!boothImg || boothImg.length === 0) {
-    return <p>Loading...</p>;
+    return <p>No booth images available</p>;
   }
 
   return (
     <>
-      {/* Only load the script after interactive */}
-      <Script src="https://www.radonexhibition.eu/web/js/owl.carousel.js" strategy="afterInteractive" />
+      {/* jQuery must load before OwlCarousel */}
+      <Script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        strategy="afterInteractive"
+      />
 
       <div className="owl-carousel owl-theme">
-        {boothImg && boothImg.length > 0 ? (
-          boothImg.map((btimg, index) => (
-            <div key={btimg.id || index} className="figure">
-              <img
-                className="carousel-image"
-                src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`}
-                width={1024}
-                height={768}
-                alt={`Booth Image ${index + 1}`}
-              />
-            </div>
-          ))
-        ) : (
-          <p>No additional details available.</p>
-        )}
+        {boothImg.map((btimg, index) => (
+          <div key={btimg.id || index} className="figure">
+            <img
+              className="carousel-image"
+              src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`}
+              width={1024}
+              height={768}
+              alt={`Booth Image ${index + 1}`}
+              loading="lazy"
+            />
+          </div>
+        ))}
       </div>
     </>
   );

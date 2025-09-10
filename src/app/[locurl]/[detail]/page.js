@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const { detail } = params;
   
 
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}/`, {
+  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}`, {
     cache: 'no-store',
   });
 
@@ -35,18 +35,30 @@ export async function generateMetadata({ params }) {
 export default async function BoothDetail({ params }) {
   const { locurl, detail } = params;
 
-  // Fetch booth details
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}/`, {
+  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}`, {
     cache: 'no-store',
   });
 
-  if (!result.ok) return notFound();
-  const data = await result.json();
+  if (!result.ok) {
+    console.error("API Error:", result.status, result.statusText);
+    return notFound();
+  }
+
+  let data;
+  try {
+    data = await result.json();  // try to parse JSON directly
+  } catch (err) {
+    // fallback if response is HTML
+    const text = await result.text();
+    console.error("Response is not JSON:", text.slice(0, 200)); // log first 200 chars
+    return notFound();
+  }
+
   if (!data?.data) return notFound();
 
   const boothdetaildata = data.data;
-  const boothimg = data.rentalimg;
-  const boothrelated = data.relatedbooth;
+  const boothimg = data.rentalimg || [];
+  const boothrelated = data.relatedbooth || [];
 
   return (
     <>
@@ -57,7 +69,11 @@ export default async function BoothDetail({ params }) {
               <div className="row">
                 <div className="col-lg-7">
                   <div className="figurebg">
-                    <Detailcarousel locurl={locurl} detail={detail} boothimg={boothimg} />
+                    <Detailcarousel
+                      locurl={locurl}
+                      detail={detail}
+                      boothimg={boothimg}
+                    />
                     <h2 className="rboothtitle">
                       <span>BOOTH CODE: </span> {boothdetaildata.skucode}
                     </h2>
@@ -93,7 +109,11 @@ export default async function BoothDetail({ params }) {
                       </ul>
                     </div>
                     <div className="rentaltitle">Not Included:</div>
-                    <p>Sales Tax, Material Handling (Drayage), Rigging Charges (If any), Booth Vacuuming during fair, Electrical Outlet, Labor to install electrical outlets. Electricity cost.</p>
+                    <p>
+                      Sales Tax, Material Handling (Drayage), Rigging Charges (If
+                      any), Booth Vacuuming during fair, Electrical Outlet, Labor
+                      to install electrical outlets. Electricity cost.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -111,12 +131,17 @@ export default async function BoothDetail({ params }) {
               <h2 className="maintitle">Related Booths</h2>
             </div>
             <div className="row">
-              {boothrelated && boothrelated.length > 0 ? (
+              {boothrelated.length > 0 ? (
                 boothrelated.map((related, index) => (
-                  <div key={related.id || index} className="col-lg-4 col-md-6 col-12">
+                  <div
+                    key={related.id || index}
+                    className="col-lg-4 col-md-6 col-12"
+                  >
                     <div className="boothbg">
                       <div className="figure">
-                        <Link href={`/${related.boothsize}-trade-show-booth/${related.url}`}>
+                        <Link
+                          href={`/${related.boothsize}-trade-show-booth/${related.url.toLowerCase()}`}
+                        >
                           <img
                             src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`}
                             width={350}
@@ -128,7 +153,8 @@ export default async function BoothDetail({ params }) {
                       </div>
                       <div className="caption">
                         <div className="title">
-                          <span>BOOTH CODE: </span>{related.skucode}
+                          <span>BOOTH CODE: </span>
+                          {related.skucode}
                         </div>
                         <div className="btnsecondary">
                           <Link href="/free-design/">CONTACT US</Link>
@@ -144,8 +170,7 @@ export default async function BoothDetail({ params }) {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 }
+
