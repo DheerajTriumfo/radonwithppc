@@ -4,7 +4,9 @@ module.exports = {
     domains: ['radonexhibition.com', 'radonllcapi.mobel.us'], // external images allowed
   },
   trailingSlash: true, // force URLs with trailing slash
-
+  experimental: {
+    middleware: true,
+  },
   async headers() {
     return [
       // ✅ Cache static assets aggressively (1 year, immutable)
@@ -121,11 +123,6 @@ module.exports = {
       {
         source: '/20x20-trade-show-booth/R202022',
         destination: '/20x20-trade-show-booth/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct',
-        destination: '/?id=:query(id)', // Capture the query parameter `id` and pass it to the destination
         permanent: true,
       },
       {
