@@ -124,7 +124,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/addproduct?id=96',
+        source: '/addproduct',
         destination: '/',
         permanent: true,
       },
@@ -144,38 +144,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/addproduct?id=105',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct?id=83',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct?id=104',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct?id=113',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/20x30-trade-show-booth/R203056',
         destination: '/20x30-trade-show-booth/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct?id=103',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct?id=184',
-        destination: '/',
         permanent: true,
       },
       {
@@ -279,11 +249,6 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/addproduct?id=257',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/20x20-trade-show-booth/R202023',
         destination: '/20x20-trade-show-booth/',
         permanent: true,
@@ -306,11 +271,6 @@ module.exports = {
       {
         source: '/10x10-/',
         destination: '/10x10-trade-show-booth/',
-        permanent: true,
-      },
-      {
-        source: '/addproduct/?id=86',
-        destination: '/',
         permanent: true,
       },
       {
