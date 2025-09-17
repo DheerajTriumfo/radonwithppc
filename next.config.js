@@ -125,7 +125,7 @@ module.exports = {
       },
       {
         source: '/addproduct',
-        destination: '/',
+        destination: '/?id=:id',  // Adjust to include other params if necessary
         permanent: true,
       },
       {
