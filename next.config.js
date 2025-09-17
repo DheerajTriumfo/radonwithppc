@@ -125,7 +125,7 @@ module.exports = {
       },
       {
         source: '/addproduct',
-        destination: '/?id=:id',  // Adjust to include other params if necessary
+        destination: '/?id=:query(id)', // Capture the query parameter `id` and pass it to the destination
         permanent: true,
       },
       {
