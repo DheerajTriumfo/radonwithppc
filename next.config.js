@@ -4,9 +4,7 @@ module.exports = {
     domains: ['radonexhibition.com', 'radonllcapi.mobel.us'], // external images allowed
   },
   trailingSlash: true, // force URLs with trailing slash
-  experimental: {
-    middleware: true,
-  },
+  
   async headers() {
     return [
       // ✅ Cache static assets aggressively (1 year, immutable)
