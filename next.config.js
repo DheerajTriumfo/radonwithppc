@@ -74,6 +74,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/addproduct',
+        destination: '/', // Ensure this is still in your redirects if you want to redirect from '/addproduct'
+        permanent: true,
+      },
+      {
         source: '/10x30-trade-show-booth-designs/',
         destination: '/10x30-trade-show-booth/',
         permanent: true,

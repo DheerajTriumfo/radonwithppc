@@ -11,33 +11,49 @@ const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export async function generateMetadata({ params }) {
   const { detail } = params;
-  
+  const detailLower = detail.toLowerCase();
 
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}`, {
-    cache: 'no-store',
-  });
+  try {
+    const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
+      cache: 'no-store',
+    });
 
-  if (!result.ok) return {};
-  const data = await result.json();
-  if (!data?.data) return {};
+    if (!result.ok) return {};
 
-  const booth = data.data;
+    let data;
+    try {
+      data = await result.json();
+    } catch (err) {
+      const text = await result.clone().text();
+      console.error("Metadata API not JSON:", text.slice(0, 200));
+      return {};
+    }
 
-  return {
-    title: '',
-    description: '',
-    alternates: {
-      canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detail}/`,
-    },
-  };
+    if (!data?.data) return {};
+
+    const booth = data.data;
+
+    return {
+      title: booth.metatitle || booth.boothsize || "",
+      description: booth.metadesc || "",
+      alternates: {
+        canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detailLower}/`,
+      },
+    };
+  } catch (err) {
+    console.error("Metadata fetch error:", err);
+    return {};
+  }
 }
+
 
 export default async function BoothDetail({ params }) {
   const { locurl, detail } = params;
+const detailLower = detail.toLowerCase();
 
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detail}`, {
-    cache: 'no-store',
-  });
+const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
+  cache: 'no-store',
+});
 
   if (!result.ok) {
     console.error("API Error:", result.status, result.statusText);
@@ -45,14 +61,18 @@ export default async function BoothDetail({ params }) {
   }
 
   let data;
+try {
+  data = await result.json(); // first attempt
+} catch (err) {
   try {
-    data = await result.json();  // try to parse JSON directly
-  } catch (err) {
-    // fallback if response is HTML
-    const text = await result.text();
-    console.error("Response is not JSON:", text.slice(0, 200)); // log first 200 chars
-    return notFound();
+    const clone = result.clone(); // 👈 clone response
+    const text = await clone.text();
+    console.error("Response is not JSON:", text.slice(0, 200));
+  } catch (innerErr) {
+    console.error("Error reading fallback text:", innerErr);
   }
+  return notFound();
+}
 
   if (!data?.data) return notFound();
 

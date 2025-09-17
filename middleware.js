@@ -1,18 +1,26 @@
+// middleware.js
 import { NextResponse } from 'next/server';
 
-export function middleware(req) {
-  const { pathname, searchParams } = new URL(req.url);
+export function middleware(request) {
+  const url = request.nextUrl.clone();
 
-  // Check if the path is '/addproduct'
-  if (pathname === '/addproduct') {
-    const id = searchParams.get('id');  // Get the 'id' query param
+  // --- Rule 1: Force lowercase URLs ---
+  const lowerPath = url.pathname.toLowerCase();
+  if (url.pathname !== lowerPath) {
+    url.pathname = lowerPath;
+    return NextResponse.redirect(url, 301);
+  }
 
-    // If the 'id' parameter exists, redirect to the homepage with the same 'id' parameter
+  // --- Rule 2: /addproduct redirect with query ---
+  if (url.pathname === '/addproduct') {
+    const id = url.searchParams.get('id');
+
     if (id) {
-      return NextResponse.redirect(`${req.nextUrl.origin}/?id=${id}`, 301);
+      url.pathname = '/';  // Redirect to homepage
+      url.searchParams.set('id', id);  // Keep ?id= param
+      return NextResponse.redirect(url, 301);
     }
   }
 
-  // Otherwise, just continue with the normal request
   return NextResponse.next();
 }
