@@ -118,7 +118,6 @@ module.exports = {
         destination: '/',
         permanent: true,
       },
-      //
       {
         source: '/20x20-trade-show-booth/R202022',
         destination: '/20x20-trade-show-booth/',
@@ -324,11 +323,7 @@ module.exports = {
         destination: '/top-trade-shows/',
         permanent: true,
       },
-      {
-        source: '/addproduct?id=86',
-        destination: '/',
-        permanent: true,
-      },
+      
       {
         source: '/10x20-trade-show-booth/r102000024/',
         destination: '/10x20-trade-show-booth/',
