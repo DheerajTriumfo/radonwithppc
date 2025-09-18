@@ -1,29 +1,24 @@
-// middleware.js
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  const url = request.nextUrl.clone();
+  const url = request.nextUrl;
   const pathname = url.pathname;
 
-  // Skip Next.js internals and static files
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.includes(".")
-  ) {
+  // Ignore Next.js internals
+  if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname === '/favicon.ico') {
     return NextResponse.next();
   }
 
-  // Force lowercase path
-  if (/[A-Z]/.test(pathname)) {
-    url.pathname = pathname.toLowerCase();
-    return NextResponse.redirect(url, 301);
+  // If path has uppercase, redirect to lowercase
+  if (pathname !== pathname.toLowerCase()) {
+    const lowercaseUrl = url.clone();
+    lowercaseUrl.pathname = pathname.toLowerCase();
+    return NextResponse.redirect(lowercaseUrl, 301);
   }
 
   return NextResponse.next();
 }
 
-// Apply to everything
 export const config = {
-  matcher: "/:path*",
+  matcher: ['/((?!_next|api|favicon.ico).*)'],
 };

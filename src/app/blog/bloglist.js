@@ -46,6 +46,14 @@ export default function Bloglist()
 	    );
 	  }
   ////////////
+	  const formatDate = (dateString) => {
+	    const date = new Date(dateString);
+	    const day = String(date.getDate()).padStart(2, '0'); // Adds leading zero if day < 10
+	    const month = String(date.getMonth() + 1).padStart(2, '0'); // Adds leading zero if month < 10
+	    const year = date.getFullYear();
+
+	    return `${day}-${month}-${year}`;
+	  };
 	const handlePageChange = (page) => {
 	    if (page !== currentPage) {
 	      setCurrentPage(page); // Update the current page state
@@ -83,6 +91,7 @@ export default function Bloglist()
 
 	    return pageLinks;
 	  };
+
 	return(
 		<>
 			<section>
@@ -99,7 +108,11 @@ export default function Bloglist()
 			    								</div>
 			    								<div className="caption">
 			    									<div className="title">{blgdta.blogtitle}</div>
-			    									
+			    									<div className="gt-bottom">
+														<ul>
+															<li><svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> {formatDate(blgdta.created_at)}</li>
+														</ul>
+													</div>
 			    								</div>
 			    							</Link>
 										</div>
