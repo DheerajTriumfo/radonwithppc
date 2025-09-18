@@ -11,39 +11,27 @@ const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export async function generateMetadata({ params }) {
   const { detail } = await params;
+
   const detailLower = detail.toLowerCase();
+  const detailUpper = detail.toUpperCase();
 
-  try {
-    const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
-      cache: 'no-store',
-    });
+  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailUpper}`, {
+    cache: 'no-store',
+  });
 
-    if (!result.ok) return {};
+  if (!result.ok) return {};
+  const data = await result.json().catch(() => null);
+  if (!data?.data) return {};
 
-    let data;
-    try {
-      data = await result.json();
-    } catch (err) {
-      const text = await result.clone().text();
-      console.error("Metadata API not JSON:", text.slice(0, 200));
-      return {};
-    }
+  const booth = data.data;
 
-    if (!data?.data) return {};
-
-    const booth = data.data;
-
-    return {
-      title: booth.metatitle || booth.boothsize || "",
-      description: booth.metadesc || "",
-      alternates: {
-        canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detailLower}/`,
-      },
-    };
-  } catch (err) {
-    console.error("Metadata fetch error:", err);
-    return {};
-  }
+  return {
+    title: booth.metatitle || '',
+    description: booth.metadescription || '',
+    alternates: {
+      canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detailLower}/`,
+    },
+  };
 }
 
 
@@ -51,9 +39,10 @@ export default async function BoothDetail({ params }) {
   const { locurl, detail } = await params;
 const detailLower = detail.toLowerCase();
 
-const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
-  cache: 'no-store',
-});
+
+  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
+    cache: 'no-store',
+  });
 
   if (!result.ok) {
     console.error("API Error:", result.status, result.statusText);
@@ -61,20 +50,17 @@ const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
   }
 
   let data;
-try {
-  data = await result.json(); // first attempt
-} catch (err) {
   try {
-    const clone = result.clone(); // 👈 clone response
-    const text = await clone.text();
-    console.error("Response is not JSON:", text.slice(0, 200));
-  } catch (innerErr) {
-    console.error("Error reading fallback text:", innerErr);
+    const text = await result.text();
+    data = JSON.parse(text);
+  } catch (err) {
+    console.error("Response is not JSON");
+    return notFound();
   }
-  return notFound();
-}
+
 
   if (!data?.data) return notFound();
+
 
   const boothdetaildata = data.data;
   const boothimg = data.rentalimg || [];
@@ -160,7 +146,7 @@ try {
                     <div className="boothbg">
                       <div className="figure">
                         <Link
-                          href={`/${related.boothsize}-trade-show-booth/${related.url.toLowerCase()}`}
+                          href={`/${related.boothsize}-trade-show-booth/${related.url}`}
                         >
                           <img
                             src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`}
@@ -193,4 +179,3 @@ try {
     </>
   );
 }
-

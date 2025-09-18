@@ -55,7 +55,8 @@
 .gt-bottom>ul,
 .gt-bottom>ul>li {
     font-size: .9231rem;
-    display: flex
+    display: flex;
+    font-weight: 500;
 }
 
 .portfoliobg {

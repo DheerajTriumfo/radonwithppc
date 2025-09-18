@@ -1,10 +1,9 @@
-// middleware.js
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 console.log("Middleware file loaded");
 
 export function middleware(request) {
-  const url = request.nextUrl.clone();
+  const url = request.nextUrl;
   const pathname = url.pathname;
 
   console.log(`Middleware processing: ${pathname}`);
@@ -43,13 +42,14 @@ export function middleware(request) {
       //console.log(`Redirecting from: ${pathname} to: ${url.pathname}`);
       return NextResponse.redirect(url, 301);
     }
+
   }
 
   //console.log(`No redirect needed for: ${pathname}`);
   return NextResponse.next();
 }
 
-// Apply to everything
 export const config = {
   matcher: '/:path*',
+
 };
