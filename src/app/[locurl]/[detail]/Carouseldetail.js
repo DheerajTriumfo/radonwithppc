@@ -5,17 +5,31 @@ import Script from 'next/script';
 const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export default function Detailcarousel({ boothimg }) {
+  console.log(boothimg);
   const [boothImg, setBoothImg] = useState(boothimg || []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    console.log('BoothImg data:', boothImg);
+    
+    // Wait for both jQuery and OwlCarousel to be available
+    const initCarousel = () => {
       if (
         typeof window !== 'undefined' &&
         window.$ &&
-        window.$.fn.owlCarousel
+        window.$.fn.owlCarousel &&
+        boothImg.length > 0
       ) {
-        clearInterval(interval);
-        window.$('.owl-carousel').owlCarousel({
+        console.log('Initializing OwlCarousel...');
+        
+        // Destroy existing carousel if it exists
+        const $carousel = window.$('.owl-carousel');
+        if ($carousel.hasClass('owl-loaded')) {
+          $carousel.trigger('destroy.owl.carousel');
+          $carousel.removeClass('owl-loaded');
+        }
+        
+        // Initialize new carousel
+        $carousel.owlCarousel({
           items: 1,
           lazyLoad: true,
           loop: true,
@@ -24,6 +38,7 @@ export default function Detailcarousel({ boothimg }) {
           autoplayTimeout: 2000,
           smartSpeed: 1000,
           dots: true,
+         // nav: true,
           autoplayHoverPause: true,
           responsive: {
             0: { items: 1 },
@@ -31,10 +46,33 @@ export default function Detailcarousel({ boothimg }) {
             1000: { items: 1 },
           },
         });
+        
+        console.log('OwlCarousel initialized');
+        return true;
       }
-    }, 200);
+      return false;
+    };
 
-    return () => clearInterval(interval);
+    // Try to initialize immediately
+    if (initCarousel()) {
+      return;
+    }
+
+    // If not ready, poll until ready
+    const interval = setInterval(() => {
+      if (initCarousel()) {
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    // Cleanup
+    return () => {
+      clearInterval(interval);
+      // Cleanup carousel on unmount
+      if (typeof window !== 'undefined' && window.$ && window.$('.owl-carousel').length) {
+        window.$('.owl-carousel').trigger('destroy.owl.carousel');
+      }
+    };
   }, [boothImg]);
 
   if (!boothImg || boothImg.length === 0) {
@@ -43,14 +81,13 @@ export default function Detailcarousel({ boothimg }) {
 
   return (
     <>
-      {/* jQuery must load before OwlCarousel */}
-      <Script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        strategy="beforeInteractive"
-      />
+      {/* jQuery is already loaded in layout.js */}
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
+        onLoad={() => {
+          console.log('OwlCarousel script loaded');
+        }}
       />
 
       <div className="owl-carousel owl-theme">

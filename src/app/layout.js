@@ -44,7 +44,19 @@ export default function RootLayout({ children }) {
           }}
         />
        
-        <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="lazyOnload" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        />
+        <Script 
+          src="https://code.jquery.com/jquery-3.6.0.min.js" 
+          strategy="beforeInteractive"
+          onLoad={() => console.log('jQuery loaded globally')}
+        />
         {/* <Script src="../styles/menumaker.js" strategy="lazyOnload" /> */}
         
       </head>
