@@ -10,7 +10,7 @@ import Link from 'next/link';
 const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export async function generateMetadata({ params }) {
-  const { detail } = params;
+  const { detail } = await params;
   const detailLower = detail.toLowerCase();
 
   try {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function BoothDetail({ params }) {
-  const { locurl, detail } = params;
+  const { locurl, detail } = await params;
 const detailLower = detail.toLowerCase();
 
 const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {

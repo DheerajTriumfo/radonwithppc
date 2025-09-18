@@ -2,6 +2,7 @@ import '../../../styles/tradeshow-detail.css';
 import Tradeshowdetaillist from './tradeshowdetail.js';
 
 export async function generateMetadata({ params }) {
+  params = await params;
   const slug = params.slug;
 
   try {
@@ -26,7 +27,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default  function TradeshowDetail({ params }) {
+export default async function TradeshowDetail({ params }) {
+  params = await params;
   const slug =  params.slug;
 
   return(

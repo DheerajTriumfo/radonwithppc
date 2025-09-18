@@ -6,6 +6,7 @@ import Style from '../../../styles/blog-detail.css';
 const baseUrl = "https://radonllcapi.mobel.us/public";
 
 export async function generateMetadata({ params }) {
+  params = await params;
   const res = await fetch(`${baseUrl}/api/blogdetail/${params.slug}`, { cache: "no-store" });
   if (!res.ok) return { title: "Blog Detail", description: "Unable to load blog data" };
 
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogDetailPage({ params }) {
+  params = await params;
   const res = await fetch(`${baseUrl}/api/blogdetail/${params.slug}`, { cache: "no-store" });
   if (!res.ok) return <p>Blog not found</p>;
   const data = await res.json();

@@ -40,7 +40,8 @@ async function getPageData(locurl) {
     return { type: 'location', ...data };
 }
 export async function generateMetadata({ params }) {
-    const pageData = await getPageData(params.locurl);
+    const { locurl } = await params;
+    const pageData = await getPageData(locurl);
     if (!pageData) return notFound();
 
     if (pageData.type === 'booth') {
@@ -74,14 +75,14 @@ export async function generateMetadata({ params }) {
                 : [],
         },
         alternates: {
-	          canonical: `https://radonexhibition.com/${params.locurl}/`,
+	          canonical: `https://radonexhibition.com/${locurl}/`,
 		},
     };
 }
 
 export default async function LocationDetail({ params })
 {
-	const { locurl } = params;
+	const { locurl } = await params;
 	if (locurl.endsWith('-trade-show-booth')) {
 		const boothSize = locurl.replace('-trade-show-booth', '');
 		const res = await fetch(`${baseUrl}/api/viewboothbysize/${boothSize}/`, {
