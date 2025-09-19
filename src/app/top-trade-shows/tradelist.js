@@ -40,6 +40,7 @@ export default function Listing()
 	    );
 	  }
 	// Handle page change
+	  
 	const handlePageChange = (page) => {
     if (page !== currentPage) {
       setCurrentPage(page); // Update the current page state
@@ -117,7 +118,10 @@ export default function Listing()
 			    						</li>
 		                                <li><strong>{tradeshow.event_name}  </strong></li>
 			    						<li><span>{startDateDay}-{endDateDay} {monthYear}</span></li>
-			    						<li>{tradeshow.city}, {tradeshow.country}</li>
+			    						<li>
+			    							{tradeshow.city}, {tradeshow.country}<br/>
+			    							
+			    						</li>
 			    						<li><div className="viewdetail"><a href={`/top-trade-shows/${tradeshow.slug}`}>View Details</a></div></li>
 			    					</ul>
 			    				</div>

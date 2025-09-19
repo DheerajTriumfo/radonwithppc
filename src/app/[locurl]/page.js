@@ -108,7 +108,7 @@ export default async function LocationDetail({ params })
 								) : boothSize === '10x30' ? (
 									<p>Take a look at our vast range of 10X30 trade show booth rentals for an impactful brand presence. All of them are customizable and we offer expert guidance to create a standout exhibit. Make a lasting impression at your next trade show.</p>
 								) : boothSize === '20x20' ? (
-									<p>Discover our premium range of 20x20 trade show booth rentals, thoughtfully designed to showcase your brand with impact. Fully customizable and backed by expert guidance, our booths help you create a powerful, lasting impression at your next event. Let us bring your vision to life.</p>
+									<p>View our amazing collection of 20x20 trade show booth rentals, each expertly designed to showcase your company. Our booths are fully customizable and come with expert guidance to help you create a memorable, lasting impression at your next event. Allow us to realize your vision.</p>
 								) : boothSize === '20x30' ? (
 									<p>Check out our extensive range of 20X30 trade show booth rentals for an exceptional brand presence. These are completely customizable and our experts assist you in creating a brilliant booth incorporating your brand essence and vision.</p>
 								) : boothSize === '20x40' ? (
@@ -116,11 +116,11 @@ export default async function LocationDetail({ params })
 								) : boothSize === '30x30' ? (
 									<p>Take a look at our outstanding range of 30X30 trade show booth rentals to transform your brand presence. These are customizable choices, and our experts offer assistance in building a bespoke booth that exceeds your expectations.</p>
 								) : boothSize === '30x40' ? (
-									<p>Discover our vast array of 30X40 trade show booth rentals for impactful brand presence. These are customizable options and we help you incorporate your brand essence in it with perfection. Make an unforgettable impression at your next event.</p>
+									<p>Discover our vast array of 30X40 trade show booth rentals for impactful brand presence. We assist you in flawlessly integrating your brand spirit into these customisable alternatives. Make a lasting impression at your upcoming gathering.</p>
 								) : boothSize === '40x40' ? (
 									<p>Take a peek at our huge collection of 40X40 trade show booth rentals for a distinguished presence. All of them are customizable and our experts guide you in creating a unique and captivating booth that perfectly carries your brand essence.</p>
 								) : boothSize === '40x50' ? (
-									<p>RADON LLC offers a wide range of engaging 40x50 trade show booth rentals that can be tailored to your needs at minimal costs. Explore the most appropriate booth design to meet your brand and exhibition needs.</p>
+									<p>RADON LLC offers a wide range of engaging 40x50 trade show booth rentals that can be tailored to your needs at minimal cost. Explore the most appropriate booth design to meet your brand and exhibition needs.</p>
 								) : null}
 								<div className={styles.boothsizequotebtn}><Link href="/exhibit-form/">REQUEST FOR FREE DESIGN</Link></div>
 							</div>
