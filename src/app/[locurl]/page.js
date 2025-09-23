@@ -137,7 +137,7 @@ export default async function LocationDetail({ params })
 								{boothdata.map((row, index) => (
 								<div key={row.id || index} className="col-lg-4 col-md-6 col-12">
 									<div className={styles.boothbg}>
-										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><img src={`https://radonllcapi.mobel.us/public/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
+										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><Image src={`https://radonllcapi.mobel.us/public/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
 										<div className={styles.caption}>
 											<div className={styles.title}><span>BOOTH CODE: </span>{row.skucode}</div>
 											<QuoteForm/>

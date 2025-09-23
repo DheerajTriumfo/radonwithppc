@@ -79,10 +79,10 @@ export default function Footer(){
 						<div className="copyright text-center">Copyright ©2025 RADON LLC. All Rights Reserved </div>
 						<div className="socialfoote">
 							<ul>
-								<li><Link href="https://www.facebook.com/radonexhibitionllc"><img src="/images/facebook.webp" width="35" height="35" alt="Facebook Page" loading="lazy"/></Link></li>
-								<li><Link href="https://twitter.com/ExhibitionLlc"><img src="/images/twitter.webp" width="35" height="35" alt="twitter" loading="lazy"/></Link></li>
-								<li><Link href="https://www.linkedin.com/company/radon-exhibition-llc/"><img src="/images/linkdin.webp" width="35" height="35" alt="LinkedIn Page" loading="lazy" /></Link></li>
-								<li><Link href="https://www.instagram.com/radonexhibitionllc/"><img src="/images/instagram.webp" width="35" height="35" alt="Instagram Page" loading="lazy"/></Link></li>
+								<li><Link href="https://www.facebook.com/radonexhibitionllc"><Image src="/images/facebook.webp" width="35" height="35" alt="Facebook Page" loading="lazy"/></Link></li>
+								<li><Link href="https://twitter.com/ExhibitionLlc"><Image src="/images/twitter.webp" width="35" height="35" alt="twitter" loading="lazy"/></Link></li>
+								<li><Link href="https://www.linkedin.com/company/radon-exhibition-llc/"><Image src="/images/linkdin.webp" width="35" height="35" alt="LinkedIn Page" loading="lazy" /></Link></li>
+								<li><Link href="https://www.instagram.com/radonexhibitionllc/"><Image src="/images/instagram.webp" width="35" height="35" alt="Instagram Page" loading="lazy"/></Link></li>
 							</ul>
 						</div>
 					</div>

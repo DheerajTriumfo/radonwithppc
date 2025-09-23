@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-
+import Image from 'next/image';
+import Link from 'next/link';
 export default function MyVideo() {
   const bannerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +33,7 @@ export default function MyVideo() {
       >
         {/* Placeholder image */}
         {!isVisible && (
-          <img
+          <Image
             src="/images/newradonllc-placeholder.jpg"
             alt="Video Placeholder: Placeholder image for Radon LLC"
             width="1440"

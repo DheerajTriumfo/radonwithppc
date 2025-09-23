@@ -1,5 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Listing()
 {
@@ -114,7 +116,7 @@ export default function Listing()
 			    					<ul>
 			    						<li><div className="nnumber">{index + 1}</div></li>
 			    						<li>
-			    							<div className="tradlogo"><img src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} /></div>
+			    							<div className="tradlogo"><Image src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} /></div>
 			    						</li>
 		                                <li><strong>{tradeshow.event_name}  </strong></li>
 			    						<li><span>{startDateDay}-{endDateDay} {monthYear}</span></li>

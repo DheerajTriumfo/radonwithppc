@@ -148,7 +148,7 @@ const detailLower = detail.toLowerCase();
                         <Link
                           href={`/${related.boothsize}-trade-show-booth/${related.url}`}
                         >
-                          <img
+                          <Image
                             src={`${baseUrl}/uploads/rentalexhibition/${related.thumbnail}`}
                             width={350}
                             height={300}

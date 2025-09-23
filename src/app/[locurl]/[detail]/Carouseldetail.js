@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Script from 'next/script';
-
+import Link from "next/link";
+import Image from "next/image";
 const baseUrl = 'https://radonllcapi.mobel.us/public';
 
 export default function Detailcarousel({ boothimg }) {
@@ -93,7 +94,7 @@ export default function Detailcarousel({ boothimg }) {
       <div className="owl-carousel owl-theme">
         {boothImg.map((btimg, index) => (
           <div key={btimg.id || index} className="figure">
-            <img
+            <Image
               className="carousel-image"
               src={`${baseUrl}/uploads/multiexhibitrental/${btimg.rentalimg}`}
               width={1024}
