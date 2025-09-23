@@ -32,35 +32,35 @@ export default function Contactus()
 								<div className="infocontent">
 									<ul>
 										<li>
-											<div className="icon"><img src="/images/whatsapp.webp" width="60" height="60" alt="" loading="lazy" /></div>
+											<div className="icon"><Image src="/images/whatsapp.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">Whatsapp Number</div>
 												<p><a href={`https://api.whatsapp.com/send/?phone=17754018969&text&type=phone_number&app_absent=0`}>+1(775)401-8969</a></p>
 											</div>
 										</li>
 										<li>
-											<div className="icon"><img src="/images/landline.webp" width="60" height="60" alt="" loading="lazy" /></div>
+											<div className="icon"><Image src="/images/landline.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">Phone Number</div>
 												<p><a href="">+1 917 463 3566</a></p>
 											</div>
 										</li>
 										<li>
-											<div className="icon"><img src="/images/email.webp" width="60" height="60" alt="" loading="lazy"/></div>
+											<div className="icon"><Image src="/images/email.webp" width="60" height="60" alt="" loading="lazy"/></div>
 											<div className="caption">
 												<div className="infotitle">Email Address</div>
 												<p>info@radonexhibition.com</p>
 											</div>
 										</li>
 										<li>
-											<div className="icon"><img src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
+											<div className="icon"><Image src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">United States</div>
 												<p>5071 N Rainbow Blvd, Suite 170, Las Vegas, Nevada, 89130</p>
 											</div>
 										</li>
 										<li>
-											<div className="icon"><img src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
+											<div className="icon"><Image src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">Europe</div>
 												<p>RADON SP. Z O.O.<br />ul. Gorzowska 2B. 65-127 Zielona Góra, Poland</p>

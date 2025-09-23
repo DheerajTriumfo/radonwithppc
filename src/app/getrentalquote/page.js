@@ -1,7 +1,8 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import  '../../styles/exhibit-form.css';
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 
 const baseUrl = 'https://radonllcapi.mobel.us/public';
@@ -46,7 +47,7 @@ export default function RentalQuote()
 								<div className="formbg">
 									<form>
 										<div className="searchndata">
-										    <div className="searchnimg"><img src={`${baseUrl}/uploads/rentalexhibition/${quoteData.imagecode}` } width="" height="" alt="" loading="lazy" /></div>
+										    <div className="searchnimg"><Image src={`${baseUrl}/uploads/rentalexhibition/${quoteData.imagecode}` } width="" height="" alt="" loading="lazy" /></div>
 										    <div className="searchncart">
 										        <div className="carttext">
 		        									<span className="skucode">{quoteData.skucode}</span>

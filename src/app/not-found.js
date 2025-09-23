@@ -20,7 +20,7 @@ export default function NotFound() {
               <div className="formtitle text-center">
                 <span style={{ color: '#DF672A' }}>404!</span> Oops! Page Not Found
               </div>
-              <p className="text-center">The page you're looking for doesn't exist or may have been moved.</p>
+              <p className="text-center">{"The page you're looking for doesn't exist or may have been moved."}</p>
               <div className="text-center mt-4">
               	<Link href="/" className="button">Back to Home</Link>
               </div>
