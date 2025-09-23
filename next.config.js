@@ -127,6 +127,190 @@ module.exports = {
         destination: "/exhibition-stand-builders/",
         permanent: true,
       },
+      //
+      {
+        source: "/30x30-trade-show-booth/r3030729/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/30x30-trade-show-booth/r3030526/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/30x30-trade-show-booth/r303019/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/30x30-trade-show-booth/r303016/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "30x30-trade-show-booth/r303011/",
+        destination: "30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/30x30-trade-show-booth/r303005/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/30x30-trade-show-booth/r303002/",
+        destination: "/30x30-trade-show-booth/",
+        permanent: true,
+      },
+      //
+      {
+        source: "/20x30-trade-show-booth/r203058/",
+        destination: "/20x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x30-trade-show-booth/R203056",
+        destination: "/20x30-trade-show-booth/",
+        permanent: true,
+      },
+      //
+      {
+        source: "/20x20-trade-show-booth/R202049",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202047/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202047",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202042/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202042",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202041",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202040/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202040/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202040",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202039/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202039/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202039",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202039",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202038",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202037",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202036",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202032",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202023/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202023/",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/r202023",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202023",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202022",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/20x20-trade-show-booth/R202019",
+        destination: "/20x20-trade-show-booth/",
+        permanent: true,
+      },
+      //
+      {
+        source: "/10x30-trade-show-booth/R103055/",
+        destination: "/10x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/10x30-trade-show-booth/r103055/",
+        destination: "/10x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/10x30-trade-show-booth/r103055",
+        destination: "/10x30-trade-show-booth/",
+        permanent: true,
+      },
+      {
+        source: "/10x20-trade-show-booth/r102000024/",
+        destination: "/10x20-trade-show-booth/",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,0 +1,109 @@
+.formbg{
+    display: block;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding:30px;
+    background: #fff;
+    border:1px solid #efefef;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    border-radius: 7px;
+    margin:2rem 0;
+}
+.formbg .row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.formbg [class*='col-']{
+    padding-left: -15px;
+    padding-right: -15px;
+}
+.formbg .formtitle{
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.0;
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+.formbg  p{
+    display: block;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #414141;
+    margin-bottom: 0rem;
+}
+.formbg input[type='text']{
+    display: block;
+    font-size: 1rem;
+    line-height: 52px;
+    height: 52px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    color: #3d3d3d;
+    margin: 0.5rem 0;
+    background: #fff;
+    text-shadow: none;
+    border:1px solid #ddd;
+}
+.formbg select{
+    display: block;
+    font-size: 1rem;
+    line-height: 52px;
+    height: 52px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    color: #3d3d3d;
+    margin: 0.5rem 0;
+    background: #fff;
+    text-shadow: none;
+   border:1px solid #ddd;
+}
+.formbg textarea{
+    display: block;
+    font-size: 1rem;
+    line-height: 24px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    color: #3d3d3d;
+    margin: 0.5rem 0 1rem;
+    background: #fff;
+    text-shadow: none;
+    border:1px solid #ddd;
+}
+.formbg input[type='submit'] {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 58px;
+    box-sizing: border-box;
+    padding: 0 35px;
+    border-radius: 0px;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+    background: #e86221;
+    border-radius: 7px;
+    float: right;
+}
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
