@@ -149,7 +149,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "30x30-trade-show-booth/r303011/",
+        source: "/30x30-trade-show-booth/r303011/",
         destination: "30x30-trade-show-booth/",
         permanent: true,
       },
