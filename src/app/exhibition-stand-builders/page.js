@@ -3,8 +3,8 @@ import Image from "next/image";
 import '../../styles/about.css';
 
 export const metadata = {
-	title : "About Us | RADON LLC - Booth Design & Rental Experts",
-	description: "Enhance your brand presence with our high-quality, turnkey exhibition services.",
+	title : "About Us | RADON LLC - Exhibition Stand Builders Las Vegas",
+	description: "RADON LLC - Exhibition Stand Builders Las Vegas. Your trade show booth design & display rental company in USA to enhance your brand presence.",
 	alternates: {
 	    canonical: 'https://radonexhibition.com/exhibition-stand-builders/',
 	},
