@@ -116,7 +116,7 @@ export default function Listing()
 			    					<ul>
 			    						<li><div className="nnumber">{index + 1}</div></li>
 			    						<li>
-			    							<div className="tradlogo"><Image src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} /></div>
+			    							<div className="tradlogo"><Image src={`https://radonllcapi.mobel.us/public/uploads/tradeshow/${tradeshow.event_logo}`} alt={tradeshow.event_name || "Trade show logo"} /></div>
 			    						</li>
 		                                <li><strong>{tradeshow.event_name}  </strong></li>
 			    						<li><span>{startDateDay}-{endDateDay} {monthYear}</span></li>

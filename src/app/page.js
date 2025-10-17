@@ -44,7 +44,7 @@ export default function Home(){
           <h2 className="maintitle mb-3">Trusted by Global Brands</h2>
           <div className="shrtdesc">
             <p>
-            See how leading brands are making an impact with custom trade show exhibits and booths. Each project is proof that smart design leads to real trade show success — don’t let your brand miss out.
+              See how leading brands are making an impact with custom trade show exhibits and booths. Each project is proof that smart design leads to real trade show success — don&apos;t let your brand miss out.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Home(){
           <h2 className="maintitle mb-3">Our Portfolio</h2>
           <div className="shrtdesc">
             <p>
-            Radon LLC - Trusted Las Vegas trade show booth builders you can count on. Tell us what your brand stands for, and we’ll turn it into a booth that commands attention. Receive 3 free custom exhibit design options from Radon's expert design team — made exclusively around your brand message and show requirements
+              Radon LLC - Trusted Las Vegas trade show booth builders you can count on. Tell us what your brand stands for, and we&apos;ll turn it into a booth that commands attention. Receive 3 free custom exhibit design options from Radon&apos;s expert design team — made exclusively around your brand message and show requirements
             </p>
           </div>
         </div>
@@ -378,8 +378,8 @@ export default function Home(){
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                “Our booth was the busiest in the hall. The team handled
-                everything perfectly.”
+                &ldquo;Our booth was the busiest in the hall. The team handled
+                everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
                 <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
@@ -394,8 +394,8 @@ export default function Home(){
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                “Our booth was the busiest in the hall. The team handled
-                everything perfectly.”
+                &ldquo;Our booth was the busiest in the hall. The team handled
+                everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
                 <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
@@ -410,8 +410,8 @@ export default function Home(){
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                “Our booth was the busiest in the hall. The team handled
-                everything perfectly.”
+                &ldquo;Our booth was the busiest in the hall. The team handled
+                everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
                 <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
@@ -426,8 +426,8 @@ export default function Home(){
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                “Our booth was the busiest in the hall. The team handled
-                everything perfectly.”
+                &ldquo;Our booth was the busiest in the hall. The team handled
+                everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
                 <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
@@ -458,8 +458,8 @@ export default function Home(){
               rental services.
             </p>
             <p className="mb-3 seoitalic">
-              "Every booth is built with innovation to ensure your brand stands
-              out on the show floor."
+              &ldquo;Every booth is built with innovation to ensure your brand stands
+              out on the show floor.&rdquo;
             </p>
             <p className="mb-3">
               RADON LLC is recognized among the top trade show display rental
@@ -500,7 +500,7 @@ export default function Home(){
         <div className="bor-bg">
           <div className="tab-button"><i className="fa fa-check"></i> How customizable are your trade show display rentals?</div>
           <div className="tab-caption">
-            <p>Our trade show booth display rentals are highly customizable to align with your brand's goals and show-specific requirements.</p>
+            <p>Our trade show booth display rentals are highly customizable to align with your brand&apos;s goals and show-specific requirements.</p>
           </div>
         </div>
         <div className="bor-bg">
