@@ -68,8 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-roboto-condensed);
-    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
 }
 
 li,
@@ -91,136 +90,37 @@ button:focus {
     outline: 0
 }
 
-.header {
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    background: #34343c
-}
-
-.header::after,
-.navigation::after,
-.navigationbg::after,
-.shrtdesc::after {
-    content: "";
+.topheader{
     display: block;
-    clear: both
+    background: #414141;
+    padding: 5px 0;
 }
-
-.logo {
-    display: block;
+.topheader .innerheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.logo{
     width: 180px;
-    float: left;
-    margin-right: 40px;
-    height: 50px
-}
-
-.logo img {
-    width: 100%;
-    height: auto
-}
-
-.navigationbg {
     display: block;
+}
+.logo img{
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    line-height: 0;
-    font-weight: 600
+    height: auto;
 }
-
-.infobg,
-.infobg ul li,
-.infobg ul li a,
-.infobg ul li:last-child a::before,
-.rfpbg,
-.rfpbg a {
-    display: inline-block
+.navigation{
+    display: flex;
+    align-items: center;
 }
-
-.maintitle,
-.shrtdesc p:not(:last-child) {
-    margin-bottom: 1rem
-}
-
-.navigation {
-    width: 100%;
-    float: left;
-    padding-top: 0;
-    text-align: center
-}
-
-.infobg {
-    float: right;
-    font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-    font-weight: 400
-}
-
-.callnowbg,
-.footertitle,
-.maintitle {
-    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
-}
-
-.infobg ul li {
-    float: left;
-    margin-right: 20px
-}
-
-.infobg ul li a {
-    line-height: 50px
-}
-
-.infobg ul li:first-child a::before {
-    display: inline-block;
-    content: "";
-    position: relative;
-    width: 36px;
-    height: 17px;
-    top: 3px;
-    left: 0;
-    background: url(/images/mailicon.webp) no-repeat;
-    margin-right: 7px
-}
-
-.infobg ul li:last-child a::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 3px;
-    left: 0;
-    background: url(/images/phoneicon.webp) no-repeat;
-    margin-right: 7px
-}
-
-.rfpbg {
-    max-width: 50px;
-    float: right
-}
-
-.rfpbg a {
-    background: #e87722;
-    border-radius: .1rem;
-    padding: .5rem .85rem;
-    line-height: 1;
-    margin-top: 7px
-}
-
 .maintitle {
     display: block;
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 1.2;
-    color: #414141;
+    color: #374151;
     font-weight: 700;
-    text-transform: uppercase
 }
 
-.footertitle {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    display: block
-}
 
 .shrtdesc {
     display: block;
@@ -231,7 +131,7 @@ button:focus {
     display: block;
     font-size: 1rem;
     line-height: 1.8;
-    color: #3d3d3d
+    color: #4b5563;
 }
 
 .btnprimary a {
@@ -265,233 +165,126 @@ button:focus {
     background: #0b2a44
 }
 
-.footer {
-    width: 100%;
-    margin: 0;
-    padding: 50px 0 10px;
-    overflow: hidden;
-    background: #34343c
-}
-
-.footer::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0 0 0 / .92)
-}
-
-.footer .container {
-    position: relative;
-    z-index: 1
-}
-
-.footer .footerlogo {
-    width: 100%;
-    padding: 0;
-    overflow: hidden
-}
-
-.footer .figure img,
-.footer .footerlogo img,
-.footerbottom .footerlogo img {
-    width: auto;
-    max-width: 100%
-}
-
-.footer .innerfooter {
-    width: 100%;
-    margin: 15px 0 2rem;
-    padding: 40px 30px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: rgb(255 255 255 / .1)
-}
-
-.footer .figure,
-.footerbottom .socialfoote ul li a:hover {
-    background: #fff
-}
-
-.footertitle {
-    line-height: 28px;
-    margin-bottom: 25px;
-    color: #df672a;
-    font-weight: 400
-}
-
-.fmenu,
-.footerbottom {
-    margin: 0;
-    width: 100%;
-    overflow: hidden
-}
-
-.fmenu {
-    padding: 0
-}
-
-.fmenu ul li {
+.footer{
     display: block;
-    margin-bottom: 12px
+    border-top: 4px solid #ea580c;
+    padding-top: 1.5rem;
 }
-
-.fmenu ul li a {
+.footertop{
+    padding-bottom: 1rem;
     display: block;
-    font-size: 16px;
-    line-height: 22px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid;
-    color: rgb(255 255 255 / 95%);
-    transition: .3s ease-in-out
+    border-bottom: 1px solid #ea580c;
+    margin-bottom: 2rem;
 }
-
-.fmenu ul li a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff
-}
-
-.footer .figure {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 15px
-}
-
-.footerbottom {
-    padding: 30px 0
-}
-
-.footerbottom .footerlogo {
-    width: 100%;
-    padding: 20px 20px 20px 0;
-    overflow: hidden;
-    border-right: 1px solid #505050;
-    box-sizing: border-box
-}
-
-.callnowbg {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 30px;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 0;
-    position: relative;
-    padding-left: 60px;
-    float: right
-}
-
-.callnowbg span {
-    color: #df672a;
-    font-size: 18px
-}
-
-.callnowbg::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 48px;
-    height: 49px;
-    background-size: cover
-}
-
-.footerbottom .copyright {
+.footertitle{
     display: block;
-    text-align: right;
-    position: relative;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 15px;
-    color: #fff
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.footermenu{
+    display: block;
+}
+.footermenu ul{}
+.footermenu ul li{
+    display: block;
+}
+.footermenu ul li a{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    color: #000;
+    display: block;
+    line-height: 1;
+}
+.footerbottom{
+    display: block;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.text-sm {
+    font-size: 0.70rem;
+    line-height: 1.25rem;
+    display: block
+}
+.text-sm a{
+    display: block;
+    color: #ea580c;
+    font-weight: 500;
+}
+.text-orange{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #ea580c;
+    font-weight: 600;
+    display: block;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.70rem;
+    line-height: 1.25rem;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+}
+.socialbg{
+    display: flex;
+    align-items: center;
+    gap: 3;
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    color: #6b7280;
+    padding-left: 1rem;
+}
+.social a{
+     color: #6b7280;
+     font-size: 1rem;
 }
 
-.footerbottom .copyright::before {
-    content: "";
-    display: table;
-    clear: both
+.max-w-4xl{
+    max-width: 896px;
+    margin:0 auto;
 }
 
-.footerbottom .socialfoote {
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0)
-}
 
-.footerbottom .socialfoote ul li {
-    display: inline-block;
-    float: left;
-    margin-right: 15px
-}
 
-.footerbottom .socialfoote ul li:last-child {
-    margin-right: 0
-}
 
-.footerbottom .socialfoote ul li a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #df672a;
-    text-align: center;
-    transition: .3s ease-in-out;
-    border-radius: 50%
-}
 
-.footerbottom .socialfoote ul li a img {
-    vertical-align: top
-}
 
-.footerbottom .socialfoote ul li a:hover img {
-    filter: sepia(1) brightness(0)
-}
 
 @media screen and (max-width:991px) {
-    .infobg,
-    .navigation {
-        width: 100%
+    .innerheader{
+        flex-direction: column;
     }
-    .header .container {
-        position: relative
+    .navigation{
+        display: block;
+        width: 100%;
+        line-height: 0;
     }
-    .logo {
-        margin: 0 auto;
-        float: none
+    .footermenu{
+        margin-bottom: 1rem;
     }
-    .navigationbg {
-        background: #1c1818
-    }
-    .infobg {
-        display: block
+    .copyright{
+        flex-direction: column;
+        gap:0.5rem;
     }
 }
 
 @media screen and (max-width:767px) {
-    .callnowbg,
-    .footer .footerlogo {
-        text-align: center
-    }
-    .callnowbg {
-        display: block;
-        width: 100%;
-        padding-left: 0
-    }
-    .rfpbg {
-        position: absolute;
-        z-index: 9;
-        top: -4px
-    }
+    
 }
 
 @media screen and (max-width:575px) {
-    .infobg {
-        display: none
-    }
+    
 }

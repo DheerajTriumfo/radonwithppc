@@ -1,0 +1,290 @@
+@charset "UTF-8";
+*,
+body,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+li,
+nav,
+p,
+span,
+strong,
+ul {
+    padding: 0;
+    margin: 0
+}
+
+.infobg ul li a,
+.rfpbg a {
+    font-size: 1rem;
+    color: #fff
+}
+
+.footer,
+.header,
+.infobg ul li a,
+.infobg ul li:last-child a::before,
+.navigation,
+.navigationbg,
+.shrtdesc {
+    position: relative
+}
+
+*,
+.footer .footerlogo,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-display: swap
+}
+
+body,
+html {
+    font-display: optional;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background: #fff
+}
+
+.navigationbg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+}
+
+li,
+ul {
+    list-style: none
+}
+
+img {
+    max-width: 100%
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #1553fc
+}
+
+button:focus {
+    outline: 0
+}
+
+.topheader{
+    display: block;
+    background: #414141;
+    padding: 5px 0;
+}
+.topheader .innerheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.logo{
+    width: 180px;
+    display: block;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.maintitle {
+    display: block;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: #374151;
+    font-weight: 700;
+}
+
+
+.shrtdesc {
+    display: block;
+    width: 100%
+}
+
+.shrtdesc p {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.btnprimary a {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    color: #fff;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s
+}
+
+.widthsmall {
+    width: 867px;
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.btnprimary {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 5px
+}
+
+.btnprimary a {
+    padding: 18px 40px;
+    background: #e86221;
+    border-radius: 40px
+}
+
+.btnprimary a:hover {
+    background: #0b2a44
+}
+
+.footer{
+    display: block;
+    border-top: 4px solid #ea580c;
+    padding-top: 1.5rem;
+}
+.footertop{
+    padding-bottom: 1rem;
+    display: block;
+    border-bottom: 1px solid #ea580c;
+    margin-bottom: 2rem;
+}
+.footertitle{
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.footermenu{
+    display: block;
+}
+.footermenu ul{}
+.footermenu ul li{
+    display: block;
+}
+.footermenu ul li a{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    color: #000;
+    display: block;
+    line-height: 1;
+}
+.footerbottom{
+    display: block;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.text-sm {
+    font-size: 0.70rem;
+    line-height: 1.25rem;
+    display: block
+}
+.text-sm a{
+    display: block;
+    color: #ea580c;
+    font-weight: 500;
+}
+.text-orange{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #ea580c;
+    font-weight: 600;
+    display: block;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.70rem;
+    line-height: 1.25rem;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+}
+.socialbg{
+    display: flex;
+    align-items: center;
+    gap: 3;
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    color: #6b7280;
+    padding-left: 1rem;
+}
+.social a{
+     color: #6b7280;
+     font-size: 1rem;
+}
+
+.max-w-4xl{
+    max-width: 896px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    .innerheader{
+        flex-direction: column;
+    }
+    .navigation{
+        display: block;
+        width: 100%;
+        line-height: 0;
+    }
+    .footermenu{
+        margin-bottom: 1rem;
+    }
+    .copyright{
+        flex-direction: column;
+        gap:0.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+@media screen and (max-width:575px) {
+    
+}
