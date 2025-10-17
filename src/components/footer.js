@@ -124,8 +124,8 @@ export default function Footer() {
           </div>
           <div className="footerbottom">
             <p className="text-orange">Las Vegas - Nevada</p>
-            <p className="text-sm">5071 N Rainbow Blvd, Suite 170</p>
-            <p className="text-sm">Las Vegas, Nevada, 89130 +1 917 463 3566</p>
+            <p className="text-sm">Radon LLC<br />6355 E Tropical Parkway Suite 100</p>
+            <p className="text-sm">Las Vegas, Nevada, 89115 +1 917 463 3566</p>
             <p className="text-sm">
               <a href="mailto:info@radonexhibition.com">info@radonexhibition.com</a>
             </p>

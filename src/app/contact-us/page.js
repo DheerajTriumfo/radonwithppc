@@ -56,7 +56,7 @@ export default function Contactus()
 											<div className="icon"><Image src="/images/location.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">United States</div>
-												<p>5071 N Rainbow Blvd, Suite 170, Las Vegas, Nevada, 89130</p>
+												<p>Radon LLC<br />6355 E Tropical Parkway Suite 100, Las Vegas, NV 89115</p>
 											</div>
 										</li>
 										<li>
@@ -84,7 +84,7 @@ export default function Contactus()
 							<p>Want to meet us? You are welcome at RADON LLCs head office. Refer to the map given below to find our location.  </p>
 						</div>
 					</div>
-					<div className="mapbg"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.9134909262884!2d-115.14546098545311!3d36.168659705348745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8dbe71b8b3c0d%3A0x601f38d4196114d3!2sRadon%20LLC!5e0!3m2!1sen!2sin!4v1718287118304!5m2!1sen!2sin" width="100%" height="450"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
+					<div className="mapbg"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.81165906899!2d-115.03780991182201!3d36.26835122635602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8e76fb6d9d17d%3A0xaab04e62fb3792e0!2s6355%20E%20Tropical%20Pkwy%2C%20Las%20Vegas%2C%20NV%2089115%2C%20USA!5e0!3m2!1sen!2sin!4v1760699558002!5m2!1sen!2sin" width="100%" height="450"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
 				</div>
 			</section>
 		</>
