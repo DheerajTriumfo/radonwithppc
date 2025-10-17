@@ -106,22 +106,22 @@ export default function Home(){
       <div className="portfolioinner">
         <div className="row no-gutters">
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt1.webp" className="img-fluid" alt="" />
+            <img src="images/pt1.webp" className="img-fluid" alt="custom trade show exhibits" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt2.webp" className="img-fluid" alt="" />
+            <img src="images/pt2.webp" className="img-fluid" alt="trade show exhibits" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt3.webp" className="img-fluid" alt="" />
+            <img src="images/pt3.webp" className="img-fluid" alt="trade show booth rental" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt4.webp" className="img-fluid" alt="" />
+            <img src="images/pt4.webp" className="img-fluid" alt="trade show booth rentals" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt5.webp" className="img-fluid" alt="" />
+            <img src="images/pt5.webp" className="img-fluid" alt="trade show display rentals" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt6.webp" className="img-fluid" alt="" />
+            <img src="images/pt6.webp" className="img-fluid" alt="trade show display rental" />
           </div>
         </div>
       </div>
