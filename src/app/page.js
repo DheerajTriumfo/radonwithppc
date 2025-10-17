@@ -51,19 +51,40 @@ export default function Home(){
         <div className="mt-8">
           <div className="owl-carousel owl-theme" id="clientslider">
             <div className="item">
-              <img src="images/cl11.webp" width="" height="" alt="" />
+              <img src="images/client1.webp" width="" height="" alt="custom trade show exhibits" />
             </div>
             <div className="item">
-              <img src="images/cl14.webp" width="" height="" alt="" />
+              <img src="images/client2.webp" width="" height="" alt="trade show exhibits" />
             </div>
             <div className="item">
-              <img src="images/cl22.webp" width="" height="" alt="" />
+              <img src="images/client3.webp" width="" height="" alt="trade show booth rental" />
             </div>
             <div className="item">
-              <img src="images/cl28.webp" width="" height="" alt="" />
+              <img src="images/client4.webp" width="" height="" alt="trade show booth rentals" />
             </div>
             <div className="item">
-              <img src="images/cl34.webp" width="" height="" alt="" />
+              <img src="images/client5.webp" width="" height="" alt="trade show display rentals" />
+            </div>
+            <div className="item">
+              <img src="images/client6.webp" width="" height="" alt="trade show display rental" />
+            </div>
+            <div className="item">
+              <img src="images/client7.webp" width="" height="" alt="trade show exhibit rental" />
+               </div>
+            <div className="item">
+              <img src="images/client8.webp" width="" height="" alt="trade show rentals" />
+            </div>
+            <div className="item">
+              <img src="images/client9.webp" width="" height="" alt="trade show booth builder" />
+            </div>
+            <div className="item">
+              <img src="images/client10.webp" width="" height="" alt="trade show exhibit companies" />
+            </div>
+            <div className="item">
+              <img src="images/client11.webp" width="" height="" alt="las vegas trade show booth builders" />
+            </div>
+            <div className="item">
+              <img src="images/client12.webp" width="" height="" alt="trade show booth rental las vegas" />
             </div>
           </div>
         </div>
@@ -109,12 +130,12 @@ export default function Home(){
       </div>
     </div>
   </section>
-  <section>
+  <section style={{ height: '600px' }}>
     <div className="rentalboothbg">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-12">
-            <div className="innner">
+            <div className="innner" style={{ padding: '4rem 4rem 7rem 0px' }}>
               <h2 className="maintitle mb-2">Exhibit Booth Designs</h2>
               <div className="shrtdesc">
                 <p>
@@ -130,7 +151,7 @@ export default function Home(){
           <div className="owl-carousel owl-theme" id="rentalbooth">
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/10x20.jpg" width="356" height="384" alt="10X20 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">10x20</h4>
@@ -140,7 +161,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/10x30.jpg" width="356" height="384" alt="10X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">10x30</h4>
@@ -150,7 +171,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/20x20.jpg" width="356" height="384" alt="20X20 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x20</h4>
@@ -160,7 +181,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/20x30.jpg" width="356" height="384" alt="20X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x30</h4>
@@ -170,7 +191,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/20x40.jpg" width="356" height="384" alt="20X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x40</h4>
@@ -180,7 +201,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/30x30.jpg" width="356" height="384" alt="30X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">30x30</h4>
@@ -190,7 +211,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/30x40.jpg" width="356" height="384" alt="30X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">30x40</h4>
@@ -200,7 +221,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/rt1.webp" width="356" height="384" alt="" />
+                <img src="images/40x40.jpg" width="356" height="384" alt="40X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">40x40</h4>
@@ -382,7 +403,7 @@ export default function Home(){
                 everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
+                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="custom trade show exhibits" /></div>
                 <div>
                   <div className="clientname">Alex R.</div>
                   <span className="clientpositon">Marketing Director</span>
@@ -398,7 +419,7 @@ export default function Home(){
                 everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
+                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="las vegas trade show booth rentals" /></div>
                 <div>
                   <div className="clientname">Alex R.</div>
                   <span className="clientpositon">Marketing Director</span>
@@ -414,7 +435,7 @@ export default function Home(){
                 everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
+                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="exhibit rentals las vegas" /></div>
                 <div>
                   <div className="clientname">Alex R.</div>
                   <span className="clientpositon">Marketing Director</span>
@@ -430,7 +451,7 @@ export default function Home(){
                 everything perfectly.&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="" /></div>
+                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="trade show booth builders" /></div>
                 <div>
                   <div className="clientname">Alex R.</div>
                   <span className="clientpositon">Marketing Director</span>

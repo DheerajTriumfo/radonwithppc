@@ -133,15 +133,15 @@ export default function RootLayout({ children }) {
                       loop: true,
                       margin: 15,
                       autoplay: true,
-                      autoplayTimeout: 5000,
+                      autoplayTimeout: 2000,
                       autoplayHoverPause: true,
                       dots: true,
                       nav: false,
                       responsiveClass: true,
                       responsive: {
                         0: { items: 2, margin: 15 },
-                        768: { items: 4 },
-                        1024: { items: 6 }
+                        768: { items: 5 },
+                        1024: { items: 7 }
                       }
                     });
                     console.log('clientslider carousel initialized successfully');
