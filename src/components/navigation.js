@@ -25,7 +25,7 @@ export default function Navigation() {
                 </li>
             
                 <li>
-                  <Link href="/exhibition-stand-builders/">About Us</Link>
+                  <Link href="/exhibition-stand-builders/">ABOUT US</Link>
                 </li>
                 <li>
                   <Link href="/portfolio/">OUR WORK</Link>
