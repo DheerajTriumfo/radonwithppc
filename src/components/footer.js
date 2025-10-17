@@ -106,7 +106,7 @@ export default function Footer() {
                     <Link href="/contact-us/">Free Consultation</Link>
                   </li>
                   <li>
-                    <Link href="/portfolio/">Free Design</Link>
+                    <Link href="/free-design/">Free Design</Link>
                   </li>
                   <li>
                     <Link href="/top-trade-shows/">Top Trade Shows</Link>
@@ -115,7 +115,7 @@ export default function Footer() {
                     <Link href="/blog/">Blog</Link>
                   </li>
                   <li>
-                    <Link href="/where-we-build/">Where We Build</Link>
+                    <Link href="/locations/">Where We Build</Link>
                   </li>
            
                 </ul>

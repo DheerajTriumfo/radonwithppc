@@ -240,7 +240,7 @@ export default function Home(){
         </div>
         {/* Heading */}
         <h2 className="renttitle">Rent custom booths  <span>with zero Hassle</span></h2>
-        <div className="buttongetstarted"><a href="">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="arrow-right" className="lucide lucide-arrow-right w-6 h-6 group-hover:translate-x-1 transition-transform duration-300"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div>
+        <div className="buttongetstarted"><a href="https://radonexhibition.com/exhibit-form/">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="arrow-right" className="lucide lucide-arrow-right w-6 h-6 group-hover:translate-x-1 transition-transform duration-300"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div>
         {/* Features */}
         <div className="row justify-content-center mt-4">
           <div className="col-auto mb-2">
