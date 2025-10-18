@@ -149,7 +149,7 @@ export default function Home(){
           <div className="owl-carousel owl-theme" id="rentalbooth">
             <div className="item">
               <div className="figure">
-                <img src="images/10x20.jpg" width="356" height="384" alt="10X20 custom trade show booth design" />
+                <img src="images/10x20a.webp" width="356" height="384" alt="10X20 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">10x20</h4>
@@ -159,7 +159,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/10x30.jpg" width="356" height="384" alt="10X30 custom trade show booth design" />
+                <img src="images/10x30a.webp" width="356" height="384" alt="10X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">10x30</h4>
@@ -169,7 +169,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/20x20.jpg" width="356" height="384" alt="20X20 custom trade show booth design" />
+                <img src="images/20x20b.webp" width="356" height="384" alt="20X20 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x20</h4>
@@ -179,7 +179,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/20x30.jpg" width="356" height="384" alt="20X30 custom trade show booth design" />
+                <img src="images/20x30a.webp" width="356" height="384" alt="20X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x30</h4>
@@ -189,7 +189,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/20x40.jpg" width="356" height="384" alt="20X40 custom trade show booth design" />
+                <img src="images/20x40a.webp" width="356" height="384" alt="20X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">20x40</h4>
@@ -199,7 +199,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/30x30.jpg" width="356" height="384" alt="30X30 custom trade show booth design" />
+                <img src="images/30x30a.webp" width="356" height="384" alt="30X30 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">30x30</h4>
@@ -209,7 +209,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/30x40.jpg" width="356" height="384" alt="30X40 custom trade show booth design" />
+                <img src="images/30x40a.webp" width="356" height="384" alt="30X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">30x40</h4>
@@ -219,7 +219,7 @@ export default function Home(){
             </div>
             <div className="item">
               <div className="figure">
-                <img src="images/40x40.jpg" width="356" height="384" alt="40X40 custom trade show booth design" />
+                <img src="images/40x40a.webp" width="356" height="384" alt="40X40 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">40x40</h4>
