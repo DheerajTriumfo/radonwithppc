@@ -130,17 +130,15 @@ export default function Home(){
       </div>
     </div>
   </section>
-  <section style={{ height: '530px' }}>
+  <section>
     <div className="rentalboothbg">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-12">
-            <div className="innner" style={{ padding: '4rem 4rem 7rem 0px' }}>
+            <div className="innner">
               <h2 className="maintitle mb-2">Exhibit Booth Designs</h2>
               <div className="shrtdesc">
-                <p>
-                Innovative, eye-catching, and built to impress — our exhibit custom booth rental designs turn every event into a brand experience.
-                </p>
+                <p>Innovative, eye-catching, and built to impress — our exhibit custom booth rental designs turn every event into a brand experience.</p>
               </div>
             </div>
           </div>
