@@ -199,7 +199,7 @@ export default function RootLayout({ children }) {
                     $('#testimonial').owlCarousel({
                       loop: true,
                       margin: 15,
-                      autoplay: true,
+                      autoplay: false,
                       autoplayTimeout: 5000,
                       autoplayHoverPause: true,
                       dots: true,

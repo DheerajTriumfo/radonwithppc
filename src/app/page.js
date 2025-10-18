@@ -130,7 +130,7 @@ export default function Home(){
       </div>
     </div>
   </section>
-  <section style={{ height: '600px' }}>
+  <section style={{ height: '530px' }}>
     <div className="rentalboothbg">
       <div className="container">
         <div className="row">
@@ -395,18 +395,38 @@ export default function Home(){
           </div>
         </div>
         <div className="owl-carousel owl-theme" id="testimonial">
+          <div className="item" style={{marginLeft: '1px'}} >
+            <div className="colreview">
+              <div className="starbg">★★★★★</div>
+              <p className="textsm">
+                &ldquo;Overall, 10/10 experience. I hope I get to work with Radon again in the future for another conference. I'd recommend this company to anybody looking for a premium booth build at your next conference.&rdquo;
+              </p>
+              <div className="clientinfo">
+                <div className="clientlogos"><img src="images/jaccy.png" width="50" height="50" alt="custom trade show exhibits" /></div>
+                <div>
+                  <div className="clientname">Jacey</div>
+                  <span className="clientpositon">Marketing Director</span>
+                </div>
+                <div>
+                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="item">
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                &ldquo;Our booth was the busiest in the hall. The team handled
-                everything perfectly.&rdquo;
+                &ldquo;The experience with Radon was extremely positive. The quality-price ratio is very good. They complied with what was scheduled, and the response is immediate. Fluid communication.&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="custom trade show exhibits" /></div>
+                <div className="clientlogos"><img src="images/virginia.png" width="50" height="50" alt="las vegas trade show booth rentals" /></div>
                 <div>
-                  <div className="clientname">Alex R.</div>
+                  <div className="clientname">Virginia</div>
                   <span className="clientpositon">Marketing Director</span>
+                </div>
+                <div>
+                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
                 </div>
               </div>
             </div>
@@ -416,49 +436,35 @@ export default function Home(){
               <div className="starbg">★★★★★</div>
               <p className="textsm">
                 &ldquo;Our booth was the busiest in the hall. The team handled
-                everything perfectly.&rdquo;
+                everything perfectly.I would also like to shout out one of the other on-site workers, Bettina, who was doing the booth build. &rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="las vegas trade show booth rentals" /></div>
+                <div className="clientlogos"><img src="images/ct1.webp" width="50" height="50" alt="exhibit rentals las vegas" /></div>
                 <div>
-                  <div className="clientname">Alex R.</div>
+                  <div className="clientname">Alex R</div>
                   <span className="clientpositon">Marketing Director</span>
+                </div>
+                <div>
+                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="item">
+          {/* <div className="item">
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                &ldquo;Our booth was the busiest in the hall. The team handled
-                everything perfectly.&rdquo;
+                &ldquo;Overall, 10/10 experience. I hope I get to work with Radon again in the future for another conference. I'd recommend this company to anybody looking for a premium booth build at your next conference..&rdquo;
               </p>
               <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="exhibit rentals las vegas" /></div>
+                <div className="clientlogo"><img src="images/jaccy.png" width="50" height="50" alt="trade show booth builders" /></div>
                 <div>
-                  <div className="clientname">Alex R.</div>
+                  <div className="clientname">Jacey.</div>
                   <span className="clientpositon">Marketing Director</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="item">
-            <div className="colreview">
-              <div className="starbg">★★★★★</div>
-              <p className="textsm">
-                &ldquo;Our booth was the busiest in the hall. The team handled
-                everything perfectly.&rdquo;
-              </p>
-              <div className="clientinfo">
-                <div className="clientlogo"><img src="images/ct1.webp" width="50" height="50" alt="trade show booth builders" /></div>
-                <div>
-                  <div className="clientname">Alex R.</div>
-                  <span className="clientpositon">Marketing Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -494,7 +500,7 @@ export default function Home(){
               trusted Trade Show Exhibit Rental Experts.
             </p>
             <h2 className="maintitle mb-3 textred">
-              Turning Visions into Reality – Rent, Buy, or Go Turnkey
+            Ready to Exhibit with Confidence?
             </h2>
             <p>
               Choose RADON Exhibition LLC — Your trusted partner for trade show
