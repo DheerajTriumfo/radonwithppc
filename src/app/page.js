@@ -149,7 +149,7 @@ export default function Home(){
           <div className="owl-carousel owl-theme" id="rentalbooth">
             <div className="item">
               <div className="figure">
-                <img src="images/10x20a.webp" width="356" height="384" alt="10X20 custom trade show booth design" />
+                <img src="images/10x10a.webp" width="356" height="384" alt="10X20 custom trade show booth design" />
               </div>
               <div className="caption">
                 <h4 className="title">10x20</h4>
