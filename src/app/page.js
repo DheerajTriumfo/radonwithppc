@@ -423,7 +423,7 @@ export default function Home(){
                 <div className="clientlogos"><img src="images/virginia.png" width="50" height="50" alt="las vegas trade show booth rentals" /></div>
                 <div>
                   <div className="clientname">Virginia</div>
-                  <span className="clientpositon">Marketing Director</span>
+                  <span className="clientpositon">CEO</span>
                 </div>
                 <div>
                 <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
@@ -442,7 +442,7 @@ export default function Home(){
                 <div className="clientlogos"><img src="images/ct1.webp" width="50" height="50" alt="exhibit rentals las vegas" /></div>
                 <div>
                   <div className="clientname">Alex R</div>
-                  <span className="clientpositon">Marketing Director</span>
+                  <span className="clientpositon">Sales Director</span>
                 </div>
                 <div>
                 <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
