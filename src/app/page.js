@@ -399,7 +399,7 @@ export default function Home(){
             <div className="colreview">
               <div className="starbg">★★★★★</div>
               <p className="textsm">
-                &ldquo;Overall, 10/10 experience. I hope I get to work with Radon again in the future for another conference. I'd recommend this company to anybody looking for a premium booth build at your next conference.&rdquo;
+                &ldquo;Overall, 10/10 experience. I hope I get to work with Radon again in the future for another conference. I&apos;d recommend this company to anybody looking for a premium booth build at your next conference.&rdquo;
               </p>
               <div className="clientinfo">
                 <div className="clientlogos"><img src="images/jaccy.png" width="50" height="50" alt="custom trade show exhibits" /></div>
