@@ -216,7 +216,8 @@ export default function About(){
 							<div className="caption">
 								<h2 className="maintitle">ABOUT RADON LLC</h2>
 								<p>RADON LLC provides complete exhibition stand services, including designing, fabrication, logistics, installation, on-site booth management, dismantling, and storage options. We offer an impressive range of customizable trade show booth rentals in different shapes and sizes.</p>
-								<p>We have 20+ years of presence in the industry and achieved prominence in the USA and European markets. Our clientele includes many premium brands of the world such as Geven, Airtech, Optimedia, Botany weaving, etc. We have gained brilliance in designing exhibition booths that meet your business objectives and help your brand stand out on the show floor.</p>
+								<p>With 20+ years of industry expertise, Radon has established a strong presence across the USA and Europe, delivering remarkable booth experiences at major venues such as the Las Vegas Convention Center, San Diego Convention Center, and Colorado Convention Center.</p>
+								<p>Our clientele includes many premium brands of the world such as Geven, Airtech, Optimedia, Botany weaving, etc. We have gained brilliance in designing exhibition booths that meet your business objectives and help your brand stand out on the show floor.</p>
 							</div>
 						</div>
 					</div>
