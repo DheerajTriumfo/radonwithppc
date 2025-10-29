@@ -118,7 +118,7 @@ export default function About(){
 										<div className="clearpackage"></div>
 										<div className="packggebx">
 											<div className="title">USA</div>
-											<p>302 E. Carson Ave, Suite1011, Las Vegas, Nevada 89101, USA</p>
+											<p>6355 E Tropical Parkway, Suite 100, Las Vegas, NV 89115</p>
 											<div className="btnprimary"><Link href="/exhibit-form/">Enquire Now</Link></div>
 										</div>
 										<div className="packggebx">
