@@ -311,11 +311,6 @@ module.exports = {
         destination: "/10x20-trade-show-booth/",
         permanent: true,
       },
-      {
-        source: "/trade-shows/wtm",
-        destination: "/trade-shows/world-travel-market-london/",
-        permanent: true,
-      },
     ];
   },
 };
