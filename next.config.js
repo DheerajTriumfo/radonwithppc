@@ -312,7 +312,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/trade-shows/wtm/",
+        source: "/trade-shows/wtm",
         destination: "/trade-shows/world-travel-market-london/",
         permanent: true,
       },
