@@ -140,7 +140,13 @@ export default async function LocationDetail({ params })
 										<div className={styles.figure}><Link href={`/${row.p_slug}/${row.url.toLowerCase()}/`}><Image src={`https://radonllcapi.mobel.us/public/uploads/rentalexhibition/${row.thumbnail}`} width={1024} height={768} alt="" /></Link></div>
 										<div className={styles.caption}>
 											<div className={styles.title}><span>BOOTH CODE: </span>{row.skucode}</div>
-											<QuoteForm/>
+											<QuoteForm
+												skucode={row.skucode}
+												thumbnail={row.thumbnail}
+												boothsize={row.boothsize}
+												categorySlug={row.p_slug}
+												detailSlug={row.url}
+											/>
 										</div>
 									</div>
 								</div>
