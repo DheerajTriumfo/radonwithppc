@@ -4,6 +4,7 @@ import Script from 'next/script';
 import '../../../styles/owl.carousel.min.css';
 import GetboothDetailform from './detailform.js';
 import Detailcarousel from './Carouseldetail.js';
+import SidebarQuoteForm from './SidebarQuoteForm.js';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -83,7 +84,7 @@ const detailLower = detail.toLowerCase();
                     <h2 className="rboothtitle">
                       <span>BOOTH CODE: </span> {boothdetaildata.skucode}
                     </h2>
-                    <div className="btnbg">
+                    {/* <div className="btnbg">
                       <div className="row">
                         <div className="col-12">
                           <GetboothDetailform
@@ -93,33 +94,16 @@ const detailLower = detail.toLowerCase();
                           />
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-md-5">
                   <div className="boothcaptionbg">
-                    <div className="featuresbg">
-                      <div className="featuretitle">Package Includes :</div>
-                      <ul>
-                        <li>Booth properties shown in the design</li>
-                        <li>New graphics as per client artwork</li>
-                        <li>Lights (as shown)</li>
-                        <li>Counter (as per stock availability)</li>
-                        <li>Flooring – Single Color carpet/Vinyl</li>
-                        <li>Furniture (as per stock availability)</li>
-                        <li>Audio Visual (as per design)</li>
-                        <li>Shipping to convention centre</li>
-                        <li>Install and dismantle</li>
-                        <li>Booth vacuuming during handover</li>
-                        <li>Project Management</li>
-                      </ul>
-                    </div>
-                    <div className="rentaltitle">Not Included:</div>
-                    <p>
-                      Sales Tax, Material Handling (Drayage), Rigging Charges (If
-                      any), Booth Vacuuming during fair, Electrical Outlet, Labor
-                      to install electrical outlets. Electricity cost.
-                    </p>
+                    <SidebarQuoteForm
+                      skucode={boothdetaildata.skucode}
+                      thumbnail={boothdetaildata.thumbnail}
+                      boothsize={boothdetaildata.boothsize}
+                    />
                   </div>
                 </div>
               </div>
