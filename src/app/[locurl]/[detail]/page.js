@@ -147,7 +147,7 @@ const detailLower = detail.toLowerCase();
                           {related.skucode}
                         </div>
                         <div className="btnsecondary">
-                          <Link href="/free-design/">CONTACT US</Link>
+                          <Link href={`/${related.boothsize}-trade-show-booth/${related.url}/`}>CONTACT US</Link>
                         </div>
                       </div>
                     </div>
