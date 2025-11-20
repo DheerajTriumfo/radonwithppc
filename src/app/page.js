@@ -121,7 +121,7 @@ export default function Home(){
             <img src="images/pt5.webp" className="img-fluid" alt="trade show display rentals" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <img src="images/pt6.webp" className="img-fluid" alt="trade show display rental" />
+            <img src="images/25_cropped.webp" className="img-fluid" alt="trade show display rental" />
           </div>
         </div>
       </div>

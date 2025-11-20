@@ -63,13 +63,13 @@ export default function Portfolioimage(){
 									</div>
 								</div>
 							</li>
-							<li>
+							{/* <li>
 								<div className="figure">
 									<div className="gallery-img">
 										<a href="/portfolio/4.webp" data-fancybox="radonllc" rel="noopener nofollow" ><Image src="/portfolio/4.webp" width="1092" height="752" alt="" loading="lazy"/></a>
 									</div>
 								</div>
-							</li>
+							</li> */}
 							<li>
 								<div className="figure">
 									<div className="gallery-img">
