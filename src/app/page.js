@@ -10,6 +10,30 @@ import "../styles/home.css";
 export const metadata = {
   title : "Las Vegas Trade Show Booth Rentals | 750+Trade Booth Design",
    description : "Radon Exhibition LLC — Your Trusted Las Vegas Trade Show Booth Builder, offering custom booth designs and rental solutions in Las Vegas and across the USA.",
+   openGraph: {
+    title: "Las Vegas Trade Show Booth Rentals | 750+Trade Booth Design",
+    description:
+      "Radon Exhibition LLC — Your Trusted Las Vegas Trade Show Booth Builder, offering custom booth designs and rental solutions in Las Vegas and across the USA.",
+    url: "https://radonexhibition.com/",
+    siteName: "Radon LLC",
+    type: "website",
+    images: [
+      {
+        url: "https://radonexhibition.com/images/bannernew.webp",
+        width: 1200,
+        height: 630,
+        alt: "Triumfo Inc Trade Show Booth Design",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Las Vegas Trade Show Booth Rentals | 750+Trade Booth Design",
+    description:
+      "Radon Exhibition LLC — Your Trusted Las Vegas Trade Show Booth Builder, offering custom booth designs and rental solutions in Las Vegas and across the USA.",
+    images: ["https://radonexhibition.com/images/bannernew.webp"],
+  },
    alternates: {
        canonical: `https://radonexhibition.com/`,
    },
@@ -18,8 +42,14 @@ export const metadata = {
 export default function Home(){
   
   return(
-    <>
+    
 <>
+<Script
+        id="schema-org"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
   <div className="bannerbg">
     <div className="banneroverlay"></div>
     <div className="container">
