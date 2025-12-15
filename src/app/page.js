@@ -1,4 +1,4 @@
-import Head from "next/head";
+//import Head from "next/head";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Faqtab from './home/faq.js';
@@ -46,12 +46,7 @@ export default function Home(){
   return(
     
 <>
-<Script
-        id="schema-org"
-        type="application/ld+json"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+
   <div className="bannerbg">
     <div className="banneroverlay"></div>
     <div className="container">
