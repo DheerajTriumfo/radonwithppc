@@ -25,7 +25,7 @@ export default function Thankyou()
 		    <section>
 		        <div className="container">
 		            <div className="thankyou">
-		                <div className="icon"><img src="/images/like.webp" width="100" height="114" alt="" /></div>
+		                <div className="icon"><Image src="/images/like.webp" width="100" height="114" alt="" /></div>
 		                <p>You are now one step closer to a successful and stress-free exhibition experience.</p>
 		                <Link href="/" className="backhomebtn">Back to Home</Link>
 		            </div>

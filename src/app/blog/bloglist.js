@@ -104,7 +104,7 @@ export default function Bloglist()
 									    <div className="blogbx">
 			    							<Link href={`/blog/${blgdta.url}/`}>
 			    								<div className="figure">
-			    									<Image src={`https://radonllcapi.mobel.us/public/uploads/blog/${blgdta.blogimg}`} width="420" height="290" alt="" loading="lazy" />
+			    									<Image src={`https://radonllcapi.mobel.us/public/uploads/blog/${blgdta.blogimg}`} width="420" height="290" alt="Radon Blog" loading="lazy" />
 			    								</div>
 			    								<div className="caption">
 			    									<div className="title">{blgdta.blogtitle}</div>
