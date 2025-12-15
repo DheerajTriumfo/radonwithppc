@@ -62,7 +62,7 @@ export default function Home(){
         <div className="trustreviewbg">
           <div className="trustreview">
             <span>Our Reviews</span>
-            <img src="https://www.trustpilot.com/favicon.ico" alt="Trustpilot" className="h-8 mr-1" />
+            <Image src="https://www.trustpilot.com/favicon.ico" alt="Trustpilot" className="h-8 mr-1" />
             <span>Trustpilot</span>
           </div>
         </div>
@@ -438,7 +438,7 @@ export default function Home(){
                   <span className="clientpositon">Marketing Director</span>
                 </div>
                 <div>
-                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
+                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><Image src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
                 </div>
               </div>
             </div>
@@ -456,7 +456,7 @@ export default function Home(){
                   <span className="clientpositon">CEO</span>
                 </div>
                 <div>
-                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><img src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
+                <div style={{marginLeft: '53px'}} className="clientlogos"><a href="https://www.trustpilot.com/review/radonexhibition.com" target="_blank"><Image src="images/trust1.png" width="50" height="50" alt="custom trade show exhibits" /></a></div>
                 </div>
               </div>
             </div>
