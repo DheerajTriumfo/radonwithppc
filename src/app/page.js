@@ -481,21 +481,6 @@ export default function Home(){
               </div>
             </div>
           </div>
-          {/* <div className="item">
-            <div className="colreview">
-              <div className="starbg">★★★★★</div>
-              <p className="textsm">
-                &ldquo;Overall, 10/10 experience. I hope I get to work with Radon again in the future for another conference. I'd recommend this company to anybody looking for a premium booth build at your next conference..&rdquo;
-              </p>
-              <div className="clientinfo">
-                <div className="clientlogo"><img src="images/jaccy.png" width="50" height="50" alt="trade show booth builders" /></div>
-                <div>
-                  <div className="clientname">Jacey.</div>
-                  <span className="clientpositon">Marketing Director</span>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
