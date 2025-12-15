@@ -1,6 +1,9 @@
 'use client';
 import { useEffect } from 'react';
 import $ from 'jquery';
+import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Homeportfolio(){
 	useEffect(() => {
