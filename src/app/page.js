@@ -57,7 +57,13 @@ export default function Home(){
         <div className="trustreviewbg">
           <div className="trustreview">
             <span>Our Reviews</span>
-            <Image src="https://www.trustpilot.com/favicon.ico" alt="Trustpilot" className="h-8 mr-1" />
+            <Image
+              src="https://www.trustpilot.com/favicon.ico"
+              width={32}
+              height={32}
+              alt="Trustpilot"
+              className="h-8 mr-1"
+            />
             <span>Trustpilot</span>
           </div>
         </div>
@@ -96,7 +102,7 @@ export default function Home(){
               <Image src="images/client6.webp" width="200" height="94" alt="trade show display rental" />
             </div>
             <div className="item">
-              <Image src="images/client7.webp" width="" height="94" alt="trade show exhibit rental" />
+              <Image src="images/client7.webp" width="200" height="94" alt="trade show exhibit rental" />
                </div>
             <div className="item">
               <Image src="images/client8.webp" width="200" height="94" alt="trade show rentals" />
