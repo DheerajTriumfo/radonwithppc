@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    domains: ["radonexhibition.com", "radonllcapi.mobel.us"], // external images allowed
+    domains: ["radonexhibition.com", "radonllcapi.mobel.us", "www.trustpilot.com"], // external images allowed
   },
   trailingSlash: true, // force URLs with trailing slash
 
