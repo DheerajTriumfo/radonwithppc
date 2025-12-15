@@ -78,40 +78,40 @@ export default function Home(){
         <div className="mt-8">
           <div className="owl-carousel owl-theme" id="clientslider">
             <div className="item">
-              <Image src="images/client1.webp" width="" height="" alt="custom trade show exhibits" />
+              <Image src="images/client1.webp" width="200" height="94" alt="custom trade show exhibits" />
             </div>
             <div className="item">
-              <Image src="images/client2.webp" width="" height="" alt="trade show exhibits" />
+              <Image src="images/client2.webp" width="200" height="94" alt="trade show exhibits" />
             </div>
             <div className="item">
-              <Image src="images/client3.webp" width="" height="" alt="trade show booth rental" />
+              <Image src="images/client3.webp" width="200" height="94" alt="trade show booth rental" />
             </div>
             <div className="item">
-              <Image src="images/client4.webp" width="" height="" alt="trade show booth rentals" />
+              <Image src="images/client4.webp" width="200" height="94" alt="trade show booth rentals" />
             </div>
             <div className="item">
-              <Image src="images/client5.webp" width="" height="" alt="trade show display rentals" />
+              <Image src="images/client5.webp" width="200" height="94" alt="trade show display rentals" />
             </div>
             <div className="item">
-              <Image src="images/client6.webp" width="" height="" alt="trade show display rental" />
+              <Image src="images/client6.webp" width="200" height="94" alt="trade show display rental" />
             </div>
             <div className="item">
-              <Image src="images/client7.webp" width="" height="" alt="trade show exhibit rental" />
+              <Image src="images/client7.webp" width="" height="94" alt="trade show exhibit rental" />
                </div>
             <div className="item">
-              <Image src="images/client8.webp" width="" height="" alt="trade show rentals" />
+              <Image src="images/client8.webp" width="200" height="94" alt="trade show rentals" />
             </div>
             <div className="item">
-              <Image src="images/client9.webp" width="" height="" alt="trade show booth builder" />
+              <Image src="images/client9.webp" width="200" height="94" alt="trade show booth builder" />
             </div>
             <div className="item">
-              <Image src="images/client10.webp" width="" height="" alt="trade show exhibit companies" />
+              <Image src="images/client10.webp" width="200" height="94" alt="trade show exhibit companies" />
             </div>
             <div className="item">
-              <Image src="images/client11.webp" width="" height="" alt="las vegas trade show booth builders" />
+              <Image src="images/client11.webp" width="200" height="94" alt="las vegas trade show booth builders" />
             </div>
             <div className="item">
-              <Image src="images/client12.webp" width="" height="" alt="trade show booth rental las vegas" />
+              <Image src="images/client12.webp" width="200" height="94" alt="trade show booth rental las vegas" />
             </div>
           </div>
         </div>
@@ -133,22 +133,22 @@ export default function Home(){
       <div className="portfolioinner">
         <div className="row no-gutters">
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/pt1.webp" className="img-fluid" alt="custom trade show exhibits" />
+            <Image src="images/pt1.webp" width="767" height="530" className="img-fluid" alt="custom trade show exhibits" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/pt2.webp" className="img-fluid" alt="trade show exhibits" />
+            <Image src="images/pt2.webp" width="767" height="530" className="img-fluid" alt="trade show exhibits" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/pt3.webp" className="img-fluid" alt="trade show booth rental" />
+            <Image src="images/pt3.webp" width="767" height="530" className="img-fluid" alt="trade show booth rental" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/pt4.webp" className="img-fluid" alt="trade show booth rentals" />
+            <Image src="images/pt4.webp" width="767" height="530" className="img-fluid" alt="trade show booth rentals" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/pt5.webp" className="img-fluid" alt="trade show display rentals" />
+            <Image src="images/pt5.webp" width="767" height="530" className="img-fluid" alt="trade show display rentals" />
           </div>
           <div className="col-6 col-lg-4 p-1">
-            <Image src="images/25_cropped.webp" className="img-fluid" alt="trade show display rental" />
+            <Image src="images/25_cropped.webp" width="767" height="530" className="img-fluid" alt="trade show display rental" />
           </div>
         </div>
       </div>
