@@ -40,7 +40,7 @@ async function getPageData(locurl) {
     return { type: 'location', ...data };
 }
 export async function generateMetadata({ params }) {
-    const { locurl } = await params;
+    const { locurl } = params;
     const pageData = await getPageData(locurl);
     if (!pageData) return notFound();
 
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }) {
                     : [],
             },
             alternates: {
-		          canonical: `https://radonexhibition.com/${params.locurl}/`,
+		          canonical: `https://radonexhibition.com/${locurl}/`,
 		    },
         };
     }
