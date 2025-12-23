@@ -40,17 +40,11 @@ async function getPageData(locurl) {
     return { type: 'location', ...data };
 }
 export async function generateMetadata({ params }) {
-    const { locurl } = params;
-    const canonical = `https://radonexhibition.com/${locurl}/`;
-
+    const { locurl } = await params;
+	//console.log(locurl);
+	//console.log(params.locurl);
     const pageData = await getPageData(locurl);
-    if (!pageData) {
-        return {
-            title: 'Trade Show Booth Rentals | RADON',
-            description: 'Explore custom trade show booth rentals by RADON.',
-            alternates: { canonical },
-        };
-    }
+    if (!pageData) return notFound();
 
     if (pageData.type === 'booth') {
         const pageMeta = pageData.pagedata?.[0] || {};
@@ -65,7 +59,7 @@ export async function generateMetadata({ params }) {
                     : [],
             },
             alternates: {
-		          canonical,
+		          canonical: `https://radonexhibition.com/${locurl}/`,
 		    },
         };
     }
@@ -83,14 +77,14 @@ export async function generateMetadata({ params }) {
                 : [],
         },
         alternates: {
-	          canonical,
+	          canonical: `https://radonexhibition.com/${locurl}/`,
 		},
     };
 }
 
 export default async function LocationDetail({ params })
 {
-	const { locurl } = params;
+	const { locurl } = await params;
 	if (locurl.endsWith('-trade-show-booth')) {
 		const boothSize = locurl.replace('-trade-show-booth', '');
 		const res = await fetch(`${baseUrl}/api/viewboothbysize/${boothSize}/`, {
