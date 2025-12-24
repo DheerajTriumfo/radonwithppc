@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               "name": "Radon Exhibition LLC",
               "url": "https://radonexhibition.com/",
-              "logo": "",
+              "logo": "https://radonexhibition.com/images/logo.webp",
               "telephone": "+1 917 463 3566",
               "address": {
                 "@type": "PostalAddress",
