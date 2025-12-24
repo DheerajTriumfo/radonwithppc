@@ -71,29 +71,45 @@ export async function generateMetadata(props) {
     };
   }
 
+  // Try all possible database field variations for meta title
   const rawTitle =
-    booth.meta_title ??
-    booth.metatitle ??
-    booth.title ??
-    booth.boothtitle ??
+    booth.meta_title ||
+    booth.metatitle ||
+    booth.metaTitle ||
+    booth.title ||
+    booth.boothtitle ||
+    booth.booth_title ||
     "";
 
+  // Use dynamic title from database, or create fallback based on booth size
   const title =
     (typeof rawTitle === "string" && rawTitle.trim()) ||
-    (booth.boothsize
+    (booth.boothsize && booth.skucode
+      ? `${String(booth.boothsize).toUpperCase()} Trade Show Booth Rental ${booth.skucode} | RADON`
+      : booth.boothsize
       ? `${String(booth.boothsize).toUpperCase()} Trade Show Booth Rental | RADON`
       : "Trade Show Booth Rental Designs | RADON");
 
+  // Try all possible database field variations for meta description
   const rawDescription =
-    booth.meta_desc ??
-    booth.metadescription ??
-    booth.description ??
-    booth.shortdesc ??
+    booth.meta_desc ||
+    booth.metadesc ||
+    booth.meta_description ||
+    booth.metadescription ||
+    booth.description ||
+    booth.shortdesc ||
+    booth.short_description ||
+    booth.desc ||
     "";
 
+  // Use dynamic description from database, or create fallback
   const description =
     stripHtml(rawDescription) ||
-    "Discover customizable trade show booth designs crafted by RADON.";
+    (booth.boothsize && booth.skucode
+      ? `Explore our ${String(booth.boothsize).toUpperCase()} trade show booth rental design ${booth.skucode}. Customizable exhibits crafted by RADON for your brand presence.`
+      : booth.boothsize
+      ? `Discover our range of ${String(booth.boothsize).toUpperCase()} trade show booth rentals. Customizable exhibits crafted by RADON.`
+      : "Discover customizable trade show booth designs crafted by RADON.");
 
   const ogImages = [];
   if (booth.thumbnail) {
