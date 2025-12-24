@@ -1,49 +1,143 @@
-import { notFound } from 'next/navigation';
-import styles from '../../../styles/boothdetail.css';
-import Script from 'next/script';
-import '../../../styles/owl.carousel.min.css';
-import GetboothDetailform from './detailform.js';
-import Detailcarousel from './Carouseldetail.js';
-import SidebarQuoteForm from './SidebarQuoteForm.js';
-import Image from 'next/image';
-import Link from 'next/link';
+import { notFound } from "next/navigation";
+import "../../../styles/owl.carousel.min.css";
+import styles from "../../../styles/boothdetail.css";
+import Detailcarousel from "./Carouseldetail.js";
+import SidebarQuoteForm from "./SidebarQuoteForm.js";
+import GetboothDetailform from "./detailform.js";
+import Image from "next/image";
+import Link from "next/link";
 
-const baseUrl = 'https://radonllcapi.mobel.us/public';
+const baseUrl = "https://radonllcapi.mobel.us/public";
 
-export async function generateMetadata({ params }) {
-  const { detail } = await params;
+const stripHtml = (value) =>
+  typeof value === "string"
+    ? value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()
+    : "";
 
-  const detailLower = detail.toLowerCase();
-  const detailUpper = detail.toUpperCase();
+async function fetchBoothDetail(identifier) {
+  if (!identifier) return null;
+  try {
+    const response = await fetch(`${baseUrl}/api/viewboothdetail/${identifier}`, {
+      cache: "no-store",
+      next: { revalidate: 0 },
+    });
 
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailUpper}`, {
-    cache: 'no-store',
-  });
+    if (!response.ok) {
+      return null;
+    }
 
-  if (!result.ok) return {};
-  const data = await result.json().catch(() => null);
-  if (!data?.data) return {};
+    const data = await response.json().catch(() => null);
+    return data?.data || null;
+  } catch {
+    return null;
+  }
+}
 
-  const booth = data.data;
+async function resolveBoothDetail(detail) {
+  const raw = typeof detail === "string" ? detail : detail?.toString() || "";
+  const candidates = Array.from(
+    new Set(
+      [raw.toUpperCase(), raw.toLowerCase(), raw]
+        .map((value) => value.trim())
+        .filter(Boolean)
+    )
+  );
+
+  for (const candidate of candidates) {
+    const booth = await fetchBoothDetail(candidate);
+    if (booth) {
+      return { booth, identifier: candidate };
+    }
+  }
+
+  return { booth: null, identifier: candidates.at(0) || "" };
+}
+
+export async function generateMetadata(props) {
+  const params = await props.params;
+  const { locurl, detail } = params;
+  const detailSlug = detail?.toString().toLowerCase() || "";
+  const canonicalUrl = detailSlug
+    ? `https://radonexhibition.com/${locurl}/${detailSlug}/`
+    : `https://radonexhibition.com/${locurl}/`;
+
+  const { booth } = await resolveBoothDetail(detail);
+
+  if (!booth) {
+    return {
+      title: "Trade Show Booth Rental Designs | RADON",
+      description: "Discover customizable trade show booth designs crafted by RADON.",
+      alternates: { canonical: canonicalUrl },
+    };
+  }
+
+  const rawTitle =
+    booth.meta_title ??
+    booth.metatitle ??
+    booth.title ??
+    booth.boothtitle ??
+    "";
+
+  const title =
+    (typeof rawTitle === "string" && rawTitle.trim()) ||
+    (booth.boothsize
+      ? `${String(booth.boothsize).toUpperCase()} Trade Show Booth Rental | RADON`
+      : "Trade Show Booth Rental Designs | RADON");
+
+  const rawDescription =
+    booth.meta_desc ??
+    booth.metadescription ??
+    booth.description ??
+    booth.shortdesc ??
+    "";
+
+  const description =
+    stripHtml(rawDescription) ||
+    "Discover customizable trade show booth designs crafted by RADON.";
+
+  const ogImages = [];
+  if (booth.thumbnail) {
+    ogImages.push(`${baseUrl}/uploads/rentalexhibition/${booth.thumbnail}`);
+  } else if (booth.meta_image) {
+    ogImages.push(`${baseUrl}/uploads/meta/${booth.meta_image}`);
+  }
 
   return {
-    title: booth.metatitle || '',
-    description: booth.metadescription || '',
-    alternates: {
-      canonical: `https://radonexhibition.com/${booth.boothsize}-trade-show-booth/${detailLower}/`,
+    title,
+    description,
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      images: ogImages.map((url) => ({ url })),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ogImages,
     },
   };
 }
 
+export default async function BoothDetail(props) {
+  const params = await props.params;
+  const { locurl, detail } = params;
+  const detailLower = detail.toLowerCase();
+  const detailUpper = detail.toUpperCase();
 
-export default async function BoothDetail({ params }) {
-  const { locurl, detail } = await params;
-const detailLower = detail.toLowerCase();
-
-
-  const result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
-    cache: 'no-store',
+  let result = await fetch(`${baseUrl}/api/viewboothdetail/${detailLower}`, {
+    cache: "no-store",
+    next: { revalidate: 0 },
   });
+
+  if (!result.ok) {
+    result = await fetch(`${baseUrl}/api/viewboothdetail/${detailUpper}`, {
+      cache: "no-store",
+      next: { revalidate: 0 },
+    });
+  }
 
   if (!result.ok) {
     console.error("API Error:", result.status, result.statusText);
@@ -59,9 +153,7 @@ const detailLower = detail.toLowerCase();
     return notFound();
   }
 
-
   if (!data?.data) return notFound();
-
 
   const boothdetaildata = data.data;
   const boothimg = data.rentalimg || [];
