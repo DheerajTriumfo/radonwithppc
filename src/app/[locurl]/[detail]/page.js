@@ -175,8 +175,47 @@ export default async function BoothDetail(props) {
   const boothimg = data.rentalimg || [];
   const boothrelated = data.relatedbooth || [];
 
+  // Prepare data for schemas
+  const boothSize = boothdetaildata?.boothsize || locurl.replace('-trade-show-booth', '');
+  const boothSizeName = boothSize ? `${boothSize.toUpperCase()} Trade Show Booth` : 'Trade Show Booth';
+  const boothName = boothdetaildata?.skucode 
+    ? `Booth ${boothdetaildata.skucode}` 
+    : detail;
+  const currentUrl = `https://radonexhibition.com/${locurl}/${detail.toLowerCase()}/`;
+  const boothSizeUrl = `https://radonexhibition.com/${locurl}/`;
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://radonexhibition.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": boothSizeName,
+        "item": boothSizeUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": boothName,
+        "item": currentUrl
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {boothdetaildata?.skucode ? (
         <section>
           <div className="boothdetailbg">

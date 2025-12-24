@@ -30,7 +30,39 @@ export default async function BlogDetailPage({ params }) {
   const prev = data.prev;
   const next = data.next;
 
+  // Breadcrumb Schema for blog detail pages
+  const blogUrl = `https://radonexhibition.com/blog/${params.slug}/`;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://radonexhibition.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://radonexhibition.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": blog?.blogtitle || "Blog Post",
+        "item": blogUrl
+      }
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <section>
       <div className="bannerbg">
         <div className="container">
@@ -118,5 +150,6 @@ export default async function BlogDetailPage({ params }) {
         </div>
       </div>
     </section>
+    </>
   );
 }

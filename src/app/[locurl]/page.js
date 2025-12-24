@@ -96,8 +96,34 @@ export default async function LocationDetail({ params })
 		const boothdata = data.data;
 		const pagendata = data.pagedata;
 		const booth = data.data[0];
+		
+		// Breadcrumb Schema for booth size pages
+		const boothSizeUrl = `https://radonexhibition.com/${locurl}/`;
+		const breadcrumbSchema = {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://radonexhibition.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": `${boothSize.toUpperCase()} Trade Show Booth`,
+					"item": boothSizeUrl
+				}
+			]
+		};
+		
 		return (
 			<>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+				/>
 				<section>
 					<div className="bannerbg">
 						<div className="container">
@@ -208,10 +234,33 @@ export default async function LocationDetail({ params })
 	}
 	const locdata = data.data[0];
 
-	
+	// Breadcrumb Schema for location pages
+	const locationUrl = `https://radonexhibition.com/${locurl}/`;
+	const breadcrumbSchema = {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://radonexhibition.com/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": `Trade Show Booth Rental in ${locdata.cityname}`,
+				"item": locationUrl
+			}
+		]
+	};
 
 	return(
 		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+			/>
 			<section>
 				<div className="bannerbg">
 					<div className="container">

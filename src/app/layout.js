@@ -31,7 +31,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Radon Exhibition LLC",
+              "url": "https://radonexhibition.com/",
+              "logo": "",
+              "telephone": "+1 917 463 3566",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "6355 E Tropical Parkway Suite 100",
+                "addressRegion": "Nevada",
+                "postalCode": "89115",
+                "addressCountry": "US"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1 917 463 3566",
+                "contactType": "customer service",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/radonexhibitionllc",
+                "https://x.com/ExhibitionLlc",
+                "https://www.instagram.com/radonexhibitionllc/",
+                "https://www.youtube.com/@radonexhibition",
+                "https://www.linkedin.com/company/radon-exhibition-llc/",
+                "https://www.pinterest.com/radonexhibitionllc/"
+              ]
+            })
+          }}
+        />
         <Script
           id="gtm-script"
           strategy="lazyOnload"
