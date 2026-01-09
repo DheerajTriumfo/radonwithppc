@@ -131,7 +131,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="copyright">
-            <div>© 2025 Radon LLC. All Rights Reserved.</div>
+            <div>© 2026 Radon LLC. All Rights Reserved.</div>
             <div className="socialbg">
               <span>Follow us on:</span>
               <div className="social">
