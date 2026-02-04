@@ -46,7 +46,8 @@ export default function Thankyou()
 	                              <li>I&D coordination: Oversee dismantling and material return to warehouse post event.</li>
 	                              <li>Ensure the booth is completed on time and handed over to the client in good condition.</li>
 	                           </ul>
-	                           <p><strong>If interested please send your application to the address: <a href="https://web.archive.org/web/20250421081950/mailto:info@radonexhibition.com">info@radonexhibition.com</a></strong></p>
+	                           <p><strong>If you are interested, please submit your application to: <a href="mailto:hr@radonexhibition.com">hr@radonexhibition.com</a></strong></p>
+	                           <p><strong>For further inquiries, you may also call: <a href="tel:+17025000284">+17025000284 </a></strong></p>
 	                           <div className="applynow"><Link href="/apply-now/" className="openapply">Apply Now</Link></div>
 	                        </div>
 	                     </div>
