@@ -198,7 +198,13 @@
     border-radius: 3px;
     border: 1px solid #ddd
 }
-
+.formbg input[type=file] {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    max-width: 100%;
+}
 .formbg select {
     border-radius: 5px;
     border: 1px solid #ddd
