@@ -26,8 +26,8 @@ export default function Thankyou()
 	                        <div className="container">
 	                           <div className="gray-box">
 	                              <div className="left">
-	                                 <div className="postiontitle">Business development Manager</div>
-	                                 <div className="locationnel">Berlin, Germany</div>
+	                                 <div className="postiontitle">Sales Coordinator</div>
+	                                 <div className="locationnel">Las Vegas, United States</div>
 	                                 <div className="fulltime">Full Time</div>
 	                              </div>
 	                              <div className="right">
