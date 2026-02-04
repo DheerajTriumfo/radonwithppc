@@ -36,15 +36,15 @@ export default function Thankyou()
 	                           </div>
 	                           <div className="job-title">Key Responsibilities: </div>
 	                           <ul>
-	                              <li>•	To be able to pick and pack the BE MATRIX booth as per the design and drawings.</li>
-	                              <li>•	To be able to do all jobs connected with creating the mockup of the booths in the warehouse. </li>
-	                              <li>•	To Coordinate with designers, purchase, organize ordering of material purchases</li>
-	                              <li>•	Travel to different show sites and cross-country travel when required.</li>
-	                              <li>•	Supervise booth installation at the site and coordinate with all involved teams.</li>
-	                              <li>•	Coordinate with clients, venue officials, vendors, and internal teams during setup.</li>
-	                              <li>•	Manage last-minute changes, troubleshoot site challenges.</li>
-	                              <li>•	I&D coordination: Oversee dismantling and material return to warehouse post event.</li>
-	                              <li>•	Ensure the booth is completed on time and handed over to the client in good condition.</li>
+	                              <li>To be able to pick and pack the BE MATRIX booth as per the design and drawings.</li>
+	                              <li>To be able to do all jobs connected with creating the mockup of the booths in the warehouse. </li>
+	                              <li>To Coordinate with designers, purchase, organize ordering of material purchases</li>
+	                              <li>Travel to different show sites and cross-country travel when required.</li>
+	                              <li>Supervise booth installation at the site and coordinate with all involved teams.</li>
+	                              <li>Coordinate with clients, venue officials, vendors, and internal teams during setup.</li>
+	                              <li>Manage last-minute changes, troubleshoot site challenges.</li>
+	                              <li>I&D coordination: Oversee dismantling and material return to warehouse post event.</li>
+	                              <li>Ensure the booth is completed on time and handed over to the client in good condition.</li>
 	                           </ul>
 	                           <p><strong>If interested please send your application to the address: <a href="https://web.archive.org/web/20250421081950/mailto:info@radonexhibition.com">info@radonexhibition.com</a></strong></p>
 	                           <div className="applynow"><Link href="/apply-now/" className="openapply">Apply Now</Link></div>
