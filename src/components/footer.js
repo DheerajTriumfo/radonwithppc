@@ -117,7 +117,9 @@ export default function Footer() {
                   <li>
                     <Link href="/locations/">Where We Build</Link>
                   </li>
-           
+                  <li>
+                    <Link href="/career/">Career</Link>
+                  </li>
                 </ul>
               </div>
             </div>
