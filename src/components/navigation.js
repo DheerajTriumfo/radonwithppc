@@ -71,6 +71,9 @@ export default function Navigation() {
                   </ul>
                 </li>
                 <li>
+                  <Link href="/career/">CAREER</Link>
+                </li>
+                <li>
                   <Link href="/contact-us/">CONTACT US</Link>
                 </li>
               </ul>
