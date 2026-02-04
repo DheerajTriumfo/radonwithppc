@@ -197,7 +197,7 @@ export default function Contactform()
 
 				        <div className="col-lg-12">
 				        	<button type="submit" disabled={loading}>
-	                          {loading ? <span className="spinner"></span> : "Request Quote"}
+	                          {loading ? <span className="spinner"></span> : "Submit Form"}
 	                        </button>
 				        </div>
 				    </div>
