@@ -119,8 +119,6 @@ export default function Contactform()
 			<div className="formbg">
 				<div className="formtitle">Job Application Form</div>
 				<p>Please Fill Out the Form Below to Submit Your Job Application!</p>
-				
-
 				<form onSubmit={handleSubmit} className="validate-form">
 
 					<input type="hidden" name="pageurl" value={clientData.pageUrl} />
@@ -164,7 +162,6 @@ export default function Contactform()
 	                          />
 	                          {errors.phone && <div className="error">{errors.phone}</div>}
 				        </div>
-
 				        <div className="col-lg-6 col-sm-12">
 				            <input
 	                          type="text"
