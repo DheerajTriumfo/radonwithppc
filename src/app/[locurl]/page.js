@@ -132,7 +132,7 @@ export default async function LocationDetail({ params })
 								{boothSize === '10x10' ? (
 									<p>Check out our wide range of 10X10 trade show booth rentals to elevate your brand presence. All are customizable choices and we offer expert guidance to create a bespoke exhibit for you. Make an impactful presence at exhibitions with us.</p>
 								) : boothSize === '10x20' ? (
-									<p>Browse our impressive range of 10X20 trade show booth rentals to find the suitable one for your exhibition needs. These booths can be customized as per your needs. Our experts assist you in creating an outstanding exhibition experience with them.</p>
+									<p>Browse our professionally designed 10x20 trade show displays built to stand out in competitive trade show environments. Radon LLC shapes 10x20 booth to align with your goals, branding style, and audience expectations.</p>
 								) : boothSize === '10x30' ? (
 									<p>Take a look at our vast range of 10X30 trade show booth rentals for an impactful brand presence. All of them are customizable and we offer expert guidance to create a standout exhibit. Make a lasting impression at your next trade show.</p>
 								) : boothSize === '20x20' ? (
@@ -186,6 +186,21 @@ export default async function LocationDetail({ params })
 				<section>
 					<div className={styles.citylistingbg}>
 						<div className={styles.container}>
+							{boothSize === '10x20' ? (
+							<>
+							<div className={styles.widthsmall}>
+								<h2 className={styles.maintitle}>DO YOU NEED A CUSTOM-BUILD 10x20 BOOTH THAT <br/>MATCHES YOUR VISION?</h2>
+							</div>
+							<h2 className={styles.maintitle} style={{ color: '#f9742f' }}>SECURE A FREE CUSTOM BOOTH DESIGN THAT MEETS YOUR BRAND OBJECTIVES</h2>
+							<div className={styles.widthsmall}>
+								<div className={styles.shrtdesc}>
+									<p>Tell us your requirements for a 10x20 trade show booth layout, and we’ll create a personalized setup with detailed quotation and design proposals.</p>
+								</div>
+								<div className="btnprimary text-center mrtnone"><Link href="/exhibit-form/">REQUEST FREE DESIGN</Link></div>
+							</div>
+							</>
+							): (
+							<>
 							<div className={styles.widthsmall}>
 								<h2 className={styles.maintitle}>DIDNT FIND THE PERFECT DESIGN?</h2>
 							</div>
@@ -196,6 +211,8 @@ export default async function LocationDetail({ params })
 								</div>
 								<div className="btnprimary text-center mrtnone"><Link href="/exhibit-form/">REQUEST FREE DESIGN</Link></div>
 							</div>
+							</>
+							) }
 						</div>
 					</div>
 				</section>
