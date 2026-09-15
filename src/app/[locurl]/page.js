@@ -352,23 +352,23 @@ export default async function LocationDetail({ params })
 				</div>
 			</section>
 			<section>
-				<div className="cstopcalltoaction">
-					<div className="container">
-						<div className="csinner">
-							(!locdata.calltoaction) ? (
-								<>
-									<div className="actiontext">WE WOULD LOVE TO WORK WITH YOU</div>
-									<div className="actionbtn"><Link href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></Link></div>
-								</>
-								) : (
-								<>
-									<div className="actiontext">{locdata.calltoaction}</div>
-									<div className="actionbtn"><Link href="/contact-us/">CONTACT US <i className="fa fa-long-arrow-right"></i></Link></div>
-								</>
-								)
-						</div>
-					</div>
-				</div>
+			    <div className="cstopcalltoaction">
+			        <div className="container">
+			            <div className="csinner">
+
+			                <div className="actiontext">
+			                    {locdata?.calltoaction || "WE WOULD LOVE TO WORK WITH YOU"}
+			                </div>
+
+			                <div className="actionbtn">
+			                    <Link href="/contact-us/">
+			                        CONTACT US <i className="fa fa-long-arrow-right"></i>
+			                    </Link>
+			                </div>
+
+			            </div>
+			        </div>
+			    </div>
 			</section>
 			<section>
 				<div className="seocontentbg">
