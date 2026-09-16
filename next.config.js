@@ -48,6 +48,18 @@ module.exports = {
     return [
       // Real old → new path mappings only (keep these!)
       {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
+            value: "www.radonexhibition.com",
+          },
+        ],
+        destination: "https://radonexhibition.com/$1",
+        permanent: true,
+      },
+
+      {
         source: "/trade-show-booth-rental/",
         destination: "/",
         permanent: true,
