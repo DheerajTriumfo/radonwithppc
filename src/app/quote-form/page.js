@@ -2,13 +2,7 @@
 import '../../styles/quote-form.css';
 import React, { useEffect, useState } from 'react';
 
-export const metadata = {
-  title: 'Trade Show Booth Quote | Request a Free Quote | RADON LLC',
-  description: '',
-  alternates: {
-      canonical: 'https://radonexhibition.com/quote-form/',
-  },
-}
+
 
 export default function Quoteform() {
   const [formData, setFormData] = useState({

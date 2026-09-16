@@ -2,13 +2,7 @@
 import '../../styles/freedesignform.css';
 import React, { useEffect, useState } from 'react';
 
-export const metadata = {
-  title: 'Free Trade Show Booth Design | RADON LLC',
-  description: '',
-  alternates: {
-      canonical: 'https://radonexhibition.com/free-design/',
-  },
-}
+
 export default function GreedesignForm()
 {
 	const [formData, setFormData] = useState({

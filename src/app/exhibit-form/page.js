@@ -3,13 +3,7 @@ import '../../styles/exhibit-form.css';
 import React, { useEffect, useState } from 'react';
 import dynamic from "next/dynamic";
 
-export const metadata = {
-  title: 'Exhibit Form | Trade Show Booth Services | RADON LLC',
-  description: '',
-  alternates: {
-      canonical: 'https://radonexhibition.com/exhibit-form/',
-  },
-}
+
 
 export default function ExhibitForm() {
   const [formData, setFormData] = useState({
