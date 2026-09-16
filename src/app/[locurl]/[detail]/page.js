@@ -220,6 +220,9 @@ export default async function BoothDetail(props) {
         <section>
           <div className="boothdetailbg">
             <div className="container">
+              <div className="widthsmall text-center mb-3">
+                <h2 className="maintitle mb-3">{boothdetaildata.bannertitle}</h2>
+              </div>
               <div className="row">
                 <div className="col-lg-7">
                   <div className="figurebg">
