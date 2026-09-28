@@ -10,7 +10,7 @@ import { Poppins, Roboto_Condensed } from "next/font/google";
 import Script from "next/script";
 import Navigation from '../components/navigation.js';
 import Footer from '../components/footer.js';
-import { usePathname } from "next/navigation";
+//import { usePathname } from "next/navigation";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700", "800"],

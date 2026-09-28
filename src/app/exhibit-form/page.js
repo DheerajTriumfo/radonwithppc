@@ -6,6 +6,22 @@ import dynamic from "next/dynamic";
 
 
 export default function ExhibitForm() {
+  useEffect(() => {
+  document.title = "Exhibit Form | Trade Show Booth Services | RADON LLC";
+
+  let canonical = document.querySelector("link[rel='canonical']");
+
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+
+  canonical.setAttribute(
+    "href",
+    "https://www.radonexhibition.com/exhibit-form/"
+  );
+}, []);
   const [formData, setFormData] = useState({
     eventname: '',
     eventcity: '',
