@@ -5,6 +5,22 @@ import React, { useEffect, useState } from 'react';
 
 
 export default function Quoteform() {
+  useEffect(() => {
+  document.title = "Trade Show Booth Quote | Request a Free Quote | RADON LLC";
+
+  let canonical = document.querySelector("link[rel='canonical']");
+
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+
+  canonical.setAttribute(
+    "href",
+    "https://radonexhibition.com/quote-form/"
+  );
+}, []);
   const [formData, setFormData] = useState({
     eventname: '',
     eventcity: '',

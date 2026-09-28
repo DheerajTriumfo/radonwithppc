@@ -5,6 +5,22 @@ import React, { useEffect, useState } from 'react';
 
 export default function GreedesignForm()
 {
+	useEffect(() => {
+  document.title = "Free Trade Show Booth Design | RADON LLC";
+
+  let canonical = document.querySelector("link[rel='canonical']");
+
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+
+  canonical.setAttribute(
+    "href",
+    "https://radonexhibition.com/free-design/"
+  );
+}, []);
 	const [formData, setFormData] = useState({
     eventname: '',
     eventcity: '',
