@@ -42,14 +42,14 @@ export default function Contactus()
 											<div className="icon"><Image src="/images/landline.webp" width="60" height="60" alt="" loading="lazy" /></div>
 											<div className="caption">
 												<div className="infotitle">Phone Number</div>
-												<p><a href="">+1 917 463 3566</a></p>
+												<p><a href="tel:+1 917 463 3566">+1 917 463 3566</a></p>
 											</div>
 										</li>
 										<li>
 											<div className="icon"><Image src="/images/email.webp" width="60" height="60" alt="" loading="lazy"/></div>
 											<div className="caption">
 												<div className="infotitle">Email Address</div>
-												<p>info@radonexhibition.com</p>
+												<p><a href="mailto:info@radonexhibition.com">info@radonexhibition.com</a></p>
 											</div>
 										</li>
 										<li>
