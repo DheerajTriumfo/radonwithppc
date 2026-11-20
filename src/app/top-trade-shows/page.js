@@ -3,8 +3,8 @@ import Listing from './tradelist.js';
 
 
 export const metadata = {
-	title : 'Top Trade Shows In USA | Upcoming Trade Shows in USA',
-	description: 'Top Trade Shows In USA | Upcoming Trade Shows in USA - All Exhibitions in USA 2025-2026 | Full and accurate description of events for various business sectors.',
+	title : 'Top Trade Shows in the USA | Radon Exhibition',
+	description: 'Explore the top trade shows in the USA across major industries. Find leading exhibitions, discover business opportunities, and plan your next event with Radon.',
 	alternates: {
 	    canonical: 'https://radonexhibition.com/top-trade-shows/',
 	},
