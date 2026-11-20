@@ -266,7 +266,7 @@ export default async function LocationDetail({ params })
 			{
 				"@type": "ListItem",
 				"position": 2,
-				"name": `Trade Show Booth Rental in ${locdata.cityname}`,
+				"name": `Trade Show Booth Rental in ${locdata.citydisplayforpage}`,
 				"item": locationUrl
 			}
 		]
@@ -282,7 +282,7 @@ export default async function LocationDetail({ params })
 				<div className="bannerbg">
 					<div className="container">
 						<div className="widthsmall">
-							<h1>TRADE SHOW BOOTH RENTAL<br/><span>{locdata.cityname}</span></h1>
+							<h1>TRADE SHOW BOOTH RENTAL<br/><span>{locdata.citydisplayforpage}</span></h1>
 							<p>{locdata.design}</p>
 						</div>
 					</div>
@@ -379,7 +379,42 @@ export default async function LocationDetail({ params })
 				</div>
 			</section>
 
-			
+			{locdata.faqdata && locdata.faqdata.length > 0 && (
+    <section>
+        <div className="faqbg">
+            <div className="container">
+
+                <div className="widthsmall text-center">
+                    <h2 className="maintitle">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+
+                <div className="widthmedium">
+                    {locdata.faqdata.map((faq, index) => (
+                        <div className="bor-bg" key={faq.id || index}>
+
+                            <h3 className="tab-button">
+                                {faq.faqtitle}
+                            </h3>
+
+                            <div className="tab-caption">
+                                <div
+                                    className="shrtdesc"
+                                    dangerouslySetInnerHTML={{
+                                        __html: faq.faqdesc
+                                    }}
+                                />
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    </section>
+)}
 			
 
 

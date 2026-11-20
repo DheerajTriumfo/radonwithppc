@@ -189,7 +189,81 @@
     background-color: #e86221;
     color: #fff
 }
+.faqbg{
+    display: block;
+    padding: 3rem 0;
+    background: #fff;
+}
+.bor-bg {
+    display: block;
+    cursor: pointer;
+    margin:0;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
 
+.tab-button {
+    display: block;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2;
+    background: #FBFAF8;
+    color: #000;
+    font-weight: 500;
+    padding: 1rem 1rem;
+}
+.tab-button::after {
+    content: '\f067';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-family: FontAwesome;
+    font-size: 1.0rem;
+    -webkit-text-stroke: 1px #fff;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    text-align: center
+}
+.tab-caption {
+    display: block;
+    padding: 1rem 1rem;
+}
+.tab-button i{
+    -webkit-text-stroke: 2px #fff;
+    color: #f97316;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+.tab-caption p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #000000BA;
+    display: block;
+    font-weight: 400
+}
+.on {
+    color: #000;
+    border-top: 0
+}
+.on::after {
+    content: '\f068';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-family: FontAwesome;
+    font-size: 1.0rem;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff
+}
 @media screen and (max-width:767px) {
     .portfoliobg ul {
         column-count: 2;

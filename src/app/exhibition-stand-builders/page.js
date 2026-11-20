@@ -75,7 +75,7 @@ export default function About(){
 												<div className="icon">12</div>
 												<div className="caption">
 													<div className="title">Year in Industry</div>
-													<p>We have a flawless presence of 20+ years in this industry.</p>
+													<p>We have a flawless presence of 12+ years in this industry.</p>
 												</div>
 											</div>
 										</div>

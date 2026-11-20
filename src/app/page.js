@@ -24,7 +24,7 @@ export const metadata = {
         url: "https://radonexhibition.com/images/bannernew.webp",
         width: 1200,
         height: 630,
-        alt: "Triumfo Inc Trade Show Booth Design",
+        alt: "Trade Show Booth Rentals in Las Vegas",
       },
     ],
   },
